@@ -1,0 +1,2005 @@
+[
+  {
+    "period": 1,
+    "elements": [
+      {
+        "name": "Hydrogen",
+        "shortname": "H",
+        "position": 0,
+        "index": 1,
+        "molar": 1.00794,
+        "type": 0,
+        "formula": "1s1",
+        "electrons": [
+          1
+        ]
+      },
+      {
+        "name": "Helium",
+        "shortname": "He",
+        "position": 17,
+        "index": 2,
+        "molar": 4.002602,
+        "type": 0,
+        "formula": "1s2",
+        "electrons": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "period": 2,
+    "elements": [
+      {
+        "name": "Lithium",
+        "shortname": "Li",
+        "position": 0,
+        "index": 3,
+        "molar": 6.941,
+        "type": 0,
+        "formula": "1s2 2s1",
+        "electrons": [
+          2,
+          1
+        ]
+      },
+      {
+        "name": "Beryllium",
+        "shortname": "Be",
+        "position": 1,
+        "index": 4,
+        "molar": 9.012182,
+        "type": 0,
+        "formula": "1s2 2s2",
+        "electrons": [
+          2,
+          2
+        ]
+      },
+      {
+        "name": "Boron",
+        "shortname": "B",
+        "position": 12,
+        "index": 5,
+        "molar": 10.811,
+        "type": 2,
+        "formula": "1s2 2s2 2p1",
+        "electrons": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Carbon",
+        "shortname": "C",
+        "position": 13,
+        "index": 6,
+        "molar": 12.0107,
+        "type": 2,
+        "formula": "1s2 2s2 2p2",
+        "electrons": [
+          2,
+          4
+        ]
+      },
+      {
+        "name": "Nitrogen",
+        "shortname": "N",
+        "position": 14,
+        "index": 7,
+        "molar": 14.0067,
+        "type": 2,
+        "formula": "1s2 2s2 2p3",
+        "electrons": [
+          2,
+          5
+        ]
+      },
+      {
+        "name": "Oxygen",
+        "shortname": "O",
+        "position": 15,
+        "index": 8,
+        "molar": 15.9994,
+        "type": 2,
+        "formula": "1s2 2s2 2p4",
+        "electrons": [
+          2,
+          6
+        ]
+      },
+      {
+        "name": "Fluorine",
+        "shortname": "F",
+        "position": 16,
+        "index": 9,
+        "molar": 18.998404,
+        "type": 2,
+        "formula": "1s2 2s2 2p5",
+        "electrons": [
+          2,
+          7
+        ]
+      },
+      {
+        "name": "Neon",
+        "shortname": "Ne",
+        "position": 17,
+        "index": 10,
+        "molar": 20.1797,
+        "type": 2,
+        "formula": "1s2 2s2 2p6",
+        "electrons": [
+          2,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 3,
+    "elements": [
+      {
+        "name": "Sodium",
+        "shortname": "Na",
+        "position": 0,
+        "index": 11,
+        "molar": 22.989769,
+        "type": 0,
+        "formula": "1s2 2s2 2p6 3s1",
+        "electrons": [
+          2,
+          8,
+          1
+        ]
+      },
+      {
+        "name": "Magnesium",
+        "shortname": "Mg",
+        "position": 1,
+        "index": 12,
+        "molar": 24.305,
+        "type": 0,
+        "formula": "1s2 2s2 2p6 3s2",
+        "electrons": [
+          2,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Aluminium",
+        "shortname": "Al",
+        "position": 12,
+        "index": 13,
+        "molar": 26.981539,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p1",
+        "electrons": [
+          2,
+          8,
+          3
+        ]
+      },
+      {
+        "name": "Silicon",
+        "shortname": "Si",
+        "position": 13,
+        "index": 14,
+        "molar": 28.0855,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p2",
+        "electrons": [
+          2,
+          8,
+          4
+        ]
+      },
+      {
+        "name": "Phosphorus",
+        "shortname": "P",
+        "position": 14,
+        "index": 15,
+        "molar": 30.973763,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p3",
+        "electrons": [
+          2,
+          8,
+          5
+        ]
+      },
+      {
+        "name": "Sulfur",
+        "shortname": "S",
+        "position": 15,
+        "index": 16,
+        "molar": 32.065,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p4",
+        "electrons": [
+          2,
+          8,
+          6
+        ]
+      },
+      {
+        "name": "Chlorine",
+        "shortname": "Cl",
+        "position": 16,
+        "index": 17,
+        "molar": 35.453,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p5",
+        "electrons": [
+          2,
+          8,
+          7
+        ]
+      },
+      {
+        "name": "Argon",
+        "shortname": "Ar",
+        "position": 17,
+        "index": 18,
+        "molar": 39.948,
+        "type": 2,
+        "formula": "1s2 2s2 2p6 3s2 3p6",
+        "electrons": [
+          2,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 4,
+    "elements": [
+      {
+        "name": "Potassium",
+        "shortname": "K",
+        "position": 0,
+        "index": 19,
+        "molar": 39.0983,
+        "type": 0,
+        "formula": "1s2 2s2 2p6 3s2 3p6 4s1",
+        "electrons": [
+          2,
+          8,
+          8,
+          1
+        ]
+      },
+      {
+        "name": "Calcium",
+        "shortname": "Ca",
+        "position": 1,
+        "index": 20,
+        "molar": 40.078,
+        "type": 0,
+        "formula": "1s2 2s2 2p6 3s2 3p6 4s2",
+        "electrons": [
+          2,
+          8,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Scandium",
+        "shortname": "Sc",
+        "position": 2,
+        "index": 21,
+        "molar": 44.955914,
+        "type": 1,
+        "formula": "1s2 2s2 2p6 3s2 3p6 4s2 3d1",
+        "electrons": [
+          2,
+          8,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Titanium",
+        "shortname": "Ti",
+        "position": 3,
+        "index": 22,
+        "molar": 47.867,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d2",
+        "electrons": [
+          2,
+          8,
+          10,
+          2
+        ]
+      },
+      {
+        "name": "Vanadium",
+        "shortname": "V",
+        "position": 4,
+        "index": 23,
+        "molar": 50.9415,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d3",
+        "electrons": [
+          2,
+          8,
+          11,
+          2
+        ]
+      },
+      {
+        "name": "Chromium",
+        "shortname": "Cr",
+        "position": 5,
+        "index": 24,
+        "molar": 51.9961,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 13d5",
+        "electrons": [
+          2,
+          8,
+          13,
+          1
+        ]
+      },
+      {
+        "name": "Manganese",
+        "shortname": "Mn",
+        "position": 6,
+        "index": 25,
+        "molar": 54.938046,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d5",
+        "electrons": [
+          2,
+          8,
+          13,
+          2
+        ]
+      },
+      {
+        "name": "Iron",
+        "shortname": "Fe",
+        "position": 7,
+        "index": 26,
+        "molar": 55.845,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d6",
+        "electrons": [
+          2,
+          8,
+          14,
+          2
+        ]
+      },
+      {
+        "name": "Cobalt",
+        "shortname": "Co",
+        "position": 8,
+        "index": 27,
+        "molar": 58.933193,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d7",
+        "electrons": [
+          2,
+          8,
+          15,
+          2
+        ]
+      },
+      {
+        "name": "Nickel",
+        "shortname": "Ni",
+        "position": 9,
+        "index": 28,
+        "molar": 58.6934,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d8",
+        "electrons": [
+          2,
+          8,
+          16,
+          2
+        ]
+      },
+      {
+        "name": "Copper",
+        "shortname": "Cu",
+        "position": 10,
+        "index": 29,
+        "molar": 63.546,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 13d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          1
+        ]
+      },
+      {
+        "name": "Zinc",
+        "shortname": "Zn",
+        "position": 11,
+        "index": 30,
+        "molar": 65.38,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          2
+        ]
+      },
+      {
+        "name": "Gallium",
+        "shortname": "Ga",
+        "position": 12,
+        "index": 31,
+        "molar": 69.723,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p1",
+        "electrons": [
+          2,
+          8,
+          18,
+          3
+        ]
+      },
+      {
+        "name": "Germanium",
+        "shortname": "Ge",
+        "position": 13,
+        "index": 32,
+        "molar": 72.63,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p2",
+        "electrons": [
+          2,
+          8,
+          18,
+          4
+        ]
+      },
+      {
+        "name": "Arsenic",
+        "shortname": "As",
+        "position": 14,
+        "index": 33,
+        "molar": 74.9216,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p3",
+        "electrons": [
+          2,
+          8,
+          18,
+          5
+        ]
+      },
+      {
+        "name": "Selenium",
+        "shortname": "Se",
+        "position": 15,
+        "index": 34,
+        "molar": 78.96,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p4",
+        "electrons": [
+          2,
+          8,
+          18,
+          6
+        ]
+      },
+      {
+        "name": "Bromine",
+        "shortname": "Br",
+        "position": 16,
+        "index": 35,
+        "molar": 79.904,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p5",
+        "electrons": [
+          2,
+          8,
+          18,
+          7
+        ]
+      },
+      {
+        "name": "Krypton",
+        "shortname": "Kr",
+        "position": 17,
+        "index": 36,
+        "molar": 83.798,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p6",
+        "electrons": [
+          2,
+          8,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 5,
+    "elements": [
+      {
+        "name": "Rubidium",
+        "shortname": "Rb",
+        "position": 0,
+        "index": 37,
+        "molar": 85.4678,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s1",
+        "electrons": [
+          2,
+          8,
+          18,
+          8,
+          1
+        ]
+      },
+      {
+        "name": "Strontium",
+        "shortname": "Sr",
+        "position": 1,
+        "index": 38,
+        "molar": 87.62,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Yttrium",
+        "shortname": "Y",
+        "position": 2,
+        "index": 39,
+        "molar": 88.90585,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Zirconium",
+        "shortname": "Zr",
+        "position": 3,
+        "index": 40,
+        "molar": 91.224,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d2",
+        "electrons": [
+          2,
+          8,
+          18,
+          10,
+          2
+        ]
+      },
+      {
+        "name": "Niobium",
+        "shortname": "Nb",
+        "position": 4,
+        "index": 41,
+        "molar": 92.90638,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d4",
+        "electrons": [
+          2,
+          8,
+          18,
+          12,
+          1
+        ]
+      },
+      {
+        "name": "Molybdenum",
+        "shortname": "Mo",
+        "position": 5,
+        "index": 42,
+        "molar": 95.96,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d5",
+        "electrons": [
+          2,
+          8,
+          18,
+          13,
+          1
+        ]
+      },
+      {
+        "name": "Technetium",
+        "shortname": "Tc",
+        "position": 6,
+        "index": 43,
+        "molar": 98,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d5",
+        "electrons": [
+          2,
+          8,
+          18,
+          13,
+          2
+        ]
+      },
+      {
+        "name": "Ruthenium",
+        "shortname": "Ru",
+        "position": 7,
+        "index": 44,
+        "molar": 101.07,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d7",
+        "electrons": [
+          2,
+          8,
+          18,
+          15,
+          1
+        ]
+      },
+      {
+        "name": "Rhodium",
+        "shortname": "Rh",
+        "position": 8,
+        "index": 45,
+        "molar": 102.9055,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d8",
+        "electrons": [
+          2,
+          8,
+          18,
+          16,
+          1
+        ]
+      },
+      {
+        "name": "Palladium",
+        "shortname": "Pd",
+        "position": 9,
+        "index": 46,
+        "molar": 106.42,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s04d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          18
+        ]
+      },
+      {
+        "name": "Silver",
+        "shortname": "Ag",
+        "position": 10,
+        "index": 47,
+        "molar": 107.8682,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          1
+        ]
+      },
+      {
+        "name": "Cadmium",
+        "shortname": "Cd",
+        "position": 11,
+        "index": 48,
+        "molar": 112.411,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          2
+        ]
+      },
+      {
+        "name": "Indium",
+        "shortname": "In",
+        "position": 12,
+        "index": 49,
+        "molar": 114.818,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p1",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          3
+        ]
+      },
+      {
+        "name": "Tin",
+        "shortname": "Sn",
+        "position": 13,
+        "index": 50,
+        "molar": 118.71,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p2",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          4
+        ]
+      },
+      {
+        "name": "Antimony",
+        "shortname": "Sb",
+        "position": 14,
+        "index": 51,
+        "molar": 121.76,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s224d105p3",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          5
+        ]
+      },
+      {
+        "name": "Tellurium",
+        "shortname": "Te",
+        "position": 15,
+        "index": 52,
+        "molar": 127.6,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p4",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          6
+        ]
+      },
+      {
+        "name": "Iodine",
+        "shortname": "I",
+        "position": 16,
+        "index": 53,
+        "molar": 126.90447,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p5",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          7
+        ]
+      },
+      {
+        "name": "Xenon",
+        "shortname": "Xe",
+        "position": 17,
+        "index": 54,
+        "molar": 131.293,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p6",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 6,
+    "elements": [
+      {
+        "name": "Caesium",
+        "shortname": "Cs",
+        "position": 0,
+        "index": 55,
+        "molar": 132.90546,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s1",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          8,
+          1
+        ]
+      },
+      {
+        "name": "Barium",
+        "shortname": "Ba",
+        "position": 1,
+        "index": 56,
+        "molar": 137.327,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Hafnium",
+        "shortname": "Hf",
+        "position": 3,
+        "index": 72,
+        "molar": 178.49,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          10,
+          2
+        ]
+      },
+      {
+        "name": "Tantalum",
+        "shortname": "Ta",
+        "position": 4,
+        "index": 73,
+        "molar": 180.94788,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d3",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          11,
+          2
+        ]
+      },
+      {
+        "name": "Tungsten",
+        "shortname": "W",
+        "position": 5,
+        "index": 74,
+        "molar": 183.84,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d4",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          12,
+          2
+        ]
+      },
+      {
+        "name": "Rhenium",
+        "shortname": "Re",
+        "position": 6,
+        "index": 75,
+        "molar": 186.207,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d5",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          13,
+          2
+        ]
+      },
+      {
+        "name": "Osmium",
+        "shortname": "Os",
+        "position": 7,
+        "index": 76,
+        "molar": 190.23,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d6",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          14,
+          2
+        ]
+      },
+      {
+        "name": "Iridium",
+        "shortname": "Ir",
+        "position": 8,
+        "index": 77,
+        "molar": 192.217,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d7",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          15,
+          2
+        ]
+      },
+      {
+        "name": "Platinum",
+        "shortname": "Pt",
+        "position": 9,
+        "index": 78,
+        "molar": 195.084,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s14f145d9",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          17,
+          1
+        ]
+      },
+      {
+        "name": "Gold",
+        "shortname": "Au",
+        "position": 10,
+        "index": 79,
+        "molar": 196.96657,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s14f145d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          1
+        ]
+      },
+      {
+        "name": "Mercury",
+        "shortname": "Hg",
+        "position": 11,
+        "index": 80,
+        "molar": 200.59,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d10",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          2
+        ]
+      },
+      {
+        "name": "Thallium",
+        "shortname": "Tl",
+        "position": 12,
+        "index": 81,
+        "molar": 204.3833,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          3
+        ]
+      },
+      {
+        "name": "Lead",
+        "shortname": "Pb",
+        "position": 13,
+        "index": 82,
+        "molar": 207.2,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          4
+        ]
+      },
+      {
+        "name": "Bismuth",
+        "shortname": "Bi",
+        "position": 14,
+        "index": 83,
+        "molar": 208.9804,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p3",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          5
+        ]
+      },
+      {
+        "name": "Polonium",
+        "shortname": "Po",
+        "position": 15,
+        "index": 84,
+        "molar": 209,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p4",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          6
+        ]
+      },
+      {
+        "name": "Astatine",
+        "shortname": "At",
+        "position": 16,
+        "index": 85,
+        "molar": 210,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p5",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          7
+        ]
+      },
+      {
+        "name": "Radon",
+        "shortname": "Rn",
+        "position": 17,
+        "index": 86,
+        "molar": 222,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s14d105p66s24f145d106p6",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 7,
+    "elements": [
+      {
+        "name": "Francium",
+        "shortname": "Fr",
+        "position": 0,
+        "index": 87,
+        "molar": 223,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          8,
+          1
+        ]
+      },
+      {
+        "name": "Radium",
+        "shortname": "Ra",
+        "position": 1,
+        "index": 88,
+        "molar": 226,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Rutherfordium",
+        "shortname": "Rf",
+        "position": 3,
+        "index": 104,
+        "molar": 267,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          10,
+          2
+        ]
+      },
+      {
+        "name": "Dubnium",
+        "shortname": "Db",
+        "position": 4,
+        "index": 105,
+        "molar": 268,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d3",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          11,
+          2
+        ]
+      },
+      {
+        "name": "Seaborgium",
+        "shortname": "Sg",
+        "position": 5,
+        "index": 106,
+        "molar": 271,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d4",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          12,
+          2
+        ]
+      },
+      {
+        "name": "Bohrium",
+        "shortname": "Bh",
+        "position": 6,
+        "index": 107,
+        "molar": 272,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d5",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          13,
+          2
+        ]
+      },
+      {
+        "name": "Hassium",
+        "shortname": "Hs",
+        "position": 7,
+        "index": 108,
+        "molar": 270,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d6",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          14,
+          2
+        ]
+      },
+      {
+        "name": "Meitnerium",
+        "shortname": "Mt",
+        "position": 8,
+        "index": 109,
+        "molar": 276,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d7",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          15,
+          2
+        ]
+      },
+      {
+        "name": "Darmstadtium",
+        "shortname": "Ds",
+        "position": 9,
+        "index": 110,
+        "molar": 281,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d87s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          17,
+          1
+        ]
+      },
+      {
+        "name": "Roentgenium",
+        "shortname": "Rg",
+        "position": 10,
+        "index": 111,
+        "molar": 280,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d97s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          1
+        ]
+      },
+      {
+        "name": "Copernicium",
+        "shortname": "Cn",
+        "position": 11,
+        "index": 112,
+        "molar": 285,
+        "type": 1,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          2
+        ]
+      },
+      {
+        "name": "Ununtrium",
+        "shortname": "Uut",
+        "position": 12,
+        "index": 113,
+        "molar": 284,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          3
+        ]
+      },
+      {
+        "name": "Flerovium",
+        "shortname": "Fl",
+        "position": 13,
+        "index": 114,
+        "molar": 289,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          4
+        ]
+      },
+      {
+        "name": "Ununpentium",
+        "shortname": "Uup",
+        "position": 14,
+        "index": 115,
+        "molar": 288,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p3",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          5
+        ]
+      },
+      {
+        "name": "Livermorium",
+        "shortname": "Lv",
+        "position": 15,
+        "index": 116,
+        "molar": 293,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p4",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          6
+        ]
+      },
+      {
+        "name": "Ununseptium",
+        "shortname": "Uus",
+        "position": 16,
+        "index": 117,
+        "molar": 294,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p5",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          7
+        ]
+      },
+      {
+        "name": "Ununoctium",
+        "shortname": "Uuo",
+        "position": 17,
+        "index": 118,
+        "molar": 294,
+        "type": 2,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p6",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 8,
+    "elements": [
+      {
+        "name": "Ununennium",
+        "shortname": "Uue",
+        "position": 0,
+        "index": 119,
+        "molar": 316,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p68s1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          8
+        ]
+      },
+      {
+        "name": "Unbinilium",
+        "shortname": "Ubn",
+        "position": 1,
+        "index": 120,
+        "molar": 320,
+        "type": 0,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d107s27p68s2",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "period": 9,
+    "elements": [
+      {
+        "name": "Lanthanum",
+        "shortname": "La",
+        "position": 2,
+        "index": 57,
+        "molar": 138.90547,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s25d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          18,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Cerium",
+        "shortname": "Ce",
+        "position": 3,
+        "index": 58,
+        "molar": 140.116,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f2",
+        "electrons": [
+          2,
+          8,
+          18,
+          19,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Praseodymium",
+        "shortname": "Pr",
+        "position": 4,
+        "index": 59,
+        "molar": 140.90765,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f3",
+        "electrons": [
+          2,
+          8,
+          18,
+          21,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Neodymium",
+        "shortname": "Nd",
+        "position": 5,
+        "index": 60,
+        "molar": 144.242,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f4",
+        "electrons": [
+          2,
+          8,
+          18,
+          22,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Promethium",
+        "shortname": "Pm",
+        "position": 6,
+        "index": 61,
+        "molar": 145,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f5",
+        "electrons": [
+          2,
+          8,
+          18,
+          23,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Samarium",
+        "shortname": "Sm",
+        "position": 7,
+        "index": 62,
+        "molar": 150.36,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f6",
+        "electrons": [
+          2,
+          8,
+          18,
+          24,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Europium",
+        "shortname": "Eu",
+        "position": 8,
+        "index": 63,
+        "molar": 151.964,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f7",
+        "electrons": [
+          2,
+          8,
+          18,
+          25,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Gadolinium",
+        "shortname": "Gd",
+        "position": 9,
+        "index": 64,
+        "molar": 157.25,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f75d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          25,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Terbium",
+        "shortname": "Tb",
+        "position": 10,
+        "index": 65,
+        "molar": 158.92535,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f9",
+        "electrons": [
+          2,
+          8,
+          18,
+          27,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Dysprosium",
+        "shortname": "Dy",
+        "position": 11,
+        "index": 66,
+        "molar": 162.5,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f10",
+        "electrons": [
+          2,
+          8,
+          18,
+          28,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Holmium",
+        "shortname": "Ho",
+        "position": 12,
+        "index": 67,
+        "molar": 164.93031,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f11",
+        "electrons": [
+          2,
+          8,
+          18,
+          29,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Erbium",
+        "shortname": "Er",
+        "position": 13,
+        "index": 68,
+        "molar": 167.259,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f12",
+        "electrons": [
+          2,
+          8,
+          18,
+          30,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Thulium",
+        "shortname": "Tm",
+        "position": 14,
+        "index": 69,
+        "molar": 168.9342,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f13",
+        "electrons": [
+          2,
+          8,
+          18,
+          31,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Ytterbium",
+        "shortname": "Yb",
+        "position": 15,
+        "index": 70,
+        "molar": 173.054,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f14",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Lutetium",
+        "shortname": "Lu",
+        "position": 16,
+        "index": 71,
+        "molar": 174.9668,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          9,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "period": 10,
+    "elements": [
+      {
+        "name": "Actinium",
+        "shortname": "Ac",
+        "position": 2,
+        "index": 89,
+        "molar": 227,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s26d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Thorium",
+        "shortname": "Th",
+        "position": 3,
+        "index": 90,
+        "molar": 232.03806,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s26d25f0",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          18,
+          10,
+          2
+        ]
+      },
+      {
+        "name": "Protactinium",
+        "shortname": "Pa",
+        "position": 4,
+        "index": 91,
+        "molar": 231.03587,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f26d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          20,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Uranium",
+        "shortname": "U",
+        "position": 5,
+        "index": 92,
+        "molar": 238.02892,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f36d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          21,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Neptunium",
+        "shortname": "Np",
+        "position": 6,
+        "index": 93,
+        "molar": 237,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f46d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          22,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Plutonium",
+        "shortname": "Pu",
+        "position": 7,
+        "index": 94,
+        "molar": 244,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f56d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          24,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Americium",
+        "shortname": "Am",
+        "position": 8,
+        "index": 95,
+        "molar": 243,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f7",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          25,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Curium",
+        "shortname": "Cm",
+        "position": 9,
+        "index": 96,
+        "molar": 247,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f76d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          25,
+          9,
+          2
+        ]
+      },
+      {
+        "name": "Berkelium",
+        "shortname": "Bk",
+        "position": 10,
+        "index": 97,
+        "molar": 247,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f86d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          27,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Californium",
+        "shortname": "Cf",
+        "position": 11,
+        "index": 98,
+        "molar": 251,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f10",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          28,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Einsteinium",
+        "shortname": "Es",
+        "position": 12,
+        "index": 99,
+        "molar": 252,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f11",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          29,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Fermium",
+        "shortname": "Fm",
+        "position": 13,
+        "index": 100,
+        "molar": 257,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f12",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          30,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Mendelevium",
+        "shortname": "Md",
+        "position": 14,
+        "index": 101,
+        "molar": 258,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f13",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          31,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Nobelium",
+        "shortname": "No",
+        "position": 15,
+        "index": 102,
+        "molar": 259,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f14",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          8,
+          2
+        ]
+      },
+      {
+        "name": "Lawrencium",
+        "shortname": "Lr",
+        "position": 16,
+        "index": 103,
+        "molar": 262,
+        "type": 3,
+        "formula": "1s 22s 22p 63s 23p64s 23d104p65s24d105p66s24f145d106p67s25f146d1",
+        "electrons": [
+          2,
+          8,
+          18,
+          32,
+          32,
+          8,
+          3
+        ]
+      }
+    ]
+  }
+]
