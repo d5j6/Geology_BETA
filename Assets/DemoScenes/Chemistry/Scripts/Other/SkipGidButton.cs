@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using Andy.IdGenerator;
 
 public class SkipGidButton : MonoBehaviour, IInteractive
 {

@@ -639,7 +639,7 @@ namespace Slate{
 
 			//Record Undo and dirty? This is an overal fallback. Certain actions register undo as well.
 			if (e.rawType == EventType.MouseDown && e.button == 0){
-				Undo.RegisterFullObjectHierarchyUndo(cutscene.groupsRoot.gameObject, "Cutscene Change");
+				Undo.RegisterFullObjectHierarchyUndo(cutscene.GroupsRoot.gameObject, "Cutscene Change");
 				Undo.RecordObject(cutscene, "Cutscene Change");
 				willDirty = true;
 			}

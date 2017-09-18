@@ -9,8 +9,8 @@ public class LanguageController : Singleton<LanguageController>
     {
         base.Awake();
 
-    //private void Start()
-    //{
+        //private void Start()
+        //{
         /*if (IsInitialized)
         {
             Destroy(gameObject);
@@ -27,7 +27,9 @@ public class LanguageController : Singleton<LanguageController>
         }
     }
 
-    public void ShowWindow(System.Action callback = null)
+    System.Action SceneCallback;
+
+    public void ShowWindow(System.Action callback = null, System.Action sceneCallback = null)
     {
         if (TagAlongBehaviour)
         {
@@ -44,6 +46,8 @@ public class LanguageController : Singleton<LanguageController>
             {
                 callback.Invoke();
             }
+            if (sceneCallback != null)
+                SceneCallback = sceneCallback;
         });
     }
 
@@ -71,7 +75,8 @@ public class LanguageController : Singleton<LanguageController>
     {
         HideWindow(() =>
         {
-            ChooseScenePanelScript.Instance.Show();
+            if (SceneCallback != null)
+                SceneCallback.Invoke();
         });
     }
 }

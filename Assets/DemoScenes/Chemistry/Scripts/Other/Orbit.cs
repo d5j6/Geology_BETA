@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Vectrosity;
 using DG.Tweening;
 
-public class Orbit : MonoBehaviour
+public class Orbit : Singleton<Orbit>
 {
     private int _orbitNumber;
     private float _orbitRadius;
@@ -44,6 +44,7 @@ public class Orbit : MonoBehaviour
 
         _electronOrbit = new GameObject("ElectronOrbit").transform;
         _electronOrbit.SetParent(transform);
+
         _electronOrbit.localPosition = Vector3.zero;
         _electronOrbit.localRotation = Quaternion.identity;
 
@@ -118,6 +119,7 @@ public class Orbit : MonoBehaviour
     {
         _electronOrbit.transform.Rotate(new Vector3(0f, 0f, _orbitSpeed) * Time.deltaTime);
     }
+
 
     void OnDestroy()
     {

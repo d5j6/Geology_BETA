@@ -2,6 +2,7 @@
 
 public class StandardSimpleButton : MonoBehaviour
 {
+
     protected bool enabledByFunctionality = true;
 
     protected virtual void Awake()

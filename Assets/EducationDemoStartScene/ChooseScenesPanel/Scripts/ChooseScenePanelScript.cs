@@ -49,6 +49,8 @@ public class ChooseScenePanelScript : Singleton<ChooseScenePanelScript>
 
     public void Show(System.Action callback = null)
     {
+        LanguageManager.Instance.CurrentLanguage = Language.English;
+
         switch(LanguageManager.Instance.CurrentLanguage)
         {
             case Language.English:

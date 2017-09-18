@@ -55,7 +55,7 @@ public class OwnGestureManager : Singleton<OwnGestureManager>
         {
             if(OwnGazeManager.Instance.HitObjectType != OwnGazeManager.HitObjectTypes.Spatial)
             {
-                return;
+                //return;
             }
 
             if(Instance.OnTapEvent != null)
@@ -101,7 +101,7 @@ public class OwnGestureManager : Singleton<OwnGestureManager>
     #endregion
 
     #region Properties
-    private bool isInitialized;
+    private bool isInitialized = false;
 
     private IGestureStrategy strategy;
 
@@ -182,7 +182,7 @@ public class OwnGestureManager : Singleton<OwnGestureManager>
         tapGestureRecognizer.NavigationCompletedEvent += NavigationComplete;
         tapGestureRecognizer.NavigationCanceledEvent += NavigationCansel;
 
-        //Debug.Log("Events initialized");
+        Debug.Log("Events initialized");
 
         ChangeStrategyToNone();
 
@@ -191,8 +191,6 @@ public class OwnGestureManager : Singleton<OwnGestureManager>
 
     void OnTap(InteractionSourceKind source, int tapCount, Ray headRay)
     {
-        
-        
         strategy.Alghoritm();
     }
 

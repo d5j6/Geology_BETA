@@ -31,7 +31,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.Log("The instance of singleton is already created.");
+            Debug.Log("The instance of " + instance.GetType().ToString() + " singleton is already created.");
             return;
         }
 

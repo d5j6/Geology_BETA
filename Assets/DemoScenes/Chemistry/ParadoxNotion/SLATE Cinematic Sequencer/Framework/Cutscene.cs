@@ -96,7 +96,7 @@ namespace Slate{
 		private bool _isReSampleFrame;
 
 		//The root on which groups are added for organization
-		public Transform groupsRoot{
+		public Transform GroupsRoot{
 			get
 			{
 				if (_groupsRoot == null){
@@ -769,7 +769,7 @@ namespace Slate{
 			FlushExpressionEnvironment();
 #endif
 
-			if (groupsRoot.transform.parent != this.transform){	groupsRoot.transform.parent = this.transform; }
+			if (GroupsRoot.transform.parent != this.transform){	GroupsRoot.transform.parent = this.transform; }
 
 			directables = new List<IDirectable>();
 			foreach(IDirectable group in groups.AsEnumerable().Reverse()){
@@ -991,9 +991,9 @@ namespace Slate{
 		[ContextMenu("Remove Component")] //override
 		void RemoveComponent(){	Debug.LogWarning("Removing the Cutscene Component is not possible. Please delete the GameObject instead");	}
 		[ContextMenu("Show Transforms")]
-		void ShowTransforms(){ Prefs.showTransforms = true; groupsRoot.hideFlags = HideFlags.None; }
+		void ShowTransforms(){ Prefs.showTransforms = true; GroupsRoot.hideFlags = HideFlags.None; }
 		[ContextMenu("Hide Transforms")]
-		void HideTransforms(){ Prefs.showTransforms = false; groupsRoot.hideFlags = HideFlags.HideInHierarchy; }
+		void HideTransforms(){ Prefs.showTransforms = false; GroupsRoot.hideFlags = HideFlags.HideInHierarchy; }
 
 		protected void OnValidate(){
 			if (!Application.isPlaying && !UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode){
@@ -1039,7 +1039,7 @@ namespace Slate{
 
 			var newGroup = new GameObject(type.Name).AddComponent(type) as CutsceneGroup;
 			UnityEditor.Undo.RegisterCreatedObjectUndo(newGroup.gameObject, "Add Group");
-			UnityEditor.Undo.SetTransformParent(newGroup.transform, groupsRoot, "Add Group");
+			UnityEditor.Undo.SetTransformParent(newGroup.transform, GroupsRoot, "Add Group");
 			UnityEditor.Undo.RegisterCompleteObjectUndo(this, "Add Group");
 			newGroup.transform.localPosition = Vector3.zero;
 			newGroup.actor = targetActor;
@@ -1068,7 +1068,7 @@ namespace Slate{
 
 			var newGroup = (CutsceneGroup)Instantiate(group);
 			UnityEditor.Undo.RegisterCreatedObjectUndo(newGroup.gameObject, "Duplicate Group");
-			UnityEditor.Undo.SetTransformParent(newGroup.transform, groupsRoot, "Duplicate Group");
+			UnityEditor.Undo.SetTransformParent(newGroup.transform, GroupsRoot, "Duplicate Group");
 			UnityEditor.Undo.RegisterCompleteObjectUndo(this, "Duplicate Group");
 			newGroup.actor = targetActor;
 			newGroup.transform.localPosition = Vector3.zero;

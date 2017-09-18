@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Andy.IdGenerator;
 
 public class DataManager : Singleton<DataManager>
 {

@@ -57,7 +57,7 @@ namespace Slate{
 			GUI.skin.GetStyle("label").richText = true;
 
 			if (e.rawType == EventType.MouseDown && e.button == 0 ){ //generic undo
-				Undo.RegisterFullObjectHierarchyUndo(cutscene.groupsRoot.gameObject, "Cutscene Inspector");
+				Undo.RegisterFullObjectHierarchyUndo(cutscene.GroupsRoot.gameObject, "Cutscene Inspector");
 				Undo.RecordObject(cutscene, "Cutscene Inspector");
 				willDirty = true;
 			}

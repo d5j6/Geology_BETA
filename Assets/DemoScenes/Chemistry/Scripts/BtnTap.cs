@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine.UI;
+using Andy.IdGenerator;
 
 
 public class BtnTap : MonoBehaviour, IInteractive
@@ -54,6 +55,8 @@ public class BtnTap : MonoBehaviour, IInteractive
             audioSource.Play();
             RunAnumation();
         }
+
+        
     }
 
     public void RunAnumation(bool fromSharing = false)
@@ -63,13 +66,20 @@ public class BtnTap : MonoBehaviour, IInteractive
         {
             case "Demo":
                 CutsceneManager.Instance.PlaySectionNow(playDemo: true);
-                // CutsceneManager.Instance.PlaySectionNow(playDemo: true);
                 break;
             case "Stop":
                 CutsceneManager.Instance.SkipCutscene();
                 CutsceneManager.Instance.StopCutscene();
                 break;
+            case "Exit":
+                CutsceneManager.Instance.SkipCutscene();
+                CutsceneManager.Instance.StopCutscene();
+                ManagersActivationScript.Instance.ActivateInteractionManagers();
+                ChemistrySceneFolderCommands.Instance.DeleteChemistryObjects();
+                Loader.Instance.GoToPreviousScene();
+                break;
             default:
+                PrefabManager.Instance.professorPrefab.SetActive(true);
                 CutsceneManager.Instance.PlaySectionNow(sectionName: chapterName);
                 break;
         }
@@ -106,7 +116,6 @@ public class BtnTap : MonoBehaviour, IInteractive
         {
             _text.color = _highlightColor;
             isActiveBtn = true;
-
         }
     }
 

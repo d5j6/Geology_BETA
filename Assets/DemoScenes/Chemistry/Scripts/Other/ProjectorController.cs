@@ -47,7 +47,7 @@ public class ProjectorController : MonoBehaviour, IInteractive
         IsProjectingAtom = false;
         isSharingFirstTime = true;
         IsSharing = false;
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(true);
     }
 
     public List<ActionType> GetAllowedActions()

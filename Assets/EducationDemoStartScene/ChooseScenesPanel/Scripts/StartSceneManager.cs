@@ -33,7 +33,9 @@ public class StartSceneManager : Singleton<StartSceneManager>, ISceneManager
             logo.GetComponent<LogoController>().StartLogo();
         }).setOnComplete(() =>
         {
-            showLangChooserScreen();
+            ChooseScenePanelScript.Instance.Show();
+
+            //showLangChooserScreen();
         });
     }
 

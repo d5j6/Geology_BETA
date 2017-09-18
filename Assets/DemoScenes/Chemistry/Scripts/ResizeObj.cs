@@ -38,7 +38,7 @@ public class ResizeObj : MonoBehaviour, IInteractive
 
     private void Start()
     {
-        _chaptersMenu = transform.parent.gameObject;
+       // _chaptersMenu = transform.parent.gameObject;
     }
 
     public void OnGazeEnter()

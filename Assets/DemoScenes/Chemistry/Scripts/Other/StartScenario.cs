@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using HoloToolkit.Unity.SpatialMapping;
 
 public class StartScenario : Singleton<StartScenario>
 {
@@ -23,23 +24,28 @@ public class StartScenario : Singleton<StartScenario>
 
     void Start()
     {
+        //if (SpatialMappingManager.Instance != null)
+        //    SpatialMappingManager.Instance.StartObserver();
+
+        // projector.gameObject.SetActive(false);
+
         OwnCursorManager.Instance.DisableCursor();
         PlayerManager.Instance.IsScanned = true;
         StartTemplates();
     }
 
-
     void StartTemplates()
     {
+        TemplateDrag.Instance.Initialize();
         OwnCursorManager.Instance.EnableCursor();
         IsPeriodicTableActive = false;
 
-        PeriodicTabletemplate = Instantiate(periodicTableTemplatePrefab);
+        // NEW
+        PeriodicTabletemplate = Instantiate(periodicTableTemplatePrefab, this.gameObject.transform.parent);
         TemplateDrag templateTableScript = PeriodicTabletemplate.GetComponentInChildren<TemplateDrag>();
         PlayerManager.Instance.TryToDragInteractive(templateTableScript);
         OwnGestureManager.Instance.OnTapEvent += PeriodicTableDropHandler;
     }
-
 
     public void DestroyPeriodicTableTemplate()
     {
@@ -55,19 +61,22 @@ public class StartScenario : Singleton<StartScenario>
     {
         OwnGestureManager.Instance.OnTapEvent -= PeriodicTableDropHandler;
 
-        periodicTable.transform.parent = null;
+        periodicTable.gameObject.SetActive(true);
+
+        // NEW
+        periodicTable.transform.parent = this.gameObject.transform.parent;
+        // periodicTable.transform.parent = null;
         periodicTable.transform.position = PeriodicTabletemplate.transform.position;
         periodicTable.transform.rotation = PeriodicTabletemplate.transform.rotation;
 
-        periodicTable.gameObject.SetActive(true);
-
         Destroy(PeriodicTabletemplate);
 
-        SV_Sharing.Instance.SendTransform(
-            periodicTable.transform.position,
-            periodicTable.transform.rotation,
-            periodicTable.transform.localScale,
-            "periodic_table");
+        if (SV_Sharing.Instance != null)
+            SV_Sharing.Instance.SendTransform(
+                periodicTable.transform.position,
+                periodicTable.transform.rotation,
+                periodicTable.transform.localScale,
+                "periodic_table");
 
         IsPeriodicTableActive = true;
 
@@ -81,7 +90,10 @@ public class StartScenario : Singleton<StartScenario>
 
         Vector3 chaptersSpawnPos = new Vector3(1.0f, 0.0f, -0.1f);
         chaptersSpawnPos = periodicTable.transform.TransformPoint(-chaptersSpawnPos);
-        Instantiate(chaptersMenu, chaptersSpawnPos, periodicTable.transform.rotation);
+
+        // NEW
+        Instantiate(chaptersMenu, chaptersSpawnPos, periodicTable.transform.rotation, this.gameObject.transform.parent);
+        // Instantiate(chaptersMenu, chaptersSpawnPos, periodicTable.transform.rotation);
         chaptersBtn = GameObject.FindObjectsOfType<BtnTap>();
 
         /*
@@ -108,8 +120,8 @@ public class StartScenario : Singleton<StartScenario>
             "projector");
 
         projector.gameObject.SetActive(true);
-
-        projector.transform.parent = null;
+        Vector3 projectorSpawnPos = new Vector3(-1.5f, 0.25f, -0.2f);
+        projector.transform.position = periodicTable.transform.TransformPoint(-projectorSpawnPos);
 
         DataManager.Instance.InitializeDictionaries();
     }

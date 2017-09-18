@@ -216,6 +216,7 @@ namespace HoloToolkit.Unity.SpatialMapping
 #endif
             if (!IsObserverRunning())
             {
+                Debug.Log("Observation is starting...");
                 surfaceObserver.StartObserving();
                 StartTime = Time.unscaledTime;
             }

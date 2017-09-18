@@ -30,6 +30,7 @@ public class Loader : Singleton<Loader>
     /// Имя первой сцены, которая будет автоматически загружена просле старта Framework-сцены
     /// </summary>
     public string SceneNameToLoadOnStart = "";
+    public bool isTried { get; private set; }
 
     private string previousSceneName;
     private string currentSceneName;
@@ -47,6 +48,8 @@ public class Loader : Singleton<Loader>
     private Queue<string> scenesToLoadNext = new Queue<string>();
     private Queue<SceneLoadingMode> wantedModesToLoadNext = new Queue<SceneLoadingMode>();
     private Queue<bool> wantedLoadingScreenToLoadNext = new Queue<bool>();
+
+    private GameObject currentObject;
 
     /// <summary>
     /// Вызывается, когда новозагруженная сцена считает себя полностью загруженной, сообщает об этом лоадеру и он вызывает метод StartScene его IsceneManager'а
@@ -67,12 +70,16 @@ public class Loader : Singleton<Loader>
 
     private AsyncOperation sceneLodingOperation;
 
+    public Scene newScene { get; private set; }
+
     private void Start()
     {
         if (SceneNameToLoadOnStart != "")
         {
-            LoadScene(SceneNameToLoadOnStart, SceneLoadingMode.Additive, false);
+            LoadScene(SceneNameToLoadOnStart, SceneLoadingMode.Additive, false); 
         }
+        newScene = SceneManager.CreateScene("NEW");
+        isTried = false;
     }
 
     /// <summary>
@@ -125,7 +132,7 @@ public class Loader : Singleton<Loader>
                             PrepareAllCurrentScenesForClosing(() =>
                             {
                                 LoadingWindowScript.Instance.Show(() =>
-                                {
+                                {        
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
                                 });
                             });
@@ -147,12 +154,16 @@ public class Loader : Singleton<Loader>
                                 {
                                     PackAllToTrashCan();
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+                                    currentObject = FindObjectOfType<Initializator>().gameObject;
+                                    Initializator initializator = currentObject.GetComponent<Initializator>();
+                                    initializator.Awake();
                                 });
                             });
                         }
                         else
                         {
                             PackAllToTrashCan();
+
                             sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
                         }
                         break;
@@ -261,7 +272,11 @@ public class Loader : Singleton<Loader>
 
         for (int i = 0; i < rootGOs.Length; i++)
         {
-            if ((rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) && (rootGOs[i].GetComponent<LeanTween>() == null) && (!rootGOs[i].Equals(TrashCanObject)))
+            if (
+                (rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) &&
+                rootGOs[i].GetComponent<LeanTween>() == null &&
+                !rootGOs[i].Equals(TrashCanObject)
+                )
             {
                 rootGOs[i].transform.parent = TrashCanObject.transform;
             }

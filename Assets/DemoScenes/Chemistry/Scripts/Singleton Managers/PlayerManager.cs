@@ -287,6 +287,8 @@ public class PlayerManager : Singleton<PlayerManager>
         state.ChangeStateToDefault();
     }
 
+    public void Start() { }
+
     //public void ChangeStateToDemonstration()
     //{
     //    CutsceneManager.Instance.ActivateButton();

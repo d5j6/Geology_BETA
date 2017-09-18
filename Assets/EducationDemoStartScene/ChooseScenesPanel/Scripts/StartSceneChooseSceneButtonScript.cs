@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
-public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D {
-
+public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
+{
+    public bool MultiLanguage;
+    
     bool _animationMayChange = false;
     public bool animationMayChange
     {
@@ -100,11 +103,29 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
     {
         base.singleTapAction();
 
+        ChooseScenePanelScript.Instance.Hide();
+
+        if (MultiLanguage)
+            LanguageController.Instance.ShowWindow(null, LoadSceneByTap);
+        else
+            LoadSceneByTap();
+    }
+
+    private void LoadSceneByTap()
+    {
         if (animationMayChange)
         {
             if (SceneToLoad != "")
             {
-                Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
+                if (SceneToLoad == "ChemistryScene")
+                {
+                    ManagersActivationScript.Instance.DeactivateInteractionManagers();
+                    Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
+                }
+                else
+                {
+                    Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
+                }  
             }
         }
     }
