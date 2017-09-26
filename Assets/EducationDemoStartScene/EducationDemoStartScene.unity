@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d652278cbecf9c4db274edefaa1bc1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MultiLanguage: 0
+  MultiLanguage: 1
   SceneToLoad: ChemistryScene
 --- !u!65 &13292355
 BoxCollider:

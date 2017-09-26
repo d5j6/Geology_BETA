@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
 {
     public bool MultiLanguage;
+
+    private bool isNeed = false;
     
     bool _animationMayChange = false;
     public bool animationMayChange
@@ -99,9 +102,32 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         }
     }
 
+    private void Update()
+    {
+        isNeed = CubeButton.isNeed;
+    }
+
     protected override void singleTapAction()
     {
         base.singleTapAction();
+
+        if (isNeed)
+        {
+            Debug.Log("Work!");
+
+
+            Destroy(FindObjectOfType<DemoShowStateMachine>());
+            Destroy(FindObjectOfType<MoreInfoController>());
+            Destroy(FindObjectOfType<EarthController>());
+            Destroy(FindObjectOfType<PiePolygon>());
+            Destroy(FindObjectOfType<SceneStateMachine>());
+            Destroy(FindObjectOfType<PieController>());
+            Destroy(FindObjectOfType<BigSimpleInfoPanelController>());
+            Destroy(FindObjectOfType<SlicedEarthPolygon>());
+            Destroy(FindObjectOfType<HoloStudyDemoGeoMenuController>());
+            Destroy(FindObjectOfType<ProfessorOnPlatform>());
+            Destroy(FindObjectOfType<AudioSourceController>());
+        }
 
         ChooseScenePanelScript.Instance.Hide();
 
@@ -111,24 +137,31 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
             LoadSceneByTap();
     }
 
+
     private void LoadSceneByTap()
     {
         if (animationMayChange)
         {
             if (SceneToLoad != "")
             {
+                
+
                 if (SceneToLoad == "ChemistryScene")
                 {
-                    ManagersActivationScript.Instance.DeactivateInteractionManagers();
+                    
                     Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
+                    ManagersActivationScript.Instance.DeactivateInteractionManagers();
+                    // isNeed = false;
                 }
                 else
                 {
                     Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
-                }  
+                }
             }
         }
     }
+
+    
 
     public void OnTap(RaycastHit hitInfo)
     {

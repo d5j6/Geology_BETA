@@ -88,7 +88,7 @@ public class Loader : Singleton<Loader>
     /// <param name="sceneName">Имя сцены, которую требуется загрузкить</param>
     /// <param name="mode">Режим загрузки сцены. В отличие от <see cref="LoadSceneMode"/>, контролирует, что произойдет с предыдущей сценой после загрузки новой сцены.</param>
     /// <param name="withLoadingScreen">Нужно ли показывать экран загрузки</param>
-    public void LoadScene(string sceneName, SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true)
+    public void LoadScene(string sceneName, SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true, bool deleteGeoObjects = false)
     {
         /*
            Процес загрузки/выгрузки может быть в 3х вариантах:
@@ -154,6 +154,12 @@ public class Loader : Singleton<Loader>
                                 {
                                     PackAllToTrashCan();
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+
+                                    if (deleteGeoObjects)
+                                    {
+                                        HologramCollectionFrameworkCommands.Instance.Clear();
+                                    }
+
                                     currentObject = FindObjectOfType<Initializator>().gameObject;
                                     Initializator initializator = currentObject.GetComponent<Initializator>();
                                     initializator.Awake();
@@ -406,9 +412,9 @@ public class Loader : Singleton<Loader>
         }
     }
 
-    public void GoToPreviousScene(SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true)
+    public void GoToPreviousScene(SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true, bool deleteGeoObject = false)
     {
-        LoadScene(previousSceneName, mode, withLoadingScreen);
+        LoadScene(previousSceneName, mode, withLoadingScreen, deleteGeoObject);
     }
 
     #endregion

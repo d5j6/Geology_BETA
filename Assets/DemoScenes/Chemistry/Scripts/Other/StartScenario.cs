@@ -5,7 +5,6 @@ using HoloToolkit.Unity.SpatialMapping;
 
 public class StartScenario : Singleton<StartScenario>
 {
-
     public GameObject periodicTableTemplatePrefab;
     private GameObject PeriodicTabletemplate;
 
@@ -34,15 +33,18 @@ public class StartScenario : Singleton<StartScenario>
         StartTemplates();
     }
 
+
     void StartTemplates()
     {
-        TemplateDrag.Instance.Initialize();
         OwnCursorManager.Instance.EnableCursor();
         IsPeriodicTableActive = false;
 
         // NEW
         PeriodicTabletemplate = Instantiate(periodicTableTemplatePrefab, this.gameObject.transform.parent);
         TemplateDrag templateTableScript = PeriodicTabletemplate.GetComponentInChildren<TemplateDrag>();
+
+        // templateTableScript.Initialize();
+
         PlayerManager.Instance.TryToDragInteractive(templateTableScript);
         OwnGestureManager.Instance.OnTapEvent += PeriodicTableDropHandler;
     }
@@ -122,6 +124,7 @@ public class StartScenario : Singleton<StartScenario>
         projector.gameObject.SetActive(true);
         Vector3 projectorSpawnPos = new Vector3(-1.5f, 0.25f, -0.2f);
         projector.transform.position = periodicTable.transform.TransformPoint(-projectorSpawnPos);
+        projector.transform.parent = null;
 
         DataManager.Instance.InitializeDictionaries();
     }

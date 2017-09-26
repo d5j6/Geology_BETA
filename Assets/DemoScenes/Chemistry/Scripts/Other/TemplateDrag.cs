@@ -7,6 +7,9 @@ using DG.Tweening;
 [RequireComponent(typeof(MeshRenderer))]
 public class TemplateDrag : Singleton<TemplateDrag>, IInteractive
 {
+    private GameObject templatePrefabCustom;
+    private TemplateDrag templateDragCustom;
+
     [SerializeField]
     private List<ActionType> _allowedTypes;
 
@@ -75,16 +78,25 @@ public class TemplateDrag : Singleton<TemplateDrag>, IInteractive
 
     void Awake()
     {
+        // templateDragCustom = templatePrefabCustom.GetComponent<TemplateDrag>();
+        // templateDragCustom.Initialize();
+        
         Initialize();
     }
 
     public void Initialize()
     {
-        _material = GetComponent<MeshRenderer>().material;
+        templatePrefabCustom = FindObjectOfType<TemplateDrag>().gameObject;
 
+        // _material = GetComponent<MeshRenderer>().material;
+
+        _material = templatePrefabCustom.GetComponent<MeshRenderer>().material;            
         Color targetColor = _material.color;
         targetColor.a = 0.4f;
-        _material.DOColor(targetColor, _fadeDuration).SetLoops(-1, LoopType.Yoyo).Play();
+        _material.color = targetColor;
+        Debug.Log("Initialization of \"Template\" works fine");
+
+        // _material.DOColor(targetColor, _fadeDuration).SetLoops(-1, LoopType.Yoyo).Play();
     }
 
     private void ChangeLayerRecursively(GameObject go, int layer)
