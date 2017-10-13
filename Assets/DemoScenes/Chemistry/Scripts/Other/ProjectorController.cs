@@ -125,6 +125,8 @@ public class ProjectorController : MonoBehaviour, IInteractive
 
     public void CreateAtomProjection(TableElement element)
     {
+        Debug.Log("Creating atom's projection... Step #1");
+
         number++;
 
         if (number == 1)

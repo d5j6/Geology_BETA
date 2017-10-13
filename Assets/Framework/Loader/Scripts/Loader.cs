@@ -160,9 +160,12 @@ public class Loader : Singleton<Loader>
                                         HologramCollectionFrameworkCommands.Instance.Clear();
                                     }
 
+                                    /*
                                     currentObject = FindObjectOfType<Initializator>().gameObject;
                                     Initializator initializator = currentObject.GetComponent<Initializator>();
                                     initializator.Awake();
+                                    */
+
                                 });
                             });
                         }

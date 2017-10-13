@@ -9,9 +9,21 @@ public class AtomFactory : IAtomFactory
 
     public Atom CreateAtom(string atomName, int[] holes = null, int holesOffset = 0, List<List<float>> overridedPositions = null)
     {
+        Debug.Log("Creating atom's projection... Step #2");
+
         atomInfo = DataManager.Instance.GetAtominfo(atomName);
 
         Atom newAtom = GameObject.Instantiate(PrefabManager.Instance.atomPrefab).GetComponent<Atom>();
+
+        if (newAtom == null)
+        {
+            Debug.Log("Atom won't be created!");
+        }
+        else
+        {
+            Debug.Log("Atom will be created!");
+        }
+
         newAtom.Initialize(atomInfo, holes, holesOffset, overridedPositions);
 
         int orbitsCount = atomInfo.electrons.Length - 1;

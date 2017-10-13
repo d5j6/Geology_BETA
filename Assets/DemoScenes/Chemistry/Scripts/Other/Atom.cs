@@ -441,6 +441,7 @@ public class Atom : MonoBehaviour
 
     private float _transitionDuration = 1f;
 
+    // WORK HERE:
     public void Initialize(AtomInformation atomInformation, int[] holes = null, int holesOffset = 0, List<List<float>> overridedPositions = null)
     {
         if(_isInitialized)

@@ -115,7 +115,6 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         {
             Debug.Log("Work!");
 
-
             Destroy(FindObjectOfType<DemoShowStateMachine>());
             Destroy(FindObjectOfType<MoreInfoController>());
             Destroy(FindObjectOfType<EarthController>());
@@ -144,13 +143,13 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         {
             if (SceneToLoad != "")
             {
-                
 
                 if (SceneToLoad == "ChemistryScene")
                 {
                     
                     Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
                     ManagersActivationScript.Instance.DeactivateInteractionManagers();
+                    // Initializator.Instance.Awake();
                     // isNeed = false;
                 }
                 else

@@ -6,6 +6,14 @@ public class ManagersActivationScript : Singleton<ManagersActivationScript> {
 
     public GameObject InteractionManagers;
 
+    private void Start()
+    {
+        if (InteractionManagers == null)
+        {
+            Debug.Log("Prefabs in " + gameObject.name + " weren't assigned");
+        }
+    }
+
     public void ActivateInteractionManagers()
     {
         InteractionManagers.SetActive(true);

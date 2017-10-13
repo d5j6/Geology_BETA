@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 [RequireComponent(typeof(MeshRenderer))]
-public class TemplateDrag : Singleton<TemplateDrag>, IInteractive
+public class TemplateDrag : MonoBehaviour, IInteractive
 {
     private GameObject templatePrefabCustom;
     private TemplateDrag templateDragCustom;

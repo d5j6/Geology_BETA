@@ -43,6 +43,16 @@ public class OrbitManager : MonoBehaviour
         orbit.transform.SetParent(transform);
         orbit.transform.localPosition = Vector3.zero;
         orbit.transform.localRotation = Quaternion.identity;
+
+        if (orbit == null)
+        {
+            Debug.Log("Orbits doesn't work!");
+        }
+        else
+        {
+            Debug.Log("Orbits works!");
+        }
+
         orbit.Initialize(orbitNumber, electronsCount, holesCount, holesOffset, overridedPositions);
 
         _orbits.Add(orbit);

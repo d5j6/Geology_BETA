@@ -48,6 +48,15 @@ public class Orbit : Singleton<Orbit>
         _electronOrbit.localPosition = Vector3.zero;
         _electronOrbit.localRotation = Quaternion.identity;
 
+        if (_electronOrbit == null)
+        {
+            Debug.Log("ElectronicOrbit doesn't work!");
+        }
+        else
+        {
+            Debug.Log("ElectronicOrbit works!");
+        }
+
         int summaryPoints = electronsCount + holesCount;
         int holePeriod = (holesCount == 0) ? 0 : summaryPoints / holesCount;
 
@@ -112,11 +121,22 @@ public class Orbit : Singleton<Orbit>
         _orbitLine.material = new Material(Shader.Find("Shader Forge/UnlitColor"));
         _orbitLine.material.color = Color.gray;
         _orbitLine.MakeCircle(Vector3.zero, _orbitRadius, 32);
+
+        if (_orbitLine == null)
+        {
+            Debug.Log("OrbitLine doesn't work");
+        }
+        else
+        {
+            Debug.Log("OrbitLine works");
+        }
+
         _orbitLine.Draw3DAuto();
     }
 
     void Update()
     {
+        // Unassigned!
         _electronOrbit.transform.Rotate(new Vector3(0f, 0f, _orbitSpeed) * Time.deltaTime);
     }
 

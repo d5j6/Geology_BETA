@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using Andy.IdGenerator;
 
-public class TableElement : MonoBehaviour, IInteractive
+public class TableElement : CommonRingedAndTintedButton, IInteractive
 {
     private AudioSource audioSource;
 

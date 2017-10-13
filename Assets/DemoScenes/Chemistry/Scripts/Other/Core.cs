@@ -21,8 +21,17 @@ public class Core : MonoBehaviour
         _isInitialized = true;
 
         _material = GetComponent<MeshRenderer>().material;
-        
+
         _colorTween = _material.DOColor(Color.white, 1f).SetLoops(-1, LoopType.Yoyo).Play();
+
+        if (_colorTween == null)
+        {
+            Debug.Log("DoTween doesn't work!");
+        }
+        else
+        {
+            Debug.Log("DoTween works!");
+        }
     }
 
     void OnDestroy()

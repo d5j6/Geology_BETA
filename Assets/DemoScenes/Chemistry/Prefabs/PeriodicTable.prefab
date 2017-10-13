@@ -21364,6 +21364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Oganesson
   _allowedActions: 00000000
   _elementText: {fileID: 114000010924734388}
@@ -21540,6 +21542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Rhenium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011125960612}
@@ -21676,6 +21680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Meitnerium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011015575552}
@@ -21812,6 +21818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Hydrogen
   _allowedActions: 00000000
   _elementText: {fileID: 114000010478209172}
@@ -21826,6 +21834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Rubidium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011157805972}
@@ -21851,6 +21861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Mercury
   _allowedActions: 00000000
   _elementText: {fileID: 114000011155869436}
@@ -22109,6 +22121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Bromine
   _allowedActions: 00000000
   _elementText: {fileID: 114000010264527038}
@@ -22134,6 +22148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Americium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012089010182}
@@ -22148,6 +22164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Nobelium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012691555834}
@@ -22162,6 +22180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Flerovium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011479187904}
@@ -22176,6 +22196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Zinc
   _allowedActions: 00000000
   _elementText: {fileID: 114000013100309044}
@@ -22304,6 +22326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Iridium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010934260202}
@@ -22826,6 +22850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Mendelevium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011167258412}
@@ -22840,6 +22866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Chromium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012985865122}
@@ -22874,6 +22902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Niobium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012009716176}
@@ -23050,6 +23080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Scandium
   _allowedActions: 00000000
   _elementText: {fileID: 114000014090560558}
@@ -23226,6 +23258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Boron
   _allowedActions: 00000000
   _elementText: {fileID: 114000012198929442}
@@ -23780,6 +23814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Tennessine
   _allowedActions: 00000000
   _elementText: {fileID: 114000011924659968}
@@ -23814,6 +23850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Carbon
   _allowedActions: 00000000
   _elementText: {fileID: 114000011362192398}
@@ -23828,6 +23866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Tin
   _allowedActions: 00000000
   _elementText: {fileID: 114000011256450864}
@@ -24166,6 +24206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Barium
   _allowedActions: 00000000
   _elementText: {fileID: 114000014118937166}
@@ -24180,6 +24222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: BaseGitText
   _allowedActions: 00000000
   _elementText: {fileID: 114000010506137262}
@@ -24616,6 +24660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Nihonium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013808947332}
@@ -24670,6 +24716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Copper
   _allowedActions: 00000000
   _elementText: {fileID: 114000011255023936}
@@ -25108,6 +25156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Protactinium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013703856444}
@@ -25134,6 +25184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Molybdenum
   _allowedActions: 00000000
   _elementText: {fileID: 114000011039483016}
@@ -25148,6 +25200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Caesium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012575000254}
@@ -26394,6 +26448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Beryllium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010512431596}
@@ -26774,6 +26830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Cerium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011319730948}
@@ -26788,6 +26846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Nickel
   _allowedActions: 00000000
   _elementText: {fileID: 114000010266049404}
@@ -26967,6 +27027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Argon
   _allowedActions: 00000000
   _elementText: {fileID: 114000010279572448}
@@ -26981,6 +27043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Magnesium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013706051070}
@@ -27157,6 +27221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Neodymium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012025686180}
@@ -28392,6 +28458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Europium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010667703496}
@@ -28426,6 +28494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Moscovium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011004701366}
@@ -28928,6 +28998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Bismuth
   _allowedActions: 00000000
   _elementText: {fileID: 114000013741511412}
@@ -29237,6 +29309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Praseodymium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013249855924}
@@ -29271,6 +29345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Calcium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013275718790}
@@ -29285,6 +29361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Chlorine
   _allowedActions: 00000000
   _elementText: {fileID: 114000012506649594}
@@ -29603,6 +29681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Radium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011506627708}
@@ -29637,6 +29717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Lanthanum
   _allowedActions: 00000000
   _elementText: {fileID: 114000012064317424}
@@ -29793,6 +29875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Vanadium
   _allowedActions: 00000000
   _elementText: {fileID: 114000014184226776}
@@ -29807,6 +29891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Fermium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011527249140}
@@ -29821,6 +29907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Yttrium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010928667280}
@@ -30270,6 +30358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Uranium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010024445130}
@@ -30304,6 +30394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Samarium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010626986710}
@@ -30318,6 +30410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Krypton
   _allowedActions: 00000000
   _elementText: {fileID: 114000011170244718}
@@ -30798,6 +30892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Tungsten
   _allowedActions: 00000000
   _elementText: {fileID: 114000013337155384}
@@ -30954,6 +31050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Osmium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012731208298}
@@ -31110,6 +31208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Manganese
   _allowedActions: 00000000
   _elementText: {fileID: 114000010830680934}
@@ -31366,6 +31466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Neptunium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012088545124}
@@ -31380,6 +31482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Sulfur
   _allowedActions: 00000000
   _elementText: {fileID: 114000011263653380}
@@ -31760,6 +31864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Titanium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011106340222}
@@ -32254,6 +32360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Platinum
   _allowedActions: 00000000
   _elementText: {fileID: 114000013944251196}
@@ -32779,6 +32887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Silver
   _allowedActions: 00000000
   _elementText: {fileID: 114000012893109736}
@@ -32833,6 +32943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Promethium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011446850586}
@@ -33001,6 +33113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Thulium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012722653572}
@@ -33015,6 +33129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Xenon
   _allowedActions: 00000000
   _elementText: {fileID: 114000014237892548}
@@ -33029,6 +33145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Astatine
   _allowedActions: 00000000
   _elementText: {fileID: 114000013456359460}
@@ -33165,6 +33283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: BaseGitText
   _allowedActions: 00000000
   _elementText: {fileID: 114000010950175350}
@@ -33443,6 +33563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Dubnium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013910460362}
@@ -33477,6 +33599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Thallium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012140914178}
@@ -33491,6 +33615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Polonium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012698997148}
@@ -33891,6 +34017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Gallium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013716334938}
@@ -34169,6 +34297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Fluorine
   _allowedActions: 00000000
   _elementText: {fileID: 114000012397933548}
@@ -34203,6 +34333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Rhodium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010355518896}
@@ -34339,6 +34471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: DragSprite
   _allowedActions: 00000000
   _elementText: {fileID: 0}
@@ -34393,6 +34527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Hassium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013320723988}
@@ -34589,6 +34725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Actinium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010996757862}
@@ -34969,6 +35107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Potassium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010092461872}
@@ -35125,6 +35265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Aluminium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010725239034}
@@ -35403,6 +35545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Dysprosium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010145495766}
@@ -35437,6 +35581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Technetium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012348789820}
@@ -35593,6 +35739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Copernicium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013147602270}
@@ -35645,6 +35793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Francium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013448129470}
@@ -35659,6 +35809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Zirconium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012957828460}
@@ -35684,6 +35836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Nitrogen
   _allowedActions: 00000000
   _elementText: {fileID: 114000013626505242}
@@ -35698,6 +35852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Tellurium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012491865396}
@@ -35914,6 +36070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Lead
   _allowedActions: 00000000
   _elementText: {fileID: 114000010150877414}
@@ -36050,6 +36208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Rutherfordium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011737683792}
@@ -36308,6 +36468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Indium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010925842102}
@@ -36688,6 +36850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Bohrium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013008207128}
@@ -36978,6 +37142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Palladium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010034536208}
@@ -37012,6 +37178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Thorium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011221352350}
@@ -37026,6 +37194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Gold
   _allowedActions: 00000000
   _elementText: {fileID: 114000012663879400}
@@ -37040,6 +37210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Strontium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010960157658}
@@ -37236,6 +37408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Cadmium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012158734920}
@@ -37534,6 +37708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Terbium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011574962354}
@@ -37670,6 +37846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Californium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011030241690}
@@ -37684,6 +37862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Antimony
   _allowedActions: 00000000
   _elementText: {fileID: 114000011809407840}
@@ -37840,6 +38020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Roentgenium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010725662698}
@@ -38016,6 +38198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Radon
   _allowedActions: 00000000
   _elementText: {fileID: 114000012609662536}
@@ -38030,6 +38214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Holmium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011210471802}
@@ -38044,6 +38230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Selenium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011874548144}
@@ -38098,6 +38286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Ytterbium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012016790506}
@@ -38254,6 +38444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Lawrencium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013684126230}
@@ -38552,6 +38744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Silicon
   _allowedActions: 00000000
   _elementText: {fileID: 114000010931130898}
@@ -38566,6 +38760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Einsteinium
   _allowedActions: 00000000
   _elementText: {fileID: 114000014253834918}
@@ -38640,6 +38836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Gadolinium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012759883798}
@@ -38674,6 +38872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Arsenic
   _allowedActions: 00000000
   _elementText: {fileID: 114000013484334276}
@@ -38688,6 +38888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Seaborgium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012664098534}
@@ -38702,6 +38904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Tantalum
   _allowedActions: 00000000
   _elementText: {fileID: 114000011032428156}
@@ -38938,6 +39142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Lithium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011732918324}
@@ -39500,6 +39706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Sodium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010614273952}
@@ -39514,6 +39722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Cobalt
   _allowedActions: 00000000
   _elementText: {fileID: 114000012160879672}
@@ -39650,6 +39860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Oxygen
   _allowedActions: 00000000
   _elementText: {fileID: 114000011359570984}
@@ -40093,6 +40305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Curium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012528943686}
@@ -40107,6 +40321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Darmstadtium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013814982844}
@@ -40121,6 +40337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Hafnium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013887095470}
@@ -40309,6 +40527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Plutonium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012383785384}
@@ -40607,6 +40827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Iodine
   _allowedActions: 00000000
   _elementText: {fileID: 114000011977786184}
@@ -40661,6 +40883,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Lutetium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013011555876}
@@ -40948,6 +41172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Germanium
   _allowedActions: 00000000
   _elementText: {fileID: 114000011152453576}
@@ -41143,6 +41369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Berkelium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012994987984}
@@ -41157,6 +41385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Helium
   _allowedActions: 00000000
   _elementText: {fileID: 114000013024043474}
@@ -41171,6 +41401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Livermorium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012481217900}
@@ -41307,6 +41539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Ruthenium
   _allowedActions: 00000000
   _elementText: {fileID: 114000010248366840}
@@ -41321,6 +41555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Phosphorus
   _allowedActions: 00000000
   _elementText: {fileID: 114000010439217160}
@@ -41477,6 +41713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Iron
   _allowedActions: 00000000
   _elementText: {fileID: 114000010514977722}
@@ -41613,6 +41851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Neon
   _allowedActions: 00000000
   _elementText: {fileID: 114000013253998638}
@@ -41667,6 +41907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e073d16fd2a5a444b3f241425671835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyRings: {fileID: 0}
+  MyTinter: {fileID: 0}
   _atomName: Erbium
   _allowedActions: 00000000
   _elementText: {fileID: 114000012540235248}
