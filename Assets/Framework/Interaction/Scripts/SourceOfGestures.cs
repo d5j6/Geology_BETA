@@ -11,7 +11,9 @@ public class SourceOfGestures : Singleton<SourceOfGestures>
 {
     public KeyCode EditorManipulatonKey = KeyCode.R;
 
-    private GestureRecognizer gestureRecognizer;
+    // AndrewMilko
+    // private GestureRecognizer gestureRecognizer;
+    public GestureRecognizer gestureRecognizer { get; private set; }
     private GestureRecognizer manipulationRecognizer;
 
 

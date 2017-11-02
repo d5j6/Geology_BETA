@@ -107,7 +107,7 @@ public class OwnGestureManager : Singleton<OwnGestureManager>
 
     public KeyCode editorTapKey = KeyCode.F;
 
-    private GestureRecognizer tapGestureRecognizer;
+    public GestureRecognizer tapGestureRecognizer { get; private set; }
 
     public event Action<IInteractive> OnTapEvent;
     public event Action<IInteractive> NavStart;

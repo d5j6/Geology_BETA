@@ -620,12 +620,19 @@ public class Loader : Singleton<Loader>
 
     // Andrew Milko
     public void TurnOffManagers()
-    {
+    {   
+        SourceOfGestures.Instance.gestureRecognizer.CancelGestures();
+        SourceOfGestures.Instance.gestureRecognizer.StopCapturingGestures();
         InteractionManagers.SetActive(false);
     }
 
+    // Andrew Milko
     public void TurnOnManagers()
     {
+        OwnGestureManager.Instance.tapGestureRecognizer.CancelGestures();
+        OwnGestureManager.Instance.tapGestureRecognizer.StopCapturingGestures();
+
         InteractionManagers.SetActive(true);
+        SourceOfGestures.Instance.gestureRecognizer.StartCapturingGestures();
     }
 }
