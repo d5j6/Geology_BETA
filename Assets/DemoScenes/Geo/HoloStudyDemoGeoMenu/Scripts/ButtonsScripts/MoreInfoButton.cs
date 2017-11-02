@@ -15,8 +15,10 @@
         }
     }
 
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         ProfessorsLecturesController.Instance.LectureStarted += onLectureStarted;
         ProfessorsLecturesController.Instance.LectureEnded += onLectureEnded;
 

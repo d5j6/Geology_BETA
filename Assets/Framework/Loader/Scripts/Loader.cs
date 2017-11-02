@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System;
 using HoloToolkit.Unity;
 
+
 /// <summary>
 /// Опции загрузки префабов
 /// LoadThenIntantiate - загружает по очереди все префабы а затем все инстантиирует
@@ -24,13 +25,14 @@ public enum SceneLoadingMode { Additive, Single }
 /// </summary>
 public class Loader : Singleton<Loader>
 {
+    public GameObject InteractionManagers;
+
     #region Loading Scenes
 
     /// <summary>
     /// Имя первой сцены, которая будет автоматически загружена просле старта Framework-сцены
     /// </summary>
     public string SceneNameToLoadOnStart = "";
-    public bool isTried { get; private set; }
 
     private string previousSceneName;
     private string currentSceneName;
@@ -48,8 +50,6 @@ public class Loader : Singleton<Loader>
     private Queue<string> scenesToLoadNext = new Queue<string>();
     private Queue<SceneLoadingMode> wantedModesToLoadNext = new Queue<SceneLoadingMode>();
     private Queue<bool> wantedLoadingScreenToLoadNext = new Queue<bool>();
-
-    private GameObject currentObject;
 
     /// <summary>
     /// Вызывается, когда новозагруженная сцена считает себя полностью загруженной, сообщает об этом лоадеру и он вызывает метод StartScene его IsceneManager'а
@@ -70,16 +70,12 @@ public class Loader : Singleton<Loader>
 
     private AsyncOperation sceneLodingOperation;
 
-    public Scene newScene { get; private set; }
-
     private void Start()
     {
         if (SceneNameToLoadOnStart != "")
         {
-            LoadScene(SceneNameToLoadOnStart, SceneLoadingMode.Additive, false); 
+            LoadScene(SceneNameToLoadOnStart, SceneLoadingMode.Additive, false);
         }
-        newScene = SceneManager.CreateScene("NEW");
-        isTried = false;
     }
 
     /// <summary>
@@ -88,7 +84,7 @@ public class Loader : Singleton<Loader>
     /// <param name="sceneName">Имя сцены, которую требуется загрузкить</param>
     /// <param name="mode">Режим загрузки сцены. В отличие от <see cref="LoadSceneMode"/>, контролирует, что произойдет с предыдущей сценой после загрузки новой сцены.</param>
     /// <param name="withLoadingScreen">Нужно ли показывать экран загрузки</param>
-    public void LoadScene(string sceneName, SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true, bool deleteGeoObjects = false)
+    public void LoadScene(string sceneName, SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true)
     {
         /*
            Процес загрузки/выгрузки может быть в 3х вариантах:
@@ -132,7 +128,7 @@ public class Loader : Singleton<Loader>
                             PrepareAllCurrentScenesForClosing(() =>
                             {
                                 LoadingWindowScript.Instance.Show(() =>
-                                {        
+                                {
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
                                 });
                             });
@@ -154,25 +150,17 @@ public class Loader : Singleton<Loader>
                                 {
                                     PackAllToTrashCan();
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-
-                                    if (deleteGeoObjects)
-                                    {
-                                        HologramCollectionFrameworkCommands.Instance.Clear();
-                                    }
-
-                                    /*
-                                    currentObject = FindObjectOfType<Initializator>().gameObject;
-                                    Initializator initializator = currentObject.GetComponent<Initializator>();
-                                    initializator.Awake();
-                                    */
-
                                 });
+
+                                if (sceneName == "ChemistryScene")
+                                {
+                                    // LoadingWindowScript.Instance.HideLoadingWindowsCustomly();
+                                }
                             });
                         }
                         else
                         {
                             PackAllToTrashCan();
-
                             sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
                         }
                         break;
@@ -281,11 +269,7 @@ public class Loader : Singleton<Loader>
 
         for (int i = 0; i < rootGOs.Length; i++)
         {
-            if (
-                (rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) &&
-                rootGOs[i].GetComponent<LeanTween>() == null &&
-                !rootGOs[i].Equals(TrashCanObject)
-                )
+            if ((rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) && (rootGOs[i].GetComponent<LeanTween>() == null) && (!rootGOs[i].Equals(TrashCanObject)))
             {
                 rootGOs[i].transform.parent = TrashCanObject.transform;
             }
@@ -415,9 +399,9 @@ public class Loader : Singleton<Loader>
         }
     }
 
-    public void GoToPreviousScene(SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true, bool deleteGeoObject = false)
+    public void GoToPreviousScene(SceneLoadingMode mode = SceneLoadingMode.Single, bool withLoadingScreen = true)
     {
-        LoadScene(previousSceneName, mode, withLoadingScreen, deleteGeoObject);
+        LoadScene(previousSceneName, mode, withLoadingScreen);
     }
 
     #endregion
@@ -632,6 +616,16 @@ public class Loader : Singleton<Loader>
             }
         }
     }
-
     #endregion
+
+    // Andrew Milko
+    public void TurnOffManagers()
+    {
+        InteractionManagers.SetActive(false);
+    }
+
+    public void TurnOnManagers()
+    {
+        InteractionManagers.SetActive(true);
+    }
 }

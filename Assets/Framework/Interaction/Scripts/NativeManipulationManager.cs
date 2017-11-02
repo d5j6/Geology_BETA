@@ -1,8 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using HoloToolkit.Unity;
-using SV_Events = SV_HandlerBankEvents;
-using Andy.IdGenerator;
 
 /*
  * Менеджер нативной навигации отвечает за более сложный тип навигации чем простые перетаскивания, тапы и прочее. Он пытается выполнять то, что хочет в данный момент пользователь, при том, 
@@ -18,7 +16,7 @@ using Andy.IdGenerator;
 /// <summary>
 /// Класс предоставляет набор кажущихся нам нативными триггеров, которые могут быть использованы и истолкованы агентами манипуляции как стадии манипуляции.
 /// </summary>
-public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManipulationManager>
+public class NativeManipulationManager : Singleton<NativeManipulationManager>
 {
     [Tooltip("How much to scale each axis of hand movement (camera relative) when manipulating the object")]
     public Vector3 handPositionScale = new Vector3(2.0f, 2.0f, 4.0f);  // Default tuning values, expected to be modified per application
@@ -54,8 +52,8 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
     /// </summary>
     public Action DelayTriggered;
 
-    private void Start()
-    { 
+    void Awake()
+    {
         /*GestureManager.Instance.ManipulationStarted += manipulationStarted;
         GestureManager.Instance.ManipulationCanceled += manipulationCompleted;
         GestureManager.Instance.ManipulationCompleted += manipulationCompleted;
@@ -114,10 +112,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
             {
                 if (DelayTriggered != null)
                 {
-                    // OK
                     DelayTriggered.Invoke();
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendBool(true, "DelayTriggered"); // 1
                 }
                 delayTriggerTriggered = true;
             }
@@ -138,10 +133,8 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
 #else
                             Vector3 initialHandToCurrentHand = localHandPosition - initialHandPosition;
 #endif
-                    // OK
+
                     NativeSingleTapManipulationUpdated.Invoke(initialHandToCurrentHand);
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendJson(new SV_Events.Case1(initialHandToCurrentHand), "NativeSingleTapManipulationUpdated"); // 2
                 }
                 break;
             case UsersFirstAction.DoubleTap:
@@ -153,10 +146,8 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
 #else
                             Vector3 initialHandToCurrentHand = localHandPosition - initialHandPosition;
 #endif
-                    // OK
+
                     NativeDoubleTapManipulationUpdated.Invoke(initialHandToCurrentHand);
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendJson(new SV_Events.Case1(initialHandToCurrentHand), "NativeDoubleTapManipulationUpdated"); // 3
                 }
                 break;
         }
@@ -173,16 +164,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
 
                         if (NativeSingleTapManipulationStarted != null)
                         {
-                            // OK
                             NativeSingleTapManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                            // if object have uniq ID
-                            if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                            {
-                                var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                // SEND TO SV_Sharing
-                                SV_Sharing.Instance.SendInt(objectId, "NativeSingleTapManipulationStarted"); // 4
-                            }
                         }
                     }
                     else
@@ -192,19 +174,9 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                         currentStage = NativeManipulationActionStage.Executing;
 
                         initialHandPosition = Camera.main.transform.InverseTransformPoint(SourceOfGestures.Instance.ManipulationHandPosition);
-
                         if (NativeDoubleTapManipulationStarted != null)
                         {
-                            // OK
                             NativeDoubleTapManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                            // if object have uniq ID
-                            if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                            {
-                                var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                // SEND TO SV_Sharing
-                                SV_Sharing.Instance.SendInt(objectId, "NativeDoubleTapManipulationStarted"); // 5
-                            }
                         }
                     }
 
@@ -219,9 +191,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
 
                 if (NativeSingleTapManipulationUpdated != null)
                 {
-                    // OK
                     NativeSingleTapManipulationUpdated.Invoke(offset);
-                    SV_Sharing.Instance.SendJson(new SV_Events.Case1(offset), "NativeSingleTapManipulationUpdated"); // 6
                 }
                 
                 if (offset.magnitude >= TriggerOffset)
@@ -246,16 +216,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                         
                         if (NativeXYManipulationStarted != null)
                         {
-                            // OK
                             NativeXYManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                            // if object have uniq ID
-                            if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                            {
-                                var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                // SEND TO SV_Sharing
-                                SV_Sharing.Instance.SendInt(objectId, "NativeXYManipulationStarted"); // 7
-                            }
                         }
                     }
                     else
@@ -266,16 +227,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                             
                             if (NativeXManipulationStarted != null)
                             {
-                                // OK
                                 NativeXManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                                // if object have uniq ID
-                                if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                                {
-                                    var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendInt(objectId, "NativeXManipulationStarted"); // 8
-                                }
                             }
                         }
                         else if (abs.y > abs.z)
@@ -284,16 +236,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                             
                             if (NativeYManipulationStarted != null)
                             {
-                                // OK
                                 NativeYManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                                // if object have uniq ID
-                                if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                                {
-                                    var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendInt(objectId, "NativeYManipulationStarted"); // 9
-                                }
                             }
                         }
                         else
@@ -302,16 +245,7 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                             
                             if (NativeZManipulationStarted != null)
                             {
-                                // OK
                                 NativeZManipulationStarted.Invoke(gameObjectFocusedWhenPressStarted);
-
-                                // if object have uniq ID
-                                if (gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                                {
-                                    var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendInt(objectId, "NativeZManipulationStarted"); // 10
-                                }
                             }
                         }
                     }
@@ -345,42 +279,25 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                                 {
                                     float x = SourceOfGestures.Instance.CameraRelativeOffset.x;
                                     float y = SourceOfGestures.Instance.CameraRelativeOffset.y;
-
-                                    var res = Mathf.Sqrt(x * x + y * y) * (x / Mathf.Abs(x)) - OffsetWhenTriggered.magnitude * (OffsetWhenTriggered.x / Mathf.Abs(OffsetWhenTriggered.x));
-                                    // OK
-                                    NativeXYManipulationUpdated.Invoke(res);
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendFloat(res, "NativeXYManipulationUpdated"); // 11
+                                    NativeXYManipulationUpdated.Invoke(Mathf.Sqrt(x*x + y*y)*(x/Mathf.Abs(x)) - OffsetWhenTriggered.magnitude*(OffsetWhenTriggered.x/Mathf.Abs(OffsetWhenTriggered.x)));
                                 }
                                 break;
                             case UsersSecondAction.XManipulation:
                                 if (NativeXManipulationUpdated != null)
                                 {
-                                    var res = SourceOfGestures.Instance.CameraRelativeOffset.x - OffsetWhenTriggered.x;
-                                    // OK
-                                    NativeXManipulationUpdated.Invoke(res);
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendFloat(res, "NativeXManipulationUpdated"); // 12
+                                    NativeXManipulationUpdated.Invoke(SourceOfGestures.Instance.CameraRelativeOffset.x - OffsetWhenTriggered.x);
                                 }
                                 break;
                             case UsersSecondAction.YManipulation:
                                 if (NativeYManipulationUpdated != null)
                                 {
-                                    var res = SourceOfGestures.Instance.CameraRelativeOffset.y - OffsetWhenTriggered.y;
-                                    // OK
-                                    NativeYManipulationUpdated.Invoke(res);
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendFloat(res, "NativeYManipulationUpdated"); // 13
+                                    NativeYManipulationUpdated.Invoke(SourceOfGestures.Instance.CameraRelativeOffset.y - OffsetWhenTriggered.y);
                                 }
                                 break;
                             case UsersSecondAction.ZManipulation:
                                 if (NativeZManipulationUpdated != null)
                                 {
-                                    var res = SourceOfGestures.Instance.CameraRelativeOffset.z - OffsetWhenTriggered.z;
-                                    // OK
-                                    NativeZManipulationUpdated.Invoke(res);
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendFloat(res, "NativeZManipulationUpdated"); // 14
+                                    NativeZManipulationUpdated.Invoke(SourceOfGestures.Instance.CameraRelativeOffset.z - OffsetWhenTriggered.z);
                                 }
                                 break;
                         }
@@ -444,19 +361,13 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
             case UsersFirstAction.SingleTap:
                 if (NativeSingleTapManipulationCompleted != null)
                 {
-                    // OK
                     NativeSingleTapManipulationCompleted.Invoke();
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendBool(true, "NativeSingleTapManipulationCompleted"); // 15
                 }
                 break;
             case UsersFirstAction.DoubleTap:
                 if (NativeDoubleTapManipulationCompleted != null)
                 {
-                    // OK
                     NativeDoubleTapManipulationCompleted.Invoke();
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendBool(true, "NativeDoubleTapManipulationCompleted"); // 16
                 }
                 break;
         }
@@ -479,37 +390,25 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
                             case UsersSecondAction.XManipulation:
                                 if (NativeXManipulationCompleted != null)
                                 {
-                                    // OK
                                     NativeXManipulationCompleted.Invoke();
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendBool(true, "NativeXManipulationCompleted"); // 17
                                 }
                                 break;
                             case UsersSecondAction.YManipulation:
                                 if (NativeYManipulationCompleted != null)
                                 {
-                                    // OK
                                     NativeYManipulationCompleted.Invoke();
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendBool(true, "NativeYManipulationCompleted"); // 18
                                 }
                                 break;
                             case UsersSecondAction.ZManipulation:
                                 if (NativeZManipulationCompleted != null)
                                 {
-                                    // OK
                                     NativeZManipulationCompleted.Invoke();
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendBool(true, "NativeZManipulationCompleted"); // 19
                                 }
                                 break;
                             case UsersSecondAction.XYManipulation:
                                 if (NativeXYManipulationCompleted != null)
                                 {
-                                    // OK
                                     NativeXYManipulationCompleted.Invoke();
-                                    // SEND TO SV_Sharing
-                                    SV_Sharing.Instance.SendBool(true, "NativeXYManipulationCompleted"); // 20
                                 }
                                 break;
                         }
@@ -530,10 +429,8 @@ public class NativeManipulationManager : HoloToolkit.Unity.Singleton<NativeManip
 
     #endregion
     
-    protected override void OnDestroy()
+    void OnDestroy()
     {
-        base.OnDestroy();
-
         if (SourceOfGestures.Instance != null)
         {
             SourceOfGestures.Instance.ManipulationStarted -= onManipulationStarted;

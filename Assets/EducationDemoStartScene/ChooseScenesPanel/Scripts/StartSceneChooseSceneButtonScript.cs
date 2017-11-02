@@ -1,14 +1,10 @@
 ﻿using UnityEngine;
 using System;
-using UnityEngine.SceneManagement;
-using System.Collections;
 
-public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
-{
-    public bool MultiLanguage;
+public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D {
 
     private bool isNeed = false;
-    
+
     bool _animationMayChange = false;
     public bool animationMayChange
     {
@@ -57,6 +53,11 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         }
     }
 
+    void Update()
+    {
+        isNeed = CubeButton.isNeed;
+    }
+
     public void Show()
     {
 
@@ -102,40 +103,35 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         }
     }
 
-    private void Update()
-    {
-        isNeed = CubeButton.isNeed;
-    }
-
     protected override void singleTapAction()
     {
         base.singleTapAction();
 
         if (isNeed)
         {
-            Debug.Log("Work!");
-
-            Destroy(FindObjectOfType<DemoShowStateMachine>());
-            Destroy(FindObjectOfType<MoreInfoController>());
-            Destroy(FindObjectOfType<EarthController>());
-            Destroy(FindObjectOfType<PiePolygon>());
-            Destroy(FindObjectOfType<SceneStateMachine>());
-            Destroy(FindObjectOfType<PieController>());
-            Destroy(FindObjectOfType<BigSimpleInfoPanelController>());
-            Destroy(FindObjectOfType<SlicedEarthPolygon>());
-            Destroy(FindObjectOfType<HoloStudyDemoGeoMenuController>());
-            Destroy(FindObjectOfType<ProfessorOnPlatform>());
-            Destroy(FindObjectOfType<AudioSourceController>());
+         //  
         }
 
-        ChooseScenePanelScript.Instance.Hide();
+        // Andrew Milko
+        Debug.Log("Work!");
 
-        if (MultiLanguage)
-            LanguageController.Instance.ShowWindow(null, LoadSceneByTap);
-        else
+        Destroy(FindObjectOfType<DemoShowStateMachine>());
+        Destroy(FindObjectOfType<MoreInfoController>());
+        Destroy(FindObjectOfType<EarthController>());
+        Destroy(FindObjectOfType<PiePolygon>());
+        Destroy(FindObjectOfType<SceneStateMachine>());
+        Destroy(FindObjectOfType<PieController>());
+        Destroy(FindObjectOfType<BigSimpleInfoPanelController>());
+        Destroy(FindObjectOfType<SlicedEarthPolygon>());
+        Destroy(FindObjectOfType<HoloStudyDemoGeoMenuController>());
+        Destroy(FindObjectOfType<ProfessorOnPlatform>());
+        Destroy(FindObjectOfType<AudioSourceController>());
+
+        ChooseScenePanelScript.Instance.Hide(() =>
+        {
             LoadSceneByTap();
+        });
     }
-
 
     private void LoadSceneByTap()
     {
@@ -143,24 +139,15 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         {
             if (SceneToLoad != "")
             {
+                Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
 
                 if (SceneToLoad == "ChemistryScene")
                 {
-                    
-                    Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
-                    ManagersActivationScript.Instance.DeactivateInteractionManagers();
-                    // Initializator.Instance.Awake();
-                    // isNeed = false;
-                }
-                else
-                {
-                    Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
+                    Loader.Instance.TurnOffManagers();
                 }
             }
         }
     }
-
-    
 
     public void OnTap(RaycastHit hitInfo)
     {

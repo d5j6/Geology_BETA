@@ -1,10 +1,12 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using HoloToolkit.Unity.SpatialMapping;
+using System.Collections;
+using System;
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using UnityEngine.VR.WSA;
 
 namespace HoloToolkit.Unity
 {
@@ -21,88 +23,17 @@ namespace HoloToolkit.Unity
         /// Internal list of meshes that is passed to the dll. This is
         /// kept up to date with spatial mapping's SurfaceObject list.
         /// </summary>
-        private readonly List<SpatialUnderstandingDll.MeshData> inputMeshList = new List<SpatialUnderstandingDll.MeshData>();
+        private List<SpatialUnderstandingDll.MeshData> inputMeshList = new List<SpatialUnderstandingDll.MeshData>();
 
         // Functions
         private void Start()
         {
-            TryAttach(SpatialMappingManager.Instance.Source);
-            SpatialMappingManager.Instance.SourceChanged += HandleSpatialMappingSourceChanged;
-        }
-
-        private void HandleSpatialMappingSourceChanged(object sender, PropertyChangedEventArgsEx<SpatialMappingSource> e)
-        {
-            Debug.Assert(object.ReferenceEquals(sender, SpatialMappingManager.Instance));
-
-            TryDetach(e.OldValue);
-            TryAttach(e.NewValue);
-        }
-
-        private void TryDetach(SpatialMappingSource spatialMappingSource)
-        {
-            if (spatialMappingSource != null)
+            // Register for change events on the mapping manager
+            SpatialMappingObserver mappingObserver = SpatialMappingManager.Instance.Source as SpatialMappingObserver;
+            if (mappingObserver != null)
             {
-                spatialMappingSource.SurfaceAdded -= HandleSurfaceAdded;
-                spatialMappingSource.SurfaceUpdated -= HandleSurfaceUpdated;
-                spatialMappingSource.SurfaceRemoved -= HandleSurfaceRemoved;
-                spatialMappingSource.RemovingAllSurfaces -= HandleRemovingAllSurfaces;
+                mappingObserver.SurfaceChanged += OnSurfaceChanged;
             }
-
-            inputMeshList.Clear();
-        }
-
-        private void TryAttach(SpatialMappingSource spatialMappingSource)
-        {
-            if (spatialMappingSource != null)
-            {
-                spatialMappingSource.SurfaceAdded += HandleSurfaceAdded;
-                spatialMappingSource.SurfaceUpdated += HandleSurfaceUpdated;
-                spatialMappingSource.SurfaceRemoved += HandleSurfaceRemoved;
-                spatialMappingSource.RemovingAllSurfaces += HandleRemovingAllSurfaces;
-
-                Debug.Assert(inputMeshList.Count == 0);
-
-                foreach (var surface in spatialMappingSource.SurfaceObjects)
-                {
-                    inputMeshList.Add(CreateMeshData(surface, meshUpdateID: 0));
-                }
-            }
-        }
-
-        private void HandleSurfaceAdded(object sender, DataEventArgs<SpatialMappingSource.SurfaceObject> e)
-        {
-            Debug.Assert(object.ReferenceEquals(sender, SpatialMappingManager.Instance.Source));
-            Debug.Assert(FindMeshIndexInInputMeshList(e.Data.ID) < 0);
-
-            inputMeshList.Add(CreateMeshData(e.Data, meshUpdateID: 0));
-        }
-
-        private void HandleSurfaceUpdated(object sender, DataEventArgs<SpatialMappingSource.SurfaceUpdate> e)
-        {
-            Debug.Assert(object.ReferenceEquals(sender, SpatialMappingManager.Instance.Source));
-            Debug.Assert(e.Data.Old.ID == e.Data.New.ID);
-
-            int iMesh = FindMeshIndexInInputMeshList(e.Data.New.ID);
-            Debug.Assert(iMesh >= 0);
-
-            inputMeshList[iMesh] = CreateMeshData(e.Data.New, (inputMeshList[iMesh].LastUpdateID + 1));
-        }
-
-        private void HandleSurfaceRemoved(object sender, DataEventArgs<SpatialMappingSource.SurfaceObject> e)
-        {
-            Debug.Assert(object.ReferenceEquals(sender, SpatialMappingManager.Instance.Source));
-
-            var iMesh = FindMeshIndexInInputMeshList(e.Data.ID);
-            Debug.Assert(iMesh >= 0);
-
-            inputMeshList.RemoveAt(iMesh);
-        }
-
-        private void HandleRemovingAllSurfaces(object sender, EventArgs e)
-        {
-            Debug.Assert(object.ReferenceEquals(sender, SpatialMappingManager.Instance.Source));
-
-            inputMeshList.Clear();
         }
 
         private int FindMeshIndexInInputMeshList(int meshID)
@@ -117,11 +48,37 @@ namespace HoloToolkit.Unity
             return -1;
         }
 
-        private static SpatialUnderstandingDll.MeshData CreateMeshData(SpatialMappingSource.SurfaceObject surface, int meshUpdateID)
+        private int FindSurfaceIndexInList(int surfaceObjectID, List<SpatialMappingSource.SurfaceObject> surfaceObjects)
         {
-            MeshFilter meshFilter = surface.Filter;
-            SpatialUnderstandingDll.MeshData meshData = new SpatialUnderstandingDll.MeshData();
+            for (int i = 0; i < surfaceObjects.Count; ++i)
+            {
+                if (surfaceObjects[i].ID == surfaceObjectID)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
+        /// <summary>
+        /// Updates an element of the behavior's mesh list from an element of the the spatial mapping's surface object list.
+        /// Element will be either added or updated to match up to the surfaceObject list.
+        /// </summary>
+        /// <param name="surfaceId">The unique ID for the mesh (matches the id provided by spatial mapping)</param>
+        /// <param name="surfaceObjectIndex">Index in the surfaceObjects list</param>
+        /// <param name="surfaceObjects">The list of surfaceObjects</param>
+        /// <param name="meshDataIndex">Index into the locally stored mesh data list</param>
+        private void AddOrUpdateMeshInList(
+            int surfaceId, 
+            int surfaceObjectIndex, 
+            List<SpatialMappingSource.SurfaceObject> surfaceObjects,
+            int meshDataIndex = -1)
+        {
+            SpatialUnderstandingDll.MeshData meshData = new SpatialUnderstandingDll.MeshData();
+            int meshUpdateID = (meshDataIndex > 0) ? (inputMeshList[meshDataIndex].LastUpdateID + 1) : 0;
+
+            // Checks.
+            MeshFilter meshFilter = surfaceObjects[surfaceObjectIndex].Filter;
             if ((meshFilter != null) &&
                 (meshFilter.mesh != null) &&
                 (meshFilter.mesh.triangles.Length > 0))
@@ -130,15 +87,87 @@ namespace HoloToolkit.Unity
                 meshFilter.mesh.RecalculateNormals();
 
                 // Convert
-                meshData.CopyFrom(meshFilter, surface.ID, meshUpdateID);
+                meshData.CopyFrom(meshFilter, surfaceId, meshUpdateID);
             }
             else
             {
                 // No filter yet, add as an empty mesh (will be updated later in the update loop)
-                meshData.CopyFrom(null, surface.ID, meshUpdateID);
+                meshData.CopyFrom(null, surfaceId, meshUpdateID);
             }
 
-            return meshData;
+            // And add it (unless an index of an update item is specified)
+            if (meshDataIndex < 0)
+            {
+                inputMeshList.Add(meshData);
+            }
+            else
+            {
+                inputMeshList[meshDataIndex] = meshData;
+            }
+        }
+
+        private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, DateTime updateTime)
+        {
+            // Find the surface
+            List<SpatialMappingSource.SurfaceObject> surfaceObjects = SpatialMappingManager.Instance.GetSurfaceObjects();
+
+            // Find it (in both lists)
+            int surfaceObjectIndex = FindSurfaceIndexInList(surfaceId.handle, surfaceObjects);
+            int meshDataIndex = FindMeshIndexInInputMeshList(surfaceId.handle);
+
+            // Deal with the change
+            switch (changeType)
+            {
+                case SurfaceChange.Added:
+                    {
+                        if (surfaceObjectIndex >= 0 && surfaceObjectIndex < surfaceObjects.Count)
+                        {
+                            AddOrUpdateMeshInList(surfaceId.handle, surfaceObjectIndex, surfaceObjects);
+                        }
+                    }
+                    break;
+                case SurfaceChange.Removed:
+                    {
+                        if (meshDataIndex >= 0 && meshDataIndex < inputMeshList.Count)
+                        {
+                            inputMeshList.RemoveAt(meshDataIndex);
+                        }
+                    }
+                    break;
+                case SurfaceChange.Updated:
+                    {
+                        if ((surfaceObjectIndex >= 0 && surfaceObjectIndex < surfaceObjects.Count) &&
+                            (meshDataIndex >= 0 && meshDataIndex < inputMeshList.Count))
+                        {
+                            AddOrUpdateMeshInList(surfaceId.handle, surfaceObjectIndex, surfaceObjects, meshDataIndex);
+                        }
+                    }
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Update the internal mesh list from spatial mapping's surface object list.
+        /// </summary>
+        private void UpdateInputMeshList()
+        {
+            List<SpatialMappingSource.SurfaceObject> surfaceObjects = SpatialMappingManager.Instance.GetSurfaceObjects();
+
+            // If we have any meshes with zero indices, but with filters
+            // that indicates that the filters are now ready to be processed
+            for (int i = 0; i < inputMeshList.Count; ++i)
+            {
+                if ((inputMeshList[i].Indices == null) ||
+                    (inputMeshList[i].Indices.Length == 0))
+                {
+                    int surfaceObjectIndex = FindSurfaceIndexInList(inputMeshList[i].MeshID, surfaceObjects);
+                    if ((surfaceObjectIndex > 0) &&
+                        (surfaceObjects[surfaceObjectIndex].UpdateID != inputMeshList[i].LastUpdateID))
+                    {
+                        AddOrUpdateMeshInList(inputMeshList[i].MeshID, surfaceObjectIndex, surfaceObjects, i);
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -150,6 +179,8 @@ namespace HoloToolkit.Unity
         /// <returns></returns>
         public bool GetInputMeshList(out int meshCount, out IntPtr meshList)
         {
+            // First, update our mesh data
+            UpdateInputMeshList();
             if (inputMeshList.Count == 0)
             {
                 meshCount = 0;

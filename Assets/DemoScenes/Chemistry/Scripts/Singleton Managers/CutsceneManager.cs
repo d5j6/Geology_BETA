@@ -259,8 +259,8 @@ public class CutsceneManager : Singleton<CutsceneManager>
             item.ActivateButton(sectionName);
         }
 
-        if (!fromSharing)
-            SV_Sharing.Instance.SendBool(true, "activate_menu_items");
+        //if (!fromSharing)
+        //   SV_Sharing.Instance.SendBool(true, "activate_menu_items");
     }
 
     public void DeactivateButton(string chapterName = "", bool fromSharing = false)
@@ -273,8 +273,8 @@ public class CutsceneManager : Singleton<CutsceneManager>
         }
 
 
-        if (!fromSharing)
-            SV_Sharing.Instance.SendBool(true, "deactivate_menu_items");
+        //if (!fromSharing)
+        //    SV_Sharing.Instance.SendBool(true, "deactivate_menu_items");
     }
 
     public void NextChapter()

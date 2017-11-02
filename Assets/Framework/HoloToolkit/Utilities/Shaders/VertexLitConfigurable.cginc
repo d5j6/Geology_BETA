@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 #include "HLSLSupport.cginc"
 #include "UnityCG.cginc"
 #include "Lighting.cginc"
@@ -26,7 +28,6 @@ struct appdata_t
         float2 texcoord : TEXCOORD0;
     #endif
     float3 normal : NORMAL;
-    UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
 struct v2f_surf
@@ -45,7 +46,6 @@ struct v2f_surf
     #if _NEAR_PLANE_FADE_ON
         float fade : TEXCOORD5;
     #endif
-    UNITY_VERTEX_OUTPUT_STEREO
 };
 
 inline float3 LightingLambertVS(float3 normal, float3 lightDir)
@@ -56,7 +56,6 @@ inline float3 LightingLambertVS(float3 normal, float3 lightDir)
 
 v2f_surf vert(appdata_t v)
 {
-    UNITY_SETUP_INSTANCE_ID(v);
     v2f_surf o;
     UNITY_INITIALIZE_OUTPUT(v2f_surf, o);
 
@@ -80,7 +79,6 @@ v2f_surf vert(appdata_t v)
 
     TRANSFER_VERTEX_TO_FRAGMENT(o);
     UNITY_TRANSFER_FOG(o, o.pos);
-    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
     return o;
 }
 

@@ -25,7 +25,7 @@ namespace HoloStudyFramework
 
         public void StartScene()
         {
-            Loader.Instance.LoadScene("EducationDemoStartScene", SceneLoadingMode.Single, false);
+           Loader.Instance.LoadScene("EducationDemoStartScene", SceneLoadingMode.Single, false);
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿public class MagneticFieldButton : CommonRingedAndTintedButton
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         EarthController.Instance.MagneticFieldMeasuringStarted += onShowed;
         EarthController.Instance.MagneticFieldMeasuringEnded += onHided;
     }

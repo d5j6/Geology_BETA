@@ -12,4 +12,9 @@ public class LoadingWindow : Singleton<LoadingWindow> {
     {
 
     }
+
+    public virtual void HideLoadingWindowsCustomly()
+    {
+       
+    }
 }

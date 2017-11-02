@@ -17,10 +17,8 @@ public class HoloStudyDemoGeoMenuController : Singleton<HoloStudyDemoGeoMenuCont
     public float sideMenuScale = 0.9f;
     public float sideMenuPadiing = 0.33f;
 
-    protected override void Awake()
+    void Awake()
     {
-        base.Awake();
-
         for (int i = 0; i < GeoMenuItems.Length; i++)
         {
             GeoMenuItems[i].transform.localPosition = Vector3.zero;

@@ -33,7 +33,7 @@ public class TestMenuItems : StandardContextMenuItems
         submenu3.Action = () =>
         {
             DemoShowStateMachine.playing = true;
-            ChooseScenePanelScript.Instance.MakeAllButtonsIndifferent();
+            ChooseScenePanelScript.Instance.MakeAllButtonsIndifferent();          
             ChooseScenePanelScript.Instance.Hide(() =>
             {
                 Loader.Instance.LoadScene("DemoGeoScene"); 

@@ -18,10 +18,8 @@ public class MiniExtenderWithArrow : Singleton<MiniExtenderWithArrow>
     private float initialXPos = -1.6f;
     private float targetXPos = -0.8f;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         initialPoint1 = Obj1.transform.localPosition;
         initialPoint2 = Obj2.transform.localPosition;
         initialXScale = Arrow.transform.localScale.x;

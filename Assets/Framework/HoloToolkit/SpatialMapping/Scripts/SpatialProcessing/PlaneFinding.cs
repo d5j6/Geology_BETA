@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace HoloToolkit.Unity.SpatialMapping
+namespace HoloToolkit.Unity
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct OrientedBoundingBox
@@ -182,7 +182,7 @@ namespace HoloToolkit.Unity.SpatialMapping
 
         private static bool findPlanesRunning = false;
         private static System.Object findPlanesLock = new System.Object();
-        private static DLLImports.ImportedMeshData[] reusedImportedMeshesForMarshalling;
+        private static DLLImports.MeshData[] reusedMeshesForMarshalling = null;
         private static List<GCHandle> reusedPinnedMemoryHandles = new List<GCHandle>();
 
         /// <summary>
@@ -246,14 +246,14 @@ namespace HoloToolkit.Unity.SpatialMapping
         private static IntPtr PinMeshDataForMarshalling(List<MeshData> meshes)
         {
             // if we have a big enough array reuse it, otherwise create new
-            if (reusedImportedMeshesForMarshalling == null || reusedImportedMeshesForMarshalling.Length < meshes.Count)
+            if (reusedMeshesForMarshalling == null || reusedMeshesForMarshalling.Length < meshes.Count)
             {
-                reusedImportedMeshesForMarshalling = new DLLImports.ImportedMeshData[meshes.Count];
+                reusedMeshesForMarshalling = new DLLImports.MeshData[meshes.Count];
             }
 
             for (int i = 0; i < meshes.Count; ++i)
             {
-                reusedImportedMeshesForMarshalling[i] = new DLLImports.ImportedMeshData
+                reusedMeshesForMarshalling[i] = new DLLImports.MeshData()
                 {
                     transform = meshes[i].Transform,
                     vertCount = meshes[i].Verts.Length,
@@ -264,7 +264,7 @@ namespace HoloToolkit.Unity.SpatialMapping
                 };
             }
 
-            return PinObject(reusedImportedMeshesForMarshalling);
+            return PinObject(reusedMeshesForMarshalling);
         }
 
         /// <summary>
@@ -297,7 +297,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         private class DLLImports
         {
             [StructLayout(LayoutKind.Sequential)]
-            public struct ImportedMeshData
+            public struct MeshData
             {
                 public Matrix4x4 transform;
                 public Int32 vertCount;

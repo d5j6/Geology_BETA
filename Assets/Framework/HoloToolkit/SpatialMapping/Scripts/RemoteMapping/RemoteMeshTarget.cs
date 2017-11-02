@@ -1,16 +1,17 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-using System;
 using System.Collections.Generic;
+using System;
 using System.IO;
-#if UNITY_EDITOR || UNITY_STANDALONE
+using UnityEngine;
+
+#if UNITY_EDITOR
 using System.Net;
 using System.Net.Sockets;
 #endif
-using UnityEngine;
 
-namespace HoloToolkit.Unity.SpatialMapping
+namespace HoloToolkit.Unity
 {
     /// <summary>
     /// RemoteMeshTarget will listen for meshes being sent from a remote system (HoloLens).
@@ -25,7 +26,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         [Tooltip("The connection port on the machine to use.")]
         public int ConnectionPort = 11000;
 
-#if UNITY_EDITOR || UNITY_STANDALONE
+#if UNITY_EDITOR
         /// <summary>
         /// Listens for network connections over TCP.
         /// </summary> 
@@ -39,10 +40,10 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// <summary>
         /// Tracks if a client is connected.
         /// </summary>
-        private bool clientConnected;
+        private bool ClientConnected = false;
 
         // Use this for initialization.
-        private void Start()
+        void Start()
         {
             // Setup the network listener.
             IPAddress localAddr = IPAddress.Parse(ServerIP.Trim());
@@ -50,15 +51,15 @@ namespace HoloToolkit.Unity.SpatialMapping
             networkListener.Start();
 
             // Request the network listener to wait for connections asynchronously.
-            AsyncCallback callback = OnClientConnect;
+            AsyncCallback callback = new AsyncCallback(OnClientConnect);
             networkListener.BeginAcceptTcpClient(callback, this);
         }
 
         // Update is called once per frame.
-        private void Update()
+        void Update()
         {
             // If we have a connected client, presumably the client wants to send some meshes.
-            if (clientConnected)
+            if (ClientConnected)
             {
                 // Get the clients stream.
                 NetworkStream stream = networkClient.GetStream();
@@ -92,26 +93,26 @@ namespace HoloToolkit.Unity.SpatialMapping
                     // For each mesh, create a GameObject to render it.
                     for (int index = 0; index < meshes.Count; index++)
                     {
-                        int meshID = SurfaceObjects.Count;
+                        GameObject surface = AddSurfaceObject(meshes[index], string.Format("Beamed-{0}", SurfaceObjects.Count), transform);
+                        surface.transform.parent = SpatialMappingManager.Instance.transform;
 
-                        SurfaceObject surface = CreateSurfaceObject(
-                            mesh: meshes[index],
-                            objectName: "Beamed-" + meshID,
-                            parentObject: transform,
-                            meshID: meshID
-                            );
+                        if (SpatialMappingManager.Instance.DrawVisualMeshes == false)
+                        {
+                            surface.GetComponent<MeshRenderer>().enabled = false;
+                        }
 
-                        surface.Object.transform.parent = SpatialMappingManager.Instance.transform;
-
-                        AddSurfaceObject(surface);
+                        if (SpatialMappingManager.Instance.CastShadows == false)
+                        {
+                            surface.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                        }
                     }
 
                     // Finally disconnect.
-                    clientConnected = false;
+                    ClientConnected = false;
                     networkClient.Close();
 
                     // And wait for the next connection.
-                    AsyncCallback callback = OnClientConnect;
+                    AsyncCallback callback = new AsyncCallback(OnClientConnect);
                     networkListener.BeginAcceptTcpClient(callback, this);
                 }
             }
@@ -122,7 +123,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// </summary>
         /// <param name="stream">The stream to read the bytes from.</param>
         /// <returns>An integer representing the bytes.</returns>
-        private int ReadInt(Stream stream)
+        int ReadInt(Stream stream)
         {
             // The bytes arrive in the wrong order, so swap them.
             byte[] bytes = new byte[4];
@@ -143,7 +144,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// Called when a client connects.
         /// </summary>
         /// <param name="result">The result of the connection.</param>
-        private void OnClientConnect(IAsyncResult result)
+        void OnClientConnect(IAsyncResult result)
         {
             if (result.IsCompleted)
             {
@@ -151,7 +152,7 @@ namespace HoloToolkit.Unity.SpatialMapping
                 if (networkClient != null)
                 {
                     Debug.Log("Connected");
-                    clientConnected = true;
+                    ClientConnected = true;
                 }
             }
         }

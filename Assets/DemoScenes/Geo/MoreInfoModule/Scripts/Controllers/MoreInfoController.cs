@@ -71,10 +71,8 @@ public class MoreInfoController : Singleton<MoreInfoController>
     int wantedState = 0;
     int state = 0;
 
-    protected override void Awake()
+    void Awake()
     {
-        base.Awake();
-
         mainScaleMaterial = mainScale.GetComponent<Renderer>().material;
     }
 

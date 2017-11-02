@@ -1,7 +1,9 @@
 ﻿public class MagmaButton : CommonRingedAndTintedButton
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         PieController.Instance.MagmaShowed += onShowed;
         PieController.Instance.MagmaHided += onHided;
     }

@@ -142,10 +142,8 @@ public class PiePolygon : Singleton<PiePolygon>
         }
     }
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         //pieManipulator = MainPieGameObject.GetComponent<PieManipulator>();
         dotsPlaneMaterial = DotPlane.GetComponent<Renderer>().material;
         HideImmediately();

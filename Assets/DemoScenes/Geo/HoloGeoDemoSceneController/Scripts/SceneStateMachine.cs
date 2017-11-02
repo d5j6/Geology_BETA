@@ -179,10 +179,8 @@ public class SceneStateMachine : Singleton<SceneStateMachine>, ISceneManager
         statesStuffObject.Pie = Pie;
     }
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         InitializeStates();
     }
 

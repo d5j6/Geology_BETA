@@ -22,10 +22,7 @@ public class LoadingWindowScript : LoadingWindow {
     [HideInInspector]
     public bool Showed = false;
 
-    protected override void Awake ()
-    {
-        base.Awake();
-
+    void Awake () {
         initialScale = transform.localScale;
         backgroundMat = BackgroundObject.GetComponent<MeshRenderer>().material;
     }
@@ -99,5 +96,10 @@ public class LoadingWindowScript : LoadingWindow {
                 callback.Invoke();
             }
         });
+    }
+
+    public override void HideLoadingWindowsCustomly()
+    {
+        AllParent.SetActive(false);
     }
 }

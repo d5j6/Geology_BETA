@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-using HoloToolkit.Unity.SpatialMapping;
 
 public class StartScenario : Singleton<StartScenario>
 {
@@ -73,12 +72,15 @@ public class StartScenario : Singleton<StartScenario>
 
         Destroy(PeriodicTabletemplate);
 
+        /*
         if (SV_Sharing.Instance != null)
             SV_Sharing.Instance.SendTransform(
                 periodicTable.transform.position,
                 periodicTable.transform.rotation,
                 periodicTable.transform.localScale,
                 "periodic_table");
+        */
+
 
         IsPeriodicTableActive = true;
 
@@ -115,11 +117,14 @@ public class StartScenario : Singleton<StartScenario>
         Instantiate(projector, projectorSpawnPos, periodicTable.transform.rotation);
         */
 
+        /*
         SV_Sharing.Instance.SendTransform(
             projector.transform.position,
             projector.transform.rotation,
             projector.transform.localScale,
             "projector");
+        */
+
 
         projector.gameObject.SetActive(true);
         Vector3 projectorSpawnPos = new Vector3(-1.5f, 0.25f, -0.2f);

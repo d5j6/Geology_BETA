@@ -1,7 +1,9 @@
 ﻿public class MassButton : CommonRingedAndTintedButton
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         EarthController.Instance.MassMeasuringStarted += onShowed;
         EarthController.Instance.MassMeasuringEnded += onHided;
     }

@@ -41,25 +41,23 @@ public class PositioningMenu : MonoBehaviour {
         }
     }
 
-    /*void SetGestureManipulator(WantedManipulation manipullation)
+    void SetGestureManipulator(WantedManipulation manipullation)
     {
-
         GestureManipulator manipulator = StartPositioning.Instance.GetComponent<GestureManipulator>();
-
         if (manipulator == null)
         {
             manipulator = StartPositioning.Instance.gameObject.AddComponent<GestureManipulator>();
         }
 
         manipulator.WantedManipulation = manipullation;
-    }*/
+    }
 
     public void Move()
     {
         /*DisableAllButtonsByFunctionaluity();
         TintAll();
         HandManager.Instance.PerformMoveAction(StartPositioning.Instance.transform, ReactivateButtons);*/
-        //SetGestureManipulator(WantedManipulation.Move);
+        SetGestureManipulator(WantedManipulation.Move);
     }
 
     public void Rotate()
@@ -67,7 +65,7 @@ public class PositioningMenu : MonoBehaviour {
         /*DisableAllButtonsByFunctionaluity();
         TintAll();
         HandManager.Instance.PerformRotatingAction(StartPositioning.Instance.transform, ReactivateButtons);*/
-        //SetGestureManipulator(WantedManipulation.Rotate);
+        SetGestureManipulator(WantedManipulation.Rotate);
     }
 
     public void Scale()
@@ -75,7 +73,7 @@ public class PositioningMenu : MonoBehaviour {
         /*DisableAllButtonsByFunctionaluity();
         TintAll();
         HandManager.Instance.PerformScalingAction(StartPositioning.Instance.transform, ReactivateButtons);*/
-        //SetGestureManipulator(WantedManipulation.Scale);
+        SetGestureManipulator(WantedManipulation.Scale);
     }
 
     public void ReactivateButtons()
@@ -118,9 +116,8 @@ public class PositioningMenu : MonoBehaviour {
 
     public void OK()
     {
-        //GestureManipulator manipulator = StartPositioning.Instance.GetComponent<GestureManipulator>();
-
-        /*if (manipulator != null)
+        GestureManipulator manipulator = StartPositioning.Instance.GetComponent<GestureManipulator>();
+        if (manipulator != null)
         {
             Destroy(manipulator);
         }
@@ -128,6 +125,6 @@ public class PositioningMenu : MonoBehaviour {
         StartPositioning.Instance.HidePositioningHolos(() =>
         {
             SceneStateMachine.Instance.GoToDefaultState();
-        });*/
+        });
     }
 }

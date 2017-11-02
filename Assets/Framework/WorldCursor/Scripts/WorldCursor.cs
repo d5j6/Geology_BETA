@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using HoloToolkit.Unity;
-using HoloToolkit.Unity.InputModule;
 
 public class WorldCursor : Singleton<WorldCursor> {
 

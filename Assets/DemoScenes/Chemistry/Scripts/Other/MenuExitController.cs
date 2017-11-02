@@ -23,7 +23,7 @@ public class MenuExitController : Singleton<MenuExitController>
 
         if (!fromSharing)
         {
-            SV_Sharing.Instance.SendInt(langIndex, "change_lang");
+            //SV_Sharing.Instance.SendInt(langIndex, "change_lang");
         }
     }
 

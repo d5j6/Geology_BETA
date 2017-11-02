@@ -11,11 +11,9 @@ public class CommonRingedAndTintedButton : RingedAndTintedButton
      * иначе кнопка неактивна
      */
 
-    private void Start()
+    protected override void Awake()
     {
-    /*protected override void Awake()
-    {
-        base.Awake();*/
+        base.Awake();
 
         ProfessorsLecturesController.Instance.LectureStarted += onLectureStarted;
         ProfessorsLecturesController.Instance.LectureEnded += onLectureEnded;

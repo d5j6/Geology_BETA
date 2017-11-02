@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using System;
 using HoloToolkit.Unity;
-using HoloToolkit.Unity.InputModule;
 using System.Collections;
-using Andy.IdGenerator;
 
-public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
+public class TapsListener : Singleton<TapsListener>
 {
     private float doubleClickTimer = 0;
     private bool fistClick = false;
@@ -25,8 +23,8 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
     public Action<GameObject> UserDoubleTapPressed;
 
     /*
-     * Переменная нужна потому что есть один момент, когда мы не хотим слушать клики - это сразу после отжатия клика после события перетаскивания. 
-     * Мы хотим чтобы перетаскивание заканчивалось и клик в момент конца перетаскивания не детектился
+     * Переменная нужна потому что есть один момент, когда мы не хотим слушать клики - это сразу после отжатия клика после события перетаскивания. Мы хотим чтобы перетаскивание заканчивалось
+     * и клик в момент конца перетаскивания не детектился
      */
 
     private bool listeningForTaps = true;
@@ -101,17 +99,7 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
         {
             if (UserTapped != null)
             {
-                // OK
                 UserTapped.Invoke(GazeManager.Instance.FocusedObject);
-
-                // if object have uniq ID
-                if (GazeManager.Instance.FocusedObject != null
-                    && GazeManager.Instance.FocusedObject.GetComponent<IDHolder>())
-                {
-                    var objectId = GazeManager.Instance.FocusedObject.GetComponent<IDHolder>().ID;
-                    // SEND TO SV_Sharing
-                    SV_Sharing.Instance.SendInt(objectId, "UserTapped"); // 21
-                }
             }
 
             if (fistClick)
@@ -121,17 +109,7 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
                     Debug.Log("Double Tap Invoked!");
                     if (UserDoubleTapped != null)
                     {
-                        // OK
                         UserDoubleTapped.Invoke(gameObjectFocusedWhenPressStarted);
-
-                        // if object have uniq ID
-                        if (gameObjectFocusedWhenPressStarted != null 
-                            && gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                        {
-                            var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                            // SEND TO SV_Sharing
-                            SV_Sharing.Instance.SendInt(objectId, "UserDoubleTapped"); // 22
-                        }
                     }
                 }
 
@@ -159,20 +137,9 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
             {
                 tapPressedInvoked = true;
                 Debug.Log("Single Tap Pressed Invoked!");
-
                 if (UserSingleTapPressed != null)
                 {
-                    // OK
                     UserSingleTapPressed.Invoke(gameObjectFocusedWhenPressStarted);
-
-                    // if object have uniq ID
-                    if (gameObjectFocusedWhenPressStarted != null
-                        && gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                    {
-                        var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                        // SEND TO SV_Sharing
-                        SV_Sharing.Instance.SendInt(objectId, "UserSingleTapPressed"); // 23
-                    }
                 }
 
                 //Временно выключаем слушание кликов - пока не закончили драг
@@ -182,26 +149,14 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
         else if (doubleTapState == TapState.Pressed)
         {
             doubleTapCounter += Time.deltaTime;
-
             if (!doubleTapPressedInvoked && doubleTapCounter >= TapPressedDelay)
             {
                 fistClick = false;
                 doubleTapPressedInvoked = true;
                 Debug.Log("User Double Tap Pressed Invoked!");
-
                 if (UserDoubleTapPressed != null)
                 {
-                    // OK
                     UserDoubleTapPressed.Invoke(gameObjectFocusedWhenPressStarted);
-
-                    // if object have uniq ID
-                    if (gameObjectFocusedWhenPressStarted 
-                        && gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                    {
-                        var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                        // SEND TO SV_Sharing
-                        SV_Sharing.Instance.SendInt(objectId, "UserDoubleTapPressed"); // 24
-                    }
                 }
 
                 //Временно выключаем слушание кликов - пока не закончили драг
@@ -217,19 +172,9 @@ public class TapsListener : HoloToolkit.Unity.Singleton<TapsListener>
             {
                 doubleClickTimer = 0;
                 Debug.Log("Single Tap Invoked!");
-
                 if (UserSingleTapped != null)
                 {
-                    UserSingleTapped.Invoke(gameObjectFocusedWhenPressStarted); // 25
-
-                    // if object have uniq ID
-                    if (gameObjectFocusedWhenPressStarted != null
-                        && gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>())
-                    {
-                        var objectId = gameObjectFocusedWhenPressStarted.GetComponent<IDHolder>().ID;
-                        // SEND TO SV_Sharing
-                        SV_Sharing.Instance.SendInt(objectId, "UserSingleTapped"); // 24
-                    }
+                    UserSingleTapped.Invoke(gameObjectFocusedWhenPressStarted);
                 }
 
                 fistClick = false;

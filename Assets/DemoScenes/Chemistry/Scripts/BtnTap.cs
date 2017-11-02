@@ -74,8 +74,9 @@ public class BtnTap : MonoBehaviour, IInteractive
             case "Exit":
                 CutsceneManager.Instance.SkipCutscene();
                 CutsceneManager.Instance.StopCutscene();
-                ManagersActivationScript.Instance.ActivateInteractionManagers();
-                ChemistrySceneFolderCommands.Instance.DeleteChemistryObjects();
+                //ManagersActivationScript.Instance.ActivateInteractionManagers();
+                //ChemistrySceneFolderCommands.Instance.DeleteChemistryObjects();
+                Loader.Instance.TurnOnManagers();
                 Loader.Instance.GoToPreviousScene();
                 break;
             default:
@@ -84,8 +85,8 @@ public class BtnTap : MonoBehaviour, IInteractive
                 break;
         }
 
-        if (!fromSharing)
-            SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "run_animation");
+        //if (!fromSharing)
+        //   SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "run_animation");
     }
 
     public void OnGazeEnter()
@@ -123,16 +124,16 @@ public class BtnTap : MonoBehaviour, IInteractive
     {
         ChangeTextColor(_highlightColor);
         //SV
-        if (!fromSharing)
-            SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "highlight_menu_item");
+        //if (!fromSharing)
+        //    SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "highlight_menu_item");
     }
 
     public void DehighlightMenuItem(bool fromSharing = false)
     {
         ChangeTextColor(_selfColor);
         //SV
-        if (!fromSharing)
-            SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "dehighlight_menu_item");
+        //if (!fromSharing)
+        //    SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "dehighlight_menu_item");
     }
 
     public void ChangeTextColor(Color color)

@@ -15,10 +15,8 @@ public class ProfessorsLecturesController : Singleton<ProfessorsLecturesControll
 
     private bool _enabled = false;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         initLectures();
     }
 

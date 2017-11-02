@@ -14,10 +14,8 @@ public class ProfessorOnPlatform : Singleton<ProfessorOnPlatform>
 
     public float AnimationSpeedMultiplier = 2f;
 
-    protected override void Awake()
+    void Awake()
     {
-        base.Awake();
-
         profPlatformTargetPos = Platform.transform.localPosition;
         ProfessorBody.GetComponent<Animator>().speed = 1.5f;
         professorController = ProfessorBody.GetComponent<CharacterAnimController>();

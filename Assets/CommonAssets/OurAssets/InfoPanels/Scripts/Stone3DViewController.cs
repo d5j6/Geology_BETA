@@ -54,11 +54,8 @@ public class Stone3DViewController : Singleton<Stone3DViewController> {
     }
 
     private new BoxCollider collider;
-
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         mat = Stone.GetComponent<Renderer>().material;
         collider = GetComponent<BoxCollider>();
         collider.enabled = false;

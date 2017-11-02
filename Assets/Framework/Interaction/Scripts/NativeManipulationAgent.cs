@@ -28,7 +28,7 @@ public class NativeManipulationAgent : Singleton<NativeManipulationAgent>, IGest
 
     public Action ScaleEnded { get; set; }
 
-    private void Start()
+    void Awake()
     {
         NativeManipulationManager.Instance.NativeXManipulationUpdated += onNativeXManipulationUpdated;
         NativeManipulationManager.Instance.NativeYManipulationUpdated += onNativeYManipulationUpdated;
@@ -151,10 +151,8 @@ public class NativeManipulationAgent : Singleton<NativeManipulationAgent>, IGest
         }
     }
 
-    protected override void OnDestroy()
+    void OnDestroy()
     {
-        base.OnDestroy();
-
         if (NativeManipulationManager.Instance != null)
         {
             NativeManipulationManager.Instance.NativeXManipulationUpdated -= onNativeXManipulationUpdated;

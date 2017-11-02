@@ -5,31 +5,22 @@ public class LanguageController : Singleton<LanguageController>
 {
     public bool TagAlongBehaviour = true;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
-        //private void Start()
-        //{
-        /*if (IsInitialized)
+        /*
+        if (IsAlreadyExists)
         {
             Destroy(gameObject);
-        }*/
+        }
+        */
     }
 
-    public void ChooseLang(int langIndex, bool fromSharing = false)
+    public void ChooseLang(int langIndex)
     {
         LanguageManager.Instance.CurrentLanguage = (Language)langIndex;
-
-        if (!fromSharing)
-        {
-            SV_Sharing.Instance.SendInt(langIndex, "change_lang");
-        }
     }
 
-    System.Action SceneCallback;
-
-    public void ShowWindow(System.Action callback = null, System.Action sceneCallback = null)
+    public void ShowWindow(System.Action callback = null)
     {
         if (TagAlongBehaviour)
         {
@@ -46,8 +37,6 @@ public class LanguageController : Singleton<LanguageController>
             {
                 callback.Invoke();
             }
-            if (sceneCallback != null)
-                SceneCallback = sceneCallback;
         });
     }
 
@@ -75,8 +64,7 @@ public class LanguageController : Singleton<LanguageController>
     {
         HideWindow(() =>
         {
-            if (SceneCallback != null)
-                SceneCallback.Invoke();
+            ChooseScenePanelScript.Instance.Show();
         });
     }
 }

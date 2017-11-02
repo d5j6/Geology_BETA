@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HoloToolkit.Unity.SpatialMapping
+namespace HoloToolkit.Unity
 {
     /// <summary>
     /// RemoveSurfaceVertices will remove any vertices from the Spatial Mapping Mesh that fall within the bounding volume.
@@ -40,7 +40,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// </summary>
         private Queue<Bounds> boundingObjectsQueue;
 
-#if UNITY_EDITOR || UNITY_STANDALONE
+#if UNITY_EDITOR
         /// <summary>
         /// How much time (in sec), while running in the Unity Editor, to allow RemoveSurfaceVertices to consume before returning control to the main program.
         /// </summary>
@@ -93,10 +93,12 @@ namespace HoloToolkit.Unity.SpatialMapping
         {
             foreach (GameObject item in boundingObjects)
             {
+                Bounds bounds = new Bounds();
+
                 Collider boundingCollider = item.GetComponent<Collider>();
                 if (boundingCollider != null)
                 {
-                    Bounds bounds = boundingCollider.bounds;
+                    bounds = boundingCollider.bounds;
 
                     // Expand the bounds, if requested.
                     if (BoundsExpansion > 0.0f)
@@ -133,15 +135,8 @@ namespace HoloToolkit.Unity.SpatialMapping
                     }
 
                     Mesh mesh = filter.sharedMesh;
-                    MeshRenderer meshRenderer = filter.GetComponent<MeshRenderer>();
-                    
-                    // The mesh renderer bounds are in world space.
-                    // If the mesh is null there is nothing to process
-                    // If the renderer is null we can't get the renderer bounds
-                    // If the renderer's bounds aren't contained inside of the current
-                    // bounds from the bounds queue there is no reason to process
-                    // If any of the above conditions are met, then we should go to the next meshfilter. 
-                    if (mesh == null || meshRenderer == null || !meshRenderer.bounds.Intersects(bounds))
+
+                    if (mesh != null && !mesh.bounds.Intersects(bounds))
                     {
                         // We don't need to do anything to this mesh, move to the next one.
                         continue;
@@ -149,12 +144,12 @@ namespace HoloToolkit.Unity.SpatialMapping
 
                     // Remove vertices from any mesh that intersects with the bounds.
                     Vector3[] verts = mesh.vertices;
-                    HashSet<int> vertsToRemove = new HashSet<int>();
+                    List<int> vertsToRemove = new List<int>();
 
                     // Find which mesh vertices are within the bounds.
                     for (int i = 0; i < verts.Length; ++i)
                     {
-                        if (bounds.Contains(filter.transform.TransformPoint(verts[i])))
+                        if (bounds.Contains(verts[i]))
                         {
                             // These vertices are within bounds, so mark them for removal.
                             vertsToRemove.Add(i);
@@ -219,11 +214,11 @@ namespace HoloToolkit.Unity.SpatialMapping
                     start = Time.realtimeSinceStartup;
 
                     // Reset the mesh collider to fit the new mesh.
-                    MeshCollider meshCollider = filter.gameObject.GetComponent<MeshCollider>();
-                    if (meshCollider != null)
+                    MeshCollider collider = filter.gameObject.GetComponent<MeshCollider>();
+                    if (collider != null)
                     {
-                        meshCollider.sharedMesh = null;
-                        meshCollider.sharedMesh = mesh;
+                        collider.sharedMesh = null;
+                        collider.sharedMesh = mesh;
                     }
                 }
             }

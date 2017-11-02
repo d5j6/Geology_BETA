@@ -5,8 +5,10 @@
      * Когда лекция профессора запущена она выделена, иначе - не выделена
      */
 
-    private void Srart()
+    protected override void Awake()
     {
+        base.Awake();
+
         ProfessorsLecturesController.Instance.LectureStarted += onLectureStarted;
         ProfessorsLecturesController.Instance.LectureEnded += onLectureEnded;
 

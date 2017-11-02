@@ -8868,8 +8868,8 @@ MonoBehaviour:
   - {fileID: 200040662}
   - {fileID: 500482855}
   _length: 650
-  _viewTimeMin: -1.7585678
-  _viewTimeMax: 760.9861
+  _viewTimeMin: -279.65714
+  _viewTimeMax: 1099.3198
 --- !u!1 &790879829
 GameObject:
   m_ObjectHideFlags: 0
@@ -12889,8 +12889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isProffesorTarget: 1
-  PivotAxis: 1
+  PivotAxis: 2
 --- !u!1 &903383604
 GameObject:
   m_ObjectHideFlags: 0
@@ -15691,8 +15690,8 @@ MonoBehaviour:
   - {fileID: 1996107237}
   - {fileID: 1069747789}
   _length: 74.4
-  _viewTimeMin: -1.0837682
-  _viewTimeMax: 3.7172508
+  _viewTimeMin: -8.076559
+  _viewTimeMax: 124.78555
 --- !u!1 &1155738051
 GameObject:
   m_ObjectHideFlags: 0
@@ -17065,6 +17064,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114863285559564806, guid: 99050060584e0d04ea96db28c18c6ff0,
+        type: 2}
+      propertyPath: baseGID1
+      value: 
+      objectReference: {fileID: 1144053820}
+    - target: {fileID: 114863285559564806, guid: 99050060584e0d04ea96db28c18c6ff0,
+        type: 2}
+      propertyPath: baseGID2
+      value: 
+      objectReference: {fileID: 785335439}
+    - target: {fileID: 114863285559564806, guid: 99050060584e0d04ea96db28c18c6ff0,
+        type: 2}
+      propertyPath: baseGIDEnd
+      value: 
+      objectReference: {fileID: 2035400821}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99050060584e0d04ea96db28c18c6ff0, type: 2}
   m_IsPrefabParent: 0
@@ -19137,7 +19151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b0a043fef03ed49975eac616bee638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
 --- !u!114 &1414557098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19162,7 +19175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafeacdea65f96640941d0798a7ab098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Initialized: 0
 --- !u!114 &1414557100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19175,7 +19187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec997fd9a672da45864c837f2620db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToHideInPicture: []
 --- !u!114 &1414557101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19224,8 +19235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343aa7c3405dcf8409aa3c81d12f7881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsInRoot: []
-  Anchor: {fileID: 0}
 --- !u!1 &1419637849
 GameObject:
   m_ObjectHideFlags: 0

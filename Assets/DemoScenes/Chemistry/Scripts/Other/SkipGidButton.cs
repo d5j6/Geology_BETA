@@ -126,13 +126,13 @@ public class SkipGidButton : MonoBehaviour, IInteractive
 		Debug.Log ("!SKIP ENTER: " + gameObject.name);
 
         HighLightOnGazeEnter();
-        SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "SGB_highlight");
+        //SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "SGB_highlight");
     }
 
     public void OnGazeLeave()
     {
         HighLightOnGazeLeave();
-        SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "SGB_dehighlight");
+        //SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "SGB_dehighlight");
     }
 
     public void ChangeStrategyToDefault()

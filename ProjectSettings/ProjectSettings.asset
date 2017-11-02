@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Holo Group
-  productName: HoloStudy SV
+  productName: HoloStudy Demo
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -584,13 +584,13 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: HoloStudy-SV
+  metroPackageName: HoloStudy-Demo
   metroPackageVersion: 0.0.2.1
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: Holo Group
   metroCertificateIssuer: Holo Group
-  metroCertificateNotAfter: 00384a727641d401
+  metroCertificateNotAfter: 00f6dc53f972d401
   metroApplicationDescription: HoloStudy is a series of geology, physics, chemistry
     and biology lessons. The lessons are designed specifically to give you all the
     possibilities of HoloLens during educational process. Set off on an incredible
@@ -612,7 +612,7 @@ PlayerSettings:
     2162888: Assets/HoloStudyFramework/Textures/App icons/HS-Square-300.png
     2163088: Assets/HoloStudyFramework/Textures/App icons/HS-Square-600.png
     2293960: Assets/HoloStudyFramework/Textures/App icons/HS-Wide-620.png
-  metroTileShortName: HoloStudy SV
+  metroTileShortName: HoloStudy Demo
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 1
@@ -634,15 +634,15 @@ PlayerSettings:
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
       InputInjectionBrokered: False
-      InternetClient: True
-      InternetClientServer: True
+      InternetClient: False
+      InternetClientServer: False
       Location: False
       Microphone: True
       MusicLibrary: False
       Objects3D: False
       PhoneCall: False
       PicturesLibrary: False
-      PrivateNetworkClientServer: True
+      PrivateNetworkClientServer: False
       Proximity: False
       RemovableStorage: False
       SharedUserCertificates: True

@@ -2,8 +2,6 @@
 using UnityEngine;
 using Zenject;
 using HoloToolkit.Unity;
-using SV_Events = SV_HandlerBankEvents;
-using Andy.IdGenerator;
 
 /*[AttributeUsage(AttributeTargets.Property)]
 public class ExposePropertyAttribute : Attribute
@@ -232,13 +230,6 @@ public class StandardGestureManipulator : MonoBehaviour, IGestureManipulator
             {
                 Moving.Invoke();
             }
-            /*
-            if (TargetObject.GetComponent<IDHolder>())
-            {
-                var id = TargetObject.GetComponent<IDHolder>().ID;
-                SV_Sharing.Instance.SendJson(new SV_Events.Case2(id, TargetObject.transform), "MoveModel"); // 26
-            }
-            */
         }
     }
 
@@ -246,8 +237,7 @@ public class StandardGestureManipulator : MonoBehaviour, IGestureManipulator
 
     void onRotate(Vector3 angles)
     {
-        if (EnableRotation 
-            && whenManipulationStartedUserWatchedOnMe)
+        if (EnableRotation && whenManipulationStartedUserWatchedOnMe)
         {
             float magni = angles.x;
             //По умолчанию вращаем по Y. По идее это должно происходить, если манипуляция идет происходит дволь оси х
@@ -354,14 +344,6 @@ public class StandardGestureManipulator : MonoBehaviour, IGestureManipulator
             {
                 Rotating.Invoke();
             }
-
-            /*
-            if (TargetObject.GetComponent<IDHolder>())
-            {
-                var id = TargetObject.GetComponent<IDHolder>().ID;
-                SV_Sharing.Instance.SendJson(new SV_Events.Case2(id, TargetObject.transform), "RotateModel"); // 27
-            }
-            */
         }
     }
 
@@ -412,14 +394,6 @@ public class StandardGestureManipulator : MonoBehaviour, IGestureManipulator
             {
                 Scaling.Invoke();
             }
-
-            /*
-            if (TargetObject.GetComponent<IDHolder>())
-            {
-                var id = TargetObject.GetComponent<IDHolder>().ID;
-                SV_Sharing.Instance.SendJson(new SV_Events.Case2(id, TargetObject.transform), "ScaleModel"); // 28
-            }
-            */
         }
     }
 

@@ -1,7 +1,9 @@
 ﻿public class CrustButton : CommonRingedAndTintedButton
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         EarthController.Instance.CrustShowed += onShowed;
         EarthController.Instance.CrustHided += onHided;
     }

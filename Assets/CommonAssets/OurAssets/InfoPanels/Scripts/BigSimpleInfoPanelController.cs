@@ -10,11 +10,8 @@ public class BigSimpleInfoPanelController : Singleton<BigSimpleInfoPanelControll
     public TMProScroller TMProScroller;
 
     private new BoxCollider collider;
-
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         collider = GetComponent<BoxCollider>();
 
         transform.GetChild(0).localScale = Vector3.zero;
@@ -27,10 +24,8 @@ public class BigSimpleInfoPanelController : Singleton<BigSimpleInfoPanelControll
         NativeManipulationManager.Instance.NativeYManipulationCompleted += onYManipulationCompleted;
     }
 
-    protected override void OnDestroy()
+    private void OnDestroy()
     {
-        base.OnDestroy();
-
         if (NativeManipulationManager.Instance != null)
         {
             NativeManipulationManager.Instance.NativeYManipulationStarted -= onYManipulationStarted;

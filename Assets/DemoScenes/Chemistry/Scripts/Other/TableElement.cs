@@ -60,8 +60,8 @@ public class TableElement : CommonRingedAndTintedButton, IInteractive
         _elementText.color = _highlightColor;
 
 
-        if (GetComponent<IDHolder>() != null)
-            SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "highlight_element");
+        //if (GetComponent<IDHolder>() != null)
+        //    SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "highlight_element");
     }
 
     public void OnGazeLeave()
@@ -73,8 +73,8 @@ public class TableElement : CommonRingedAndTintedButton, IInteractive
         Debug.Log("Gaze left at " + _atomName);
         CanselHighlighting();
 
-        if (GetComponent<IDHolder>() != null)
-            SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "dehighlight_element");
+        //if (GetComponent<IDHolder>() != null)
+        //    SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "dehighlight_element");
     }
 
     public void HighlightElement()
@@ -111,7 +111,7 @@ public class TableElement : CommonRingedAndTintedButton, IInteractive
             Deselect();
         }
 
-        SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "select_element");
+        //SV_Sharing.Instance.SendInt(GetComponent<IDHolder>().ID, "select_element");
     }
 
     public void StopDrag() { }

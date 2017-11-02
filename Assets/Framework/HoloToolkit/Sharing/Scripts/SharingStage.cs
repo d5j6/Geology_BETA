@@ -1,28 +1,10 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See LICENSE in the project root for license information.
-
-using System;
-using UnityEngine;
-using HoloToolkit.Sharing.Utilities;
-using HoloToolkit.Unity;
+﻿using UnityEngine;
 
 namespace HoloToolkit.Sharing
 {
-    /// <summary>
-    /// The SharingStage is in charge of managing the core networking layer for the application.
-    /// </summary>
-    public class SharingStage : Singleton<SharingStage>
+    public class SharingStage : MonoBehaviour
     {
-        /// <summary> 
-        /// SharingManagerConnected event notifies when the sharing manager is created and connected. 
-        /// </summary> 
-        public event EventHandler SharingManagerConnected;
-
-        /// <summary>
-        /// Default username to use when joining a session.
-        /// </summary>
-        /// <remarks>User code should set the user name by setting the UserName property.</remarks>
-        private const string DefaultUserName = "User ";
+        public static SharingStage Instance = null;
 
         /// <summary>
         /// Set whether this app should be a Primary or Secondary client.
@@ -31,25 +13,11 @@ namespace HoloToolkit.Sharing
         /// </summary>
         public ClientRole ClientRole = ClientRole.Primary;
 
-        /// <summary>
-        /// Port of the sharing server.
-        /// </summary>
-        [Tooltip("Port of the sharing server")]
+        public string ServerAddress = "localhost";
         public int ServerPort = 20602;
 
-        [Tooltip("Should the app connect to the server at startup")]
-        [SerializeField]
-        private bool connectOnAwake = true;
-
-        /// <summary>
-        /// Sharing manager used by the application.
-        /// </summary>
-        public SharingManager Manager { get; private set; }
-
-        public bool AutoDiscoverServer;
-
-        [Tooltip("Determines how often the discovery service should ping the network in search of a server.")]
-        public float PingIntervalSec = 2;
+        private SharingManager sharingMgr;
+        public SharingManager Manager { get { return this.sharingMgr; } }
 
         /// <summary>
         /// Set whether this app should provide audio input / output features.
@@ -61,335 +29,45 @@ namespace HoloToolkit.Sharing
         /// </summary>
         private ConsoleLogWriter logWriter;
 
-        /// <summary>
-        /// Root element of our data model
-        /// </summary>
-        public SyncRoot Root { get; private set; }
-
-        /// <summary>
-        /// Server sessions tracker.
-        /// </summary>
-        public ServerSessionsTracker SessionsTracker { get; private set; }
-
-        /// <summary>
-        /// Current session users tracker.
-        /// </summary>
-        public SessionUsersTracker SessionUsersTracker { get; private set; }
-
-        /// <summary>
-        /// Sync State Listener sending events indicating the current sharing sync state.
-        /// </summary>
-        public SyncStateListener SyncStateListener { get; private set; }
-
-        /// <summary>
-        /// Unique ID used to uniquely identify anything spawned by this application's instance,
-        /// in order to prevent conflicts when spawning objects.
-        /// </summary>
-        public string AppInstanceUniqueId { get; private set; }
-
-        /// <summary>
-        /// Invoked when the local user changes their user name.
-        /// </summary>
-        public event Action<string> UserNameChanged;
-
-        /// <summary> 
-        /// Enables Server Discovery on the network 
-        /// </summary> 
-        private DiscoveryClient discoveryClient;
-
-        /// <summary> 
-        /// Provides callbacks when server is discovered or lost. 
-        /// </summary> 
-        private DiscoveryClientAdapter discoveryClientAdapter;
-
-        /// <summary>
-        /// The current ping interval during AutoDiscovery updates.
-        /// </summary>
-        private float pingIntervalCurrent;
-
-        /// <summary>
-        /// True when AutoDiscovery is actively searching, otherwise false.
-        /// </summary>
-        private bool isTryingToFindServer;
-
-        [Tooltip("Show Detailed Information for server connections")]
-        public bool ShowDetailedLogs;
-
-        public string UserName
+        private void Awake()
         {
-            get
-            {
-                using (User user = Manager.GetLocalUser())
-                {
-                    using (XString userName = user.GetName())
-                    {
-                        return userName.GetString();
-                    }
-                }
-            }
-            set
-            {
-                using (var userName = new XString(value))
-                {
-                    Manager.SetUserName(userName);
-                }
+            Instance = this;
 
-                UserNameChanged.RaiseEvent(value);
-            }
+            this.logWriter = new ConsoleLogWriter();
+
+            ClientConfig config = new ClientConfig(this.ClientRole);
+            config.SetIsAudioEndpoint(this.IsAudioEndpoint);
+            config.SetLogWriter(this.logWriter);
+            config.SetServerAddress(this.ServerAddress);
+            config.SetServerPort(this.ServerPort);
+            config.SetProfilerEnabled(false);
+
+            this.sharingMgr = SharingManager.Create(config);
         }
 
-        private NetworkConnectionAdapter networkConnectionAdapter;
-        private NetworkConnection networkConnection;
-        public NetworkConnection Connection
+        protected void OnDestroy()
         {
-            get
-            {
-                if (networkConnection == null && Manager != null)
-                {
-                    networkConnection = Manager.GetServerConnection();
-                }
-                return networkConnection;
-            }
-        }
+            Instance = null;
 
-        /// <summary>
-        /// Returns true if connected to a Sharing Service server.
-        /// </summary>
-        public bool IsConnected
-        {
-            get
-            {
-                if (Manager != null && Connection != null)
-                {
-                    return Connection.IsConnected();
-                }
+            // Force a disconnection so that we can stop and start Unity without connections hanging around
+            this.sharingMgr.GetPairedConnection().Disconnect();
+            this.sharingMgr.GetServerConnection().Disconnect();
 
-                return false;
-            }
-        }
-
-        protected override void Awake()
-        {
-            base.Awake();
-
-            AppInstanceUniqueId = Guid.NewGuid().ToString();
-            logWriter = new ConsoleLogWriter();
-            logWriter.ShowDetailedLogs = ShowDetailedLogs;
-
-            if (AutoDiscoverServer)
-            {
-                AutoDiscoverInit();
-            }
-            else
-            {
-                Connect();
-            }
-        }
-
-        protected override void OnDestroy()
-        {
-            if (discoveryClient != null)
-            {
-                discoveryClient.RemoveListener(discoveryClientAdapter);
-                discoveryClient.Dispose();
-                discoveryClient = null;
-
-                if (discoveryClientAdapter != null)
-                {
-                    discoveryClientAdapter.Dispose();
-                    discoveryClientAdapter = null;
-                }
-            }
-
-            if (Manager != null)
-            {
-                // Force a disconnection so that we can stop and start Unity without connections hanging around
-                Manager.GetPairedConnection().Disconnect();
-                Manager.GetServerConnection().Disconnect();
-            }
-
-            // Release the Sharing resources
-            if (SessionUsersTracker != null)
-            {
-                SessionUsersTracker.Dispose();
-                SessionUsersTracker = null;
-            }
-
-            if (SessionsTracker != null)
-            {
-                SessionsTracker.Dispose();
-                SessionsTracker = null;
-            }
-
-            if (networkConnection != null)
-            {
-                networkConnection.RemoveListener((byte)MessageID.StatusOnly, networkConnectionAdapter);
-                networkConnection.Dispose();
-                networkConnection = null;
-
-                if (networkConnectionAdapter != null)
-                {
-                    networkConnectionAdapter.Dispose();
-                    networkConnectionAdapter = null;
-                }
-            }
-
-            if (Manager != null)
-            {
-                Manager.Dispose();
-                Manager = null;
-            }
+            // Release the XTools manager so that it cleans up the C++ copy
+            this.sharingMgr.Dispose();
+            this.sharingMgr = null;
 
             // Forces a garbage collection to try to clean up any additional reference to SWIG-wrapped objects
-            GC.Collect();
-
-            base.OnDestroy();
+            System.GC.Collect();
         }
 
         private void LateUpdate()
         {
-            if (isTryingToFindServer)
-            {
-                AutoDiscoverUpdate();
-            }
-
-            if (Manager != null)
+            if (this.sharingMgr != null)
             {
                 // Update the XToolsManager to processes any network messages that have arrived
-                Manager.Update();
+                this.sharingMgr.Update();
             }
-        }
-
-        private void Connect()
-        {
-            var config = new ClientConfig(ClientRole);
-            config.SetIsAudioEndpoint(IsAudioEndpoint);
-            config.SetLogWriter(logWriter);
-
-            // Only set the server info is we are connecting on awake
-            if (connectOnAwake)
-            {
-                config.SetServerAddress(SV_Settings.Instance.LocalIP);
-                config.SetServerPort(ServerPort);
-            }
-
-            Manager = SharingManager.Create(config);
-
-            //set up callbacks so that we know when we've connected successfully
-            networkConnection = Manager.GetServerConnection();
-            networkConnectionAdapter = new NetworkConnectionAdapter();
-            networkConnectionAdapter.ConnectedCallback += NetworkConnectionAdapter_ConnectedCallback;
-            networkConnection.AddListener((byte)MessageID.StatusOnly, networkConnectionAdapter);
-
-            SyncStateListener = new SyncStateListener();
-            Manager.RegisterSyncListener(SyncStateListener);
-
-            Root = new SyncRoot(Manager.GetRootSyncObject());
-
-            SessionsTracker = new ServerSessionsTracker(Manager.GetSessionManager());
-            SessionUsersTracker = new SessionUsersTracker(SessionsTracker);
-
-            using (var userName = new XString(DefaultUserName))
-            {
-#if UNITY_WSA && !UNITY_EDITOR
-                Manager.SetUserName(SystemInfo.deviceName);
-#else
-                if (!string.IsNullOrEmpty(Environment.UserName))
-                {
-                    Manager.SetUserName(Environment.UserName);
-                }
-                else
-                {
-                    User localUser = Manager.GetLocalUser();
-                    Manager.SetUserName(userName + localUser.GetID().ToString());
-                }
-#endif
-            }
-        }
-
-        private void NetworkConnectionAdapter_ConnectedCallback(NetworkConnection obj)
-        {
-            SendConnectedNotification();
-        }
-
-        private void SendConnectedNotification()
-        {
-            if (Manager.GetServerConnection().IsConnected())
-            {
-                //Send notification that we're connected 
-                EventHandler connectedEvent = SharingManagerConnected;
-                if (connectedEvent != null)
-                {
-                    connectedEvent(this, EventArgs.Empty);
-                }
-            }
-            else
-            {
-                Log.Error(string.Format("Cannot connect to server {0}:{1}", SV_Settings.Instance.LocalIP, ServerPort.ToString()));
-            }
-        }
-
-        private void AutoDiscoverInit()
-        {
-            if (ShowDetailedLogs)
-            {
-                Debug.Log("Looking for servers...");
-            }
-            discoveryClientAdapter = new DiscoveryClientAdapter();
-            discoveryClientAdapter.DiscoveredEvent += OnSystemDiscovered;
-
-            discoveryClient = DiscoveryClient.Create();
-            discoveryClient.AddListener(discoveryClientAdapter);
-
-            //Start Finding Server 
-            isTryingToFindServer = true;
-        }
-
-        private void AutoDiscoverUpdate()
-        {
-            //Searching Enabled-> Update DiscoveryClient to check results, Wait Interval then Ping network. 
-            pingIntervalCurrent += Time.deltaTime;
-            if (pingIntervalCurrent > PingIntervalSec)
-            {
-                if (ShowDetailedLogs)
-                {
-                    Debug.Log("Looking for servers...");
-                }
-                pingIntervalCurrent = 0;
-                discoveryClient.Ping();
-            }
-            discoveryClient.Update();
-        }
-
-        private void OnSystemDiscovered(DiscoveredSystem obj)
-        {
-            if (obj.GetRole() == SystemRole.SessionDiscoveryServerRole)
-            {
-                //Found a server. Stop pinging the network and connect 
-                isTryingToFindServer = false;
-                SV_Settings.Instance.LocalIP = obj.GetAddress();
-                if (ShowDetailedLogs)
-                {
-                    Debug.Log("Server discovered at: " + SV_Settings.Instance.LocalIP);
-                }
-                Connect();
-                if (ShowDetailedLogs)
-                {
-                    Debug.LogFormat("Connected to: {0}:{1}", SV_Settings.Instance.LocalIP, ServerPort.ToString());
-                }
-            }
-        }
-
-        public void ConnectToServer(string serverAddress, int port)
-        {
-            SV_Settings.Instance.LocalIP = serverAddress;
-            ServerPort = port;
-            ConnectToServer();
-        }
-
-        public void ConnectToServer()
-        {
-            Manager.SetServerConnectionInfo(SV_Settings.Instance.LocalIP, (uint)ServerPort);
         }
 
         private void OnEnable()
@@ -402,7 +80,7 @@ namespace HoloToolkit.Sharing
             Application.logMessageReceived -= HandleLog;
         }
 
-        private void HandleLog(string logString, string stackTrace, LogType type)
+        void HandleLog(string logString, string stackTrace, LogType type)
         {
             switch (type)
             {
@@ -418,10 +96,7 @@ namespace HoloToolkit.Sharing
 
                 case LogType.Log:
                 default:
-                    if (ShowDetailedLogs)
-                    {
-                        Log.Info(logString);
-                    }
+                    Log.Info(logString);
                     break;
             }
         }

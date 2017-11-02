@@ -6,16 +6,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-#if !UNITY_EDITOR && UNITY_METRO
+#if !UNITY_EDITOR
 using System.Threading;
 using System.Threading.Tasks;
-#endif
-
-#if UNITY_EDITOR
+#else
 using UnityEditor;
 #endif
 
-namespace HoloToolkit.Unity.SpatialMapping
+namespace HoloToolkit.Unity
 {
     /// <summary>
     /// SurfaceMeshesToPlanes will find and create planes based on the meshes returned by the SpatialMappingManager's Observer.
@@ -84,7 +82,7 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// </summary>
         private bool makingPlanes = false;
 
-#if UNITY_EDITOR || UNITY_STANDALONE
+#if UNITY_EDITOR
         /// <summary>
         /// How much time (in sec), while running in the Unity Editor, to allow RemoveSurfaceVertices to consume before returning control to the main program.
         /// </summary>
@@ -188,7 +186,7 @@ namespace HoloToolkit.Unity.SpatialMapping
             // Pause our work, and continue on the next frame.
             yield return null;
 
-#if !UNITY_EDITOR && UNITY_METRO
+#if !UNITY_EDITOR
             // When not in the unity editor we can use a cool background task to help manage FindPlanes().
             Task<BoundedPlane[]> planeTask = Task.Run(() => PlaneFinding.FindPlanes(meshData, snapToGravityThreshold, MinArea));
         

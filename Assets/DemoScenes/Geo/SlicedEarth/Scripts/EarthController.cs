@@ -49,10 +49,8 @@ public class EarthController : Singleton<EarthController>
         Surface().Whole().Join().Immediately().Go();
     }
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         initialize();
     }
 
@@ -74,6 +72,11 @@ public class EarthController : Singleton<EarthController>
         layers[5].Initialize(LayerState.Surface);
 
         collider = GetComponent<SphereCollider>();
+    }
+
+    private void OnDestroy()
+    {
+
     }
     
     private void Update()

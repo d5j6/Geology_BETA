@@ -62,10 +62,8 @@ public class SlicedEarthPolygon : Singleton<SlicedEarthPolygon>
         Planet.transform.localScale = Vector3.zero;
     }
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         HideImmediately();
     }
 }

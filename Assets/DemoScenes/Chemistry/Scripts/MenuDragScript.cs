@@ -91,11 +91,13 @@ public class MenuDragScript : MonoBehaviour, IInteractive
             if (isSharingFirstTime || IsSharing)
             {
                 isSharingFirstTime = false;
+                /*
                 SV_Sharing.Instance.SendTransform(
                     _chaptersMenu.transform.position,
                     _chaptersMenu.transform.rotation,
                     _chaptersMenu.transform.localScale,
                     "menu_pos");
+                */
             }
 
             yield return null;

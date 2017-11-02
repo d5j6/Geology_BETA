@@ -9,11 +9,8 @@ public class SmallInfoViewController : Singleton<SmallInfoViewController> {
     public TMProScroller TMProScroller;
 
     private new BoxCollider collider;
-
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         collider = GetComponent<BoxCollider>();
         transform.GetChild(0).gameObject.SetActive(false);
         collider.enabled = false;
@@ -26,10 +23,8 @@ public class SmallInfoViewController : Singleton<SmallInfoViewController> {
         NativeManipulationManager.Instance.NativeYManipulationCompleted += onYManipulationCompleted;
     }
 
-    protected override void OnDestroy()
+    private void OnDestroy()
     {
-        base.OnDestroy();
-
         if (NativeManipulationManager.Instance != null)
         {
             NativeManipulationManager.Instance.NativeYManipulationStarted -= onYManipulationStarted;

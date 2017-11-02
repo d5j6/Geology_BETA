@@ -1,7 +1,9 @@
 ﻿public class InnerCoreButton : CommonRingedAndTintedButton
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         EarthController.Instance.InnerCoreShowed += onShowed;
         EarthController.Instance.InnerCoreHided += onHided;
     }

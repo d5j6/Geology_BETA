@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity;
-using HoloToolkit.Unity.InputModule;
 
 /// <summary>
 /// Класс отвечает за логику взаимодействия с контекстными меню - по какому действию они открываются и по какому закрываются.

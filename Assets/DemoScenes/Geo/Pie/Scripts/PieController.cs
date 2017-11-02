@@ -275,10 +275,8 @@ public class PieController : Singleton<PieController>
     private Material granitMaterial;
     private Material sedimentaryMaterial;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         magmaMaterial = magmaRend.material;
         basaltMaterial = basaltRend.material;
         granitMaterial = granitRend.material;

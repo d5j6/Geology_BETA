@@ -28,10 +28,8 @@ public class ChooseScenePanelScript : Singleton<ChooseScenePanelScript>
     public bool TagAlongBehaviour = true;
 
     // Use this for initialization
-    protected override void Awake ()
+    void Awake ()
     {
-        base.Awake();
-
         for (int i = 0; i < Buttons.Count; i++)
         {
             Materials.Add(Buttons[i].GetComponent<MeshRenderer>().material);
@@ -49,8 +47,6 @@ public class ChooseScenePanelScript : Singleton<ChooseScenePanelScript>
 
     public void Show(System.Action callback = null)
     {
-        LanguageManager.Instance.CurrentLanguage = Language.English;
-
         switch(LanguageManager.Instance.CurrentLanguage)
         {
             case Language.English:

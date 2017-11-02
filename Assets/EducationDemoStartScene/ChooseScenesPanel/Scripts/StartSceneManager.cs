@@ -5,9 +5,9 @@ using System;
 public class StartSceneManager : Singleton<StartSceneManager>, ISceneManager
 {
     private GameObject logo;
-    
+
     private void Start()
-    { 
+    {
         Loader.Instance.IThinkIWasLoadedCompletelyAndCanStart(this);
     }
 
@@ -33,9 +33,7 @@ public class StartSceneManager : Singleton<StartSceneManager>, ISceneManager
             logo.GetComponent<LogoController>().StartLogo();
         }).setOnComplete(() =>
         {
-            ChooseScenePanelScript.Instance.Show();
-
-            //showLangChooserScreen();
+            showLangChooserScreen();
         });
     }
 

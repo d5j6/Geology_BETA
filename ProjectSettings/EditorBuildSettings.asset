@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DemoScenes/Geo/DemoGeoScene.unity
     guid: 80e5620e0247c1e4fad24a88d93356ba
+  - enabled: 0
+    path: 
+    guid: 4068d30cadc491942866ae1aea02cea6
+  - enabled: 0
+    path: 
+    guid: d59fb7e6ad29f8149871fcf92e9e2fc5
+  - enabled: 0
+    path: 
+    guid: ad43edf54cf864343b241ff804e9a544
   - enabled: 1
     path: Assets/DemoScenes/Chemistry/Scenes/ChemistryScene.unity
     guid: 24b61cb45c680c342bada430c925c950

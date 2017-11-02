@@ -26,10 +26,8 @@ public class DemoShowStateMachine : Singleton<DemoShowStateMachine> {
     private IDemoShowState state;
     private Action<IDemoShowState, Action> onExit;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         demoShowStuff = new DemoShowStuff();
         demoShowStuff.Professor = Professor;
         demoShowStuff.TeBeginningOfDemoButton = TeBeginningOfDemoButton;
