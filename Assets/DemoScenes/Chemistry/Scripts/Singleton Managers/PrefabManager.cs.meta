@@ -1,10 +1,38 @@
 fileFormatVersion: 2
 guid: 38eebc7300b58cf4bacd0b243f8cf9ab
-timeCreated: 1473751431
-licenseType: Pro
+timeCreated: 1509702109
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - atomPrefab: {fileID: 1000013920983554, guid: 67718b584b6bf1749bdfea491edf4aae,
+      type: 2}
+  - classicCorePrefab: {fileID: 1000014255289894, guid: 1d4499ec38e06004095dc30aa5630099,
+      type: 2}
+  - electronPrefab: {fileID: 1000013698062164, guid: 1304c92f8be713a43a13c361e56c1149,
+      type: 2}
+  - holePrefab: {fileID: 1000011878172552, guid: 4202886c7da6c914c814a05026bcbefa,
+      type: 2}
+  - realCorePrefab: {fileID: 1000011468679584, guid: b8ada4f02d110b148ad0384a72ef5d7b,
+      type: 2}
+  - sSubLevelPrefab: {fileID: 1000011211657310, guid: db0603cb5ab6d0947834698973a44063,
+      type: 2}
+  - pSubLevelPrefab: {fileID: 1000010737850848, guid: 5989149f11e34344fb07d661b2bab5ea,
+      type: 2}
+  - dSubLevelPrefab: {fileID: 1000014215878014, guid: 0113e1e3e75631f48bdbfadb3c363d7a,
+      type: 2}
+  - fSubLevelPrefub: {fileID: 1000012699672922, guid: fb4bbcdf3ac56c942bcedab8f6e3c5f6,
+      type: 2}
+  - professorPrefab: {fileID: 1000011567174958, guid: 7a747a38072a7874e85e401dbee6bc61,
+      type: 2}
+  - questionButtonPrefab: {fileID: 1000010076659044, guid: d18b408c548b7c94cb255dc3b88a1190,
+      type: 2}
+  - detailedElementPrefab: {fileID: 1000012975358712, guid: 8e28222883d59cc4e8c6f3942acc7c05,
+      type: 2}
+  - tableElementShapePrefab: {fileID: 1000011818869408, guid: 5ad96301a0e5a4e49acd890b54cc1a5f,
+      type: 2}
+  - heliumCorePrefab: {fileID: 1000013812506420, guid: c8e8d9671523bf14784098fd5012ddb0,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

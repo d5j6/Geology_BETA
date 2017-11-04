@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using DG.Tweening;
 
-public class Atom : MonoBehaviour
+public class Atom : Singleton<Atom>
 {
     #region State implementation
     private interface IAtomState
@@ -13,6 +13,7 @@ public class Atom : MonoBehaviour
         void ChangeStateToClassic2D(Vector3? direction = null);
         void ChangeStateToReal();
     }
+
 
     private class AtomNoneState : IAtomState
     {
@@ -78,7 +79,7 @@ public class Atom : MonoBehaviour
                 }
 
                 _atom._state = new AtomClassic3DState(_atom);
-            });
+             });
 
             toColor.a = 0f;
             seq.Append(_atom._shell.material.DOColor(toColor, _atom._transitionDuration));
@@ -108,7 +109,7 @@ public class Atom : MonoBehaviour
             seq.Play();
         }
     }
-
+    
     private class AtomClassic3DState : IAtomState
     {
         private Atom _atom;
@@ -144,6 +145,9 @@ public class Atom : MonoBehaviour
 
             seq.AppendCallback(() =>
             {
+                // Andrew Milko
+                _atom._classicModel.SetActive(true);
+
                 _atom._state = new AtomClassic2DState(_atom);
             });
 
@@ -166,6 +170,9 @@ public class Atom : MonoBehaviour
 
             seq.AppendCallback(() =>
             {
+                // Andrew Milko
+                _atom._classicModel.SetActive(true);
+
                 _atom._state = new AtomClassic3DState(_atom);
             });
 
@@ -243,6 +250,9 @@ public class Atom : MonoBehaviour
 
             seq.AppendCallback(() =>
             {
+                // Andrew Milko
+                _atom._classicModel.SetActive(true);
+
                 _atom._state = new AtomClassic2DState(_atom);
             });
 
@@ -266,6 +276,9 @@ public class Atom : MonoBehaviour
 
             seq.AppendCallback(() =>
             {
+                // Andrew Milko
+                _atom._classicModel.SetActive(true);
+
                 _atom._state = new AtomClassic3DState(_atom);
             });
 
@@ -306,6 +319,7 @@ public class Atom : MonoBehaviour
             seq.Play();
         }
     }
+
 
     private class AtomRealState : IAtomState
     {
@@ -413,11 +427,9 @@ public class Atom : MonoBehaviour
 
     bool _isInitialized;
 
-    [SerializeField]
-    private GameObject _classicModel;
+    public GameObject _classicModel;
 
-    [SerializeField]
-    private GameObject _realModel;
+    public GameObject _realModel;
 
     [SerializeField]
     private Core _classicCore;

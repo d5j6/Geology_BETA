@@ -93,10 +93,10 @@ public class TemplateDrag : MonoBehaviour, IInteractive
         _material = templatePrefabCustom.GetComponent<MeshRenderer>().material;            
         Color targetColor = _material.color;
         targetColor.a = 0.4f;
-        _material.color = targetColor;
+        // _material.color = targetColor;
         Debug.Log("Initialization of \"Template\" works fine");
 
-        // _material.DOColor(targetColor, _fadeDuration).SetLoops(-1, LoopType.Yoyo).Play();
+        _material.DOColor(targetColor, _fadeDuration).SetLoops(-1, LoopType.Yoyo).Play();
     }
 
     private void ChangeLayerRecursively(GameObject go, int layer)

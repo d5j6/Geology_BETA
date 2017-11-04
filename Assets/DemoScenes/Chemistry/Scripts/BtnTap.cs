@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine.UI;
 using Andy.IdGenerator;
-
+using UnityEngine.SceneManagement;
 
 public class BtnTap : MonoBehaviour, IInteractive
 {
@@ -33,6 +33,8 @@ public class BtnTap : MonoBehaviour, IInteractive
     // Use this for initialization
     void Start()
     {
+        DOTween.Clear();
+
         _text = GetComponentInChildren<Text>();
         _text.color = Color.white;
 
@@ -55,8 +57,6 @@ public class BtnTap : MonoBehaviour, IInteractive
             audioSource.Play();
             RunAnumation();
         }
-
-        
     }
 
     public void RunAnumation(bool fromSharing = false)
@@ -74,10 +74,13 @@ public class BtnTap : MonoBehaviour, IInteractive
             case "Exit":
                 CutsceneManager.Instance.SkipCutscene();
                 CutsceneManager.Instance.StopCutscene();
-                //ManagersActivationScript.Instance.ActivateInteractionManagers();
-                //ChemistrySceneFolderCommands.Instance.DeleteChemistryObjects();
+
+                // AndrewMilko
                 Loader.Instance.TurnOnManagers();
                 Loader.Instance.GoToPreviousScene();
+                
+
+
                 break;
             default:
                 PrefabManager.Instance.professorPrefab.SetActive(true);

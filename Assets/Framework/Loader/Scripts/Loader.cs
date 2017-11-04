@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using HoloToolkit.Unity;
+using DG.Tweening;
 
 
 /// <summary>
@@ -151,11 +152,6 @@ public class Loader : Singleton<Loader>
                                     PackAllToTrashCan();
                                     sceneLodingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
                                 });
-
-                                if (sceneName == "ChemistryScene")
-                                {
-                                    // LoadingWindowScript.Instance.HideLoadingWindowsCustomly();
-                                }
                             });
                         }
                         else
@@ -269,7 +265,19 @@ public class Loader : Singleton<Loader>
 
         for (int i = 0; i < rootGOs.Length; i++)
         {
-            if ((rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) && (rootGOs[i].GetComponent<LeanTween>() == null) && (!rootGOs[i].Equals(TrashCanObject)))
+            if (rootGOs[i].gameObject.name == "[DOTween]" ||
+                rootGOs[i].gameObject.name == "LineManager")
+            {
+                rootGOs[i].gameObject.layer = 9;
+            }
+        }
+
+        for (int i = 0; i < rootGOs.Length; i++)
+        {
+            if ((rootGOs[i].GetComponent<IUndestroyableOnLoad>() == null) &&
+                (rootGOs[i].GetComponent<LeanTween>() == null) &&
+                (rootGOs[i].gameObject.layer != 9) &&
+                (!rootGOs[i].Equals(TrashCanObject)))
             {
                 rootGOs[i].transform.parent = TrashCanObject.transform;
             }

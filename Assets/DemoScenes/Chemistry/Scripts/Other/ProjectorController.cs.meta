@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: ff5cb732c3f2ecb4eacbe6b25cf600e8
-timeCreated: 1473499879
-licenseType: Pro
+timeCreated: 1509714882
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - HelperColliderPrefab: {fileID: 1705309267462260, guid: 76ec0c6502355cc4083310e86f401f4d,
+      type: 2}
+  - _spawnPlace: {instanceID: 0}
+  - _atomUIState: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -55,30 +55,25 @@ public class AtomUIStateController : MonoBehaviour
     #endregion
 
     private ProjectorController _projector;
+  
+    public AtomUIStateButton _classic3DButton;
 
-    [SerializeField]
-    private AtomUIStateButton _classic3DButton;
-
-    [SerializeField]
-    private AtomUIStateButton _classic2DButton;
+    public AtomUIStateButton _classic2DButton;
 
     [SerializeField]
     private AtomUIStateButton _realButton;
 
     private AtomUIStateButton _pressedButton;
-
-    [SerializeField]
-    private TextMeshPro _atomFormulaText;
+    
+    public TextMeshPro _atomFormulaText;
     public TextMeshPro atomFormulaText { get { return _atomFormulaText; } }
 
-    [SerializeField]
-    private TextMeshPro _atomNameText;
+    public TextMeshPro _atomNameText;
     public TextMeshPro atomNameText { get { return _atomNameText; } }
 
     void Awake()
     {
         _projector = GetComponentInParent<ProjectorController>();
-        // gameObject.SetActive(false);
     }
 
     void Update()

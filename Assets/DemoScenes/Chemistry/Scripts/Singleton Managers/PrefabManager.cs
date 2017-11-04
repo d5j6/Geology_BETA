@@ -3,6 +3,11 @@ using System.Collections;
 
 public class PrefabManager : Singleton<PrefabManager>
 {
+    private void Start()
+    {
+        atomPrefab.transform.position = Vector3.zero;
+    }
+
     public GameObject atomPrefab;
     public GameObject classicCorePrefab;
     public GameObject electronPrefab;

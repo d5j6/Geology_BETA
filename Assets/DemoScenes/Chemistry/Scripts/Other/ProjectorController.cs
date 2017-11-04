@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 // AbstractFactory used for atom creation
-public class ProjectorController : MonoBehaviour, IInteractive
+public class ProjectorController : Singleton<ProjectorController>, IInteractive
 {
     public GameObject HelperColliderPrefab;
 
@@ -27,13 +27,11 @@ public class ProjectorController : MonoBehaviour, IInteractive
 
     private AtomFactory atomFactory;
 
-    private Atom _currentAtom;
-
-    [SerializeField]
-    private Transform _spawnPlace;
-
-    [SerializeField]
-    private AtomUIStateController _atomUIState;
+    public Atom _currentAtom { get; set; }
+  
+    public Transform _spawnPlace;
+    
+    public AtomUIStateController _atomUIState;
 
     public bool IsProjectingAtom { get; private set; }
 
@@ -135,19 +133,22 @@ public class ProjectorController : MonoBehaviour, IInteractive
         if (number == 1)
         {
             Destroy(HelperColliderPrefab);
+
+            number = 0;
         }
 
-        DestroyAtomProjection();
+        // DestroyAtomProjection();
 
         _currentAtom = atomFactory.CreateAtom(element.atomName);
 
-        _currentAtom.transform.SetParent(_spawnPlace);
-        _currentAtom.transform.localPosition = Vector3.zero;
-        _currentAtom.transform.localRotation = Quaternion.identity;
+        // _currentAtom.transform.SetParent(_spawnPlace);
+        // _currentAtom.transform.localPosition = Vector3.zero;
+        // _currentAtom.transform.localRotation = Quaternion.identity;
 
         _atomUIState.atomNameText.text = _currentAtom.atomInformation.name;
         _atomUIState.atomFormulaText.text = _currentAtom.atomInformation.formula;
         _atomUIState.gameObject.SetActive(true);
+     
         _atomUIState.ChangeViewToClassic3D();
 
         IsProjectingAtom = true;
@@ -162,9 +163,13 @@ public class ProjectorController : MonoBehaviour, IInteractive
     {
         _atomUIState.gameObject.SetActive(false);
 
-        if(_currentAtom != null)
+        if (_currentAtom != null)
         {
             Destroy(_currentAtom.gameObject);
+        }
+        else
+        {
+            Debug.Log("Problem is not here!");
         }
 
         IsProjectingAtom = false;

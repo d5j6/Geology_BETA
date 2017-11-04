@@ -117,7 +117,9 @@ public class Orbit : Singleton<Orbit>
     private void CreateOrbitLine()
     {
         _orbitLine = new VectorLine(string.Format("OrbitLineN{0}", _orbitNumber), new List<Vector3>(64), 1f);
+
         _orbitLine.drawTransform = transform;
+
         _orbitLine.material = new Material(Shader.Find("Shader Forge/UnlitColor"));
         _orbitLine.material.color = Color.gray;
         _orbitLine.MakeCircle(Vector3.zero, _orbitRadius, 32);
@@ -131,12 +133,13 @@ public class Orbit : Singleton<Orbit>
             Debug.Log("OrbitLine works");
         }
 
-        _orbitLine.Draw3DAuto();
+        // Andrew Milko
+        _orbitLine.Draw3DAuto(); 
     }
 
     void Update()
     {
-        // Unassigned!
+        /// Unassigned!
         _electronOrbit.transform.Rotate(new Vector3(0f, 0f, _orbitSpeed) * Time.deltaTime);
     }
 

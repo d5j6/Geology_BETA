@@ -46,6 +46,11 @@ public class PeriodicTable : MonoBehaviour
 
     private List<TableElement>[] groups;
 
+    private void OnDestroy()
+    {
+        _selectedElement = null;
+    }
+
     public void SelectElement(TableElement element)
     {
         if (_selectedElement != null)
