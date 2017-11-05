@@ -242,10 +242,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &6510912
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012088602770, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -334,7 +334,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &6510915
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014028697978, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -835,10 +835,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &12172782
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012937603406, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -927,7 +927,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &12172785
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010840254032, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2059,10 +2059,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &45443216
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010380806942, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2151,7 +2151,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &45443219
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011161380516, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2291,10 +2291,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &56904786
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011763554812, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2383,7 +2383,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &56904789
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013367169078, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2675,10 +2675,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -2706,7 +2706,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &66760555
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013182144304, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -2767,7 +2767,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &66760558
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011415480924, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3027,10 +3027,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3058,7 +3058,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &73154975
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012683620694, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3119,7 +3119,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &73154978
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012555568450, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3259,10 +3259,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3290,7 +3290,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &88204656
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011881920844, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3351,7 +3351,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &88204659
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011156777872, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3491,10 +3491,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3522,7 +3522,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &90105721
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011615597812, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3583,7 +3583,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &90105724
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012898728926, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3840,10 +3840,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3871,7 +3871,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &104923297
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013134784294, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -3932,7 +3932,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &104923300
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011667716394, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -4848,10 +4848,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -4879,7 +4879,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &123375374
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012055456828, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -4940,7 +4940,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &123375377
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010585509278, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -5733,10 +5733,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -6237,10 +6237,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -6268,7 +6268,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &157763406
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013526924650, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -6329,54 +6329,12 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &157763409
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013383598522, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 157763403}
   m_Mesh: {fileID: 0}
---- !u!1001 &179330414
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2078431043}
-    m_Modifications:
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 76ec0c6502355cc4083310e86f401f4d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &193452507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,10 +6858,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -6931,7 +6889,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &206573041
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011693899028, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -6992,7 +6950,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &206573044
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010813374590, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -7180,10 +7138,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -7340,69 +7298,6 @@ Transform:
   m_Father: {fileID: 1414557096}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &215449155
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1237267464960608, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 215449157}
-  - component: {fileID: 215449158}
-  - component: {fileID: 215449156}
-  m_Layer: 0
-  m_Name: Projector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &215449156
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 135807653147524804, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 215449155}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.38
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!4 &215449157
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4996714016773624, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 215449155}
-  m_LocalRotation: {x: -0, y: -0.97629607, z: -0, w: -0.21643952}
-  m_LocalPosition: {x: 1.011, y: -0.25, z: 0.2909999}
-  m_LocalScale: {x: 0.7000002, y: 0.7, z: 0.7000002}
-  m_Children:
-  - {fileID: 2078431043}
-  m_Father: {fileID: 675155893}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: -25, z: 0}
---- !u!114 &215449158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114345346427412962, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 215449155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5cb732c3f2ecb4eacbe6b25cf600e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HelperColliderPrefab: {fileID: 332894878}
-  allowedActions: 01000000
-  _duration: 1
-  _spawnPlace: {fileID: 855618882}
-  _atomUIState: {fileID: 1259788240}
 --- !u!1 &219574237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7731,10 +7626,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -7762,7 +7657,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &220323339
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010105102324, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -7823,7 +7718,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &220323342
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013967318698, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8010,10 +7905,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -8041,7 +7936,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &221555827
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013809640402, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8102,7 +7997,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &221555830
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011141405904, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8242,10 +8137,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -8273,7 +8168,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &227797102
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013054240124, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8334,7 +8229,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &227797105
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014079226478, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8594,10 +8489,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -8625,7 +8520,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &229066289
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012629396934, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -8686,7 +8581,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &229066292
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011247595036, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -9384,10 +9279,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -9415,7 +9310,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &261681615
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010019934120, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -9476,7 +9371,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &261681618
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010264995626, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -9906,10 +9801,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -9937,7 +9832,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &274109830
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014119806660, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -9998,7 +9893,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &274109833
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012807980708, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -10138,10 +10033,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -10169,7 +10064,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &274759682
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011937186396, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -10230,7 +10125,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &274759685
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011995084558, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -12086,16 +11981,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 332421791}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &332894878 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1705309267462260, guid: 76ec0c6502355cc4083310e86f401f4d,
-    type: 2}
-  m_PrefabInternal: {fileID: 179330414}
---- !u!4 &332894879 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4052434483759960, guid: 76ec0c6502355cc4083310e86f401f4d,
-    type: 2}
-  m_PrefabInternal: {fileID: 179330414}
 --- !u!1 &340644564
 GameObject:
   m_ObjectHideFlags: 0
@@ -12421,10 +12306,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -12452,7 +12337,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &344470814
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010604541152, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -12513,7 +12398,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &344470817
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010610306316, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -12827,10 +12712,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -12858,7 +12743,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &352292885
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010998874762, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -12919,7 +12804,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &352292888
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012146772386, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -13312,10 +13197,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -13343,14 +13228,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &360856680
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013984221734, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 360856677}
 --- !u!33 &360856681
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013429337188, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -13634,10 +13519,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -13665,7 +13550,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &369911732
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011626001244, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -13726,7 +13611,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &369911735
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014257565080, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -13866,10 +13751,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -13897,7 +13782,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &370677157
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012377288054, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -13958,7 +13843,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &370677160
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013888428998, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -14158,10 +14043,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -14189,7 +14074,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &394089209
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011655844468, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -14250,7 +14135,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &394089212
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010422599194, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -15042,10 +14927,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -15073,7 +14958,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &434268758
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011869933740, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -15134,7 +15019,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &434268761
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014134141630, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -15700,10 +15585,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -15731,7 +15616,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &448296345
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012335848272, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -15792,7 +15677,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &448296348
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012159385556, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -17482,10 +17367,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -17513,7 +17398,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &493263852
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012049717460, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -17574,7 +17459,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &493263855
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012745840194, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -17862,10 +17747,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -17893,7 +17778,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &497672129
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011623089200, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -17954,7 +17839,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &497672132
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013680833650, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -18094,10 +17979,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -18125,7 +18010,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &498040256
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011130932286, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -18186,7 +18071,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &498040259
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011157512108, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -18326,10 +18211,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -18357,7 +18242,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &499364246
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010235076448, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -18418,7 +18303,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &499364249
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014285515526, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -19491,10 +19376,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -19522,7 +19407,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &526588537
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012737523100, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -19583,7 +19468,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &526588540
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011790278116, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -19794,10 +19679,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -19825,7 +19710,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &535300225
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013796244232, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -19886,7 +19771,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &535300228
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010071071974, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -20018,10 +19903,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -20250,10 +20135,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -20281,7 +20166,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &547567604
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010421431422, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -20342,7 +20227,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &547567607
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013985237948, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -20482,10 +20367,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -20513,7 +20398,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &563411926
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011182164620, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -20574,7 +20459,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &563411929
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010167396770, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -21354,10 +21239,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -21385,7 +21270,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &590707839
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012202228568, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -21446,7 +21331,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &590707842
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010484028116, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22085,10 +21970,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -22116,7 +22001,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &615993844
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014123760088, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22177,12 +22062,17 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &615993847
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011800203004, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 615993841}
   m_Mesh: {fileID: 0}
+--- !u!4 &616748720 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1542335122}
 --- !u!1 &621063714
 GameObject:
   m_ObjectHideFlags: 0
@@ -22317,10 +22207,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -22348,7 +22238,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &621063717
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014114473082, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22409,7 +22299,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &621063720
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014175936040, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22605,10 +22495,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -22636,7 +22526,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &624772475
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013553591694, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22697,7 +22587,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &624772478
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012088274414, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22837,10 +22727,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -22868,7 +22758,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &625482434
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014257354132, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -22929,7 +22819,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &625482437
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013745085188, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -23895,10 +23785,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -23926,7 +23816,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &658239946
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012343585246, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -23987,7 +23877,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &658239949
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011059181494, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -24368,10 +24258,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -24399,7 +24289,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &660761656
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011411714056, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -24460,7 +24350,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &660761659
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010879188442, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -24600,10 +24490,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -24631,7 +24521,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &665320110
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014060493732, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -24692,7 +24582,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &665320113
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012601630056, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -24846,7 +24736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa466460adabfe49b625c9b1adfb529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _projector: {fileID: 215449158}
+  _projector: {fileID: 1786766383}
   projectorPrefab: {fileID: 1237267464960608, guid: e54e554e45de801418a21d361b42de47,
     type: 2}
   shape: {fileID: 1836013524}
@@ -24880,7 +24770,7 @@ Transform:
   - {fileID: 2099147136}
   - {fileID: 1836013522}
   - {fileID: 1168626086}
-  - {fileID: 215449157}
+  - {fileID: 616748720}
   m_Father: {fileID: 1414557096}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -25491,10 +25381,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -25522,7 +25412,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &692301280
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013740021860, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -25583,7 +25473,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &692301283
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010140856490, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -25723,10 +25613,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -25754,7 +25644,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &692435880
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011326439058, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -25815,7 +25705,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &692435883
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010184631950, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26138,10 +26028,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -26169,7 +26059,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &701790177
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011072629870, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26230,7 +26120,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &701790180
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011027172852, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26551,10 +26441,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -26582,7 +26472,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &708533386
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014284479540, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26643,7 +26533,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &708533389
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011259950954, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26837,10 +26727,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -26868,7 +26758,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &718832453
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013047925136, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -26929,7 +26819,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &718832456
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013022816864, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -27069,10 +26959,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -27100,7 +26990,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &719318265
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011171260424, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -27161,7 +27051,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &719318268
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013106882104, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -27413,10 +27303,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -27444,14 +27334,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &725304622
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011424443744, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725304619}
 --- !u!33 &725304623
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013536920388, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -29192,10 +29082,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -29223,7 +29113,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &822486887
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012433721524, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -29284,7 +29174,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &822486890
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013333851030, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -30399,10 +30289,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -30430,7 +30320,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &851751446
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012144478486, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -30491,7 +30381,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &851751449
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011916970180, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -30660,10 +30550,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -30691,7 +30581,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &854011109
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011076513592, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -30752,17 +30642,12 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &854011112
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011101351656, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854011106}
   m_Mesh: {fileID: 0}
---- !u!4 &855618882 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4842177683129112, guid: 40e455dd6647e114a9f512947bc07ccf,
-    type: 2}
-  m_PrefabInternal: {fileID: 1324592717}
 --- !u!1 &856644961
 GameObject:
   m_ObjectHideFlags: 0
@@ -30928,10 +30813,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -30959,7 +30844,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &860007183
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013617140936, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -31020,7 +30905,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &860007186
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011687263448, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -31904,10 +31789,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -31935,7 +31820,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &891298505
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013538481206, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -31996,7 +31881,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &891298508
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011618290776, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -32975,10 +32860,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -34247,7 +34132,7 @@ MonoBehaviour:
   periodicTableTemplatePrefab: {fileID: 1000011628129800, guid: b97a49112691f4e408f2261ff2f9edf2,
     type: 2}
   periodicTable: {fileID: 675155891}
-  projector: {fileID: 215449155}
+  projector: {fileID: 1353197993}
   chaptersMenu: {fileID: 1819248483639184, guid: 1d2042a5ea5b23b4d8caeccad87036ab,
     type: 2}
 --- !u!4 &991699057
@@ -34726,10 +34611,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -34757,7 +34642,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1003355667
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011876091562, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -34818,7 +34703,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1003355670
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013578497242, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35075,10 +34960,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -35106,7 +34991,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1018439025
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013092148734, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35167,7 +35052,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1018439028
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013103871414, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35327,10 +35212,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -35358,14 +35243,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1022652817
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010337905580, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022652814}
 --- !u!33 &1022652818
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012771143620, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35727,10 +35612,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -35758,7 +35643,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1031847857
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014025994496, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35819,7 +35704,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1031847860
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012417174596, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -35959,10 +35844,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -35990,7 +35875,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1032619393
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011788494260, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -36051,7 +35936,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1032619396
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010755984164, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -36702,10 +36587,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -37164,10 +37049,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -37195,7 +37080,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1072478141
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012401807018, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -37256,7 +37141,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1072478144
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012283925788, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -37396,10 +37281,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -37427,7 +37312,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1072876508
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014265970142, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -37488,7 +37373,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1072876511
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010007012752, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -37908,10 +37793,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -37939,7 +37824,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1077729571
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010144424970, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -38000,7 +37885,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1077729574
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012724649186, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -38171,10 +38056,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -38202,7 +38087,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1080822877
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011724387870, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -38263,7 +38148,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1080822880
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013595327944, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -39384,10 +39269,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -39415,7 +39300,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1119472004
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010677752826, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -39476,7 +39361,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1119472007
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011404633242, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -39819,10 +39704,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -39850,7 +39735,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1145571349
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011650822220, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -39911,7 +39796,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1145571352
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012060733208, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -40051,10 +39936,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -40082,7 +39967,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1149260946
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011326774046, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -40143,7 +40028,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1149260949
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012281258488, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -40283,10 +40168,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -40314,7 +40199,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1153948508
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012367717834, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -40375,7 +40260,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1153948511
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012989757538, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41062,10 +40947,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -41093,7 +40978,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1190415293
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011871867322, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41154,7 +41039,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1190415296
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011379590928, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41286,10 +41171,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -41317,7 +41202,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1192258566
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013244591308, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41378,7 +41263,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1192258569
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013069437554, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41767,10 +41652,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -41798,7 +41683,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1196014625
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012924504558, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -41859,7 +41744,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1196014628
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013891819354, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -42101,10 +41986,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -42132,7 +42017,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1198557374
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011618883410, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -42193,7 +42078,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1198557377
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010237836792, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -43032,10 +42917,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -43063,7 +42948,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1253127993
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014280136494, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -43124,7 +43009,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1253127996
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010939177736, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -43250,17 +43135,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1255192111}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1259788240 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114748055424291616, guid: 40e455dd6647e114a9f512947bc07ccf,
-    type: 2}
-  m_PrefabInternal: {fileID: 1324592717}
-  m_Script: {fileID: 11500000, guid: f394b6d7c9547814cbd92c4a599b0b6d, type: 3}
---- !u!4 &1259788241 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf,
-    type: 2}
-  m_PrefabInternal: {fileID: 1324592717}
 --- !u!1 &1260094991
 GameObject:
   m_ObjectHideFlags: 0
@@ -43584,10 +43458,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -43615,7 +43489,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1262300319
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014194600720, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -43676,7 +43550,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1262300322
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012482740402, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -43808,10 +43682,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -43839,14 +43713,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1262831592
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013830626774, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262831589}
 --- !u!33 &1262831593
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013302548134, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -44314,10 +44188,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -44345,7 +44219,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1268810340
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012804429902, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -44406,7 +44280,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1268810343
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012748381262, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -44723,6 +44597,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4814301248347440, guid: 99050060584e0d04ea96db28c18c6ff0,
     type: 2}
   m_PrefabInternal: {fileID: 1282605852}
+--- !u!1 &1282605854 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1908328606141382, guid: 99050060584e0d04ea96db28c18c6ff0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1282605852}
 --- !u!1 &1288710814
 GameObject:
   m_ObjectHideFlags: 0
@@ -44915,10 +44794,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -44946,7 +44825,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1289250064
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013297571650, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -45007,7 +44886,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1289250067
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012863834878, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -45363,10 +45242,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -46666,10 +46545,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -46697,7 +46576,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1308844737
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012682681478, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -46758,7 +46637,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1308844740
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012811338182, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -46898,10 +46777,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -46929,7 +46808,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1312804453
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010618097218, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -46990,7 +46869,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1312804456
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012075699732, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -47130,10 +47009,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -47161,7 +47040,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1315203172
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011167928480, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -47222,7 +47101,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1315203175
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010840297790, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -47426,10 +47305,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -47457,7 +47336,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1322038342
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013374809236, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -47518,114 +47397,12 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1322038345
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010350333234, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1322038339}
   m_Mesh: {fileID: 0}
---- !u!1001 &1324592717
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2078431043}
-    m_Modifications:
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269908293976988, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114061335975320618, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114061335975320618, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33664413964575926, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114337026546065480, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114337026546065480, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33335931063512068, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33869504551816136, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33235802087298012, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114360331852238414, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114360331852238414, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114036763805457016, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114036763805457016, guid: 40e455dd6647e114a9f512947bc07ccf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 40e455dd6647e114a9f512947bc07ccf, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1333477060
 GameObject:
   m_ObjectHideFlags: 0
@@ -47867,10 +47644,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -47898,7 +47675,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1343652960
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010099206386, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -47959,12 +47736,17 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1343652963
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012010451042, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343652957}
   m_Mesh: {fileID: 0}
+--- !u!1 &1353197993 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1089138979905550, guid: e54e554e45de801418a21d361b42de47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1542335122}
 --- !u!1 &1354582330
 GameObject:
   m_ObjectHideFlags: 0
@@ -48316,10 +48098,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -48347,7 +48129,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1360388261
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012050729566, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -48408,7 +48190,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1360388264
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013408542670, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -48697,10 +48479,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -48728,7 +48510,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1362957248
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010003079812, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -48789,7 +48571,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1362957251
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010705113144, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -48983,10 +48765,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -49014,7 +48796,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1382479920
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010415513234, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -49075,7 +48857,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1382479923
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011545231250, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -49518,10 +49300,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -49549,7 +49331,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1400552323
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010508509788, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -49610,7 +49392,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1400552326
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012133430792, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -50033,10 +49815,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -50064,7 +49846,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1410796126
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010112490208, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -50125,7 +49907,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1410796129
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010971727280, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -50614,10 +50396,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -50645,7 +50427,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1423683375
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011516972054, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -50706,7 +50488,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1423683378
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013312526796, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -51533,10 +51315,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -51564,7 +51346,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1437555625
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012746731580, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -51625,7 +51407,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1437555628
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012069025770, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -51757,10 +51539,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -51788,14 +51570,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1441389438
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013887046494, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441389435}
 --- !u!33 &1441389439
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012729103506, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -52352,10 +52134,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -52383,7 +52165,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1451488424
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010662029030, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -52444,7 +52226,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1451488427
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011516172112, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -52701,10 +52483,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -52732,14 +52514,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1455772910
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010277698972, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455772907}
 --- !u!33 &1455772911
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010828949184, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -52933,10 +52715,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -52964,7 +52746,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1463346816
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011794776296, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -53025,7 +52807,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1463346819
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011652720966, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -53388,10 +53170,10 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -53419,7 +53201,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1476975550
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222011801107658986, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -53480,7 +53262,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1476975553
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33981746174178668, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -53674,10 +53456,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -53705,7 +53487,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1481040225
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014130132060, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -53766,7 +53548,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1481040228
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010094633302, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -54146,10 +53928,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -54177,7 +53959,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1491591814
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011347006352, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -54238,7 +54020,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1491591817
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010606766806, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -55099,10 +54881,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -55130,7 +54912,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1516019377
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010878054352, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -55191,7 +54973,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1516019380
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010885361634, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -55350,10 +55132,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -55381,7 +55163,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1523532528
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012640396006, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -55442,7 +55224,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1523532531
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012939233738, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -55953,10 +55735,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -55984,7 +55766,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1539074627
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012288032274, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -56045,7 +55827,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1539074630
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013766181054, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -56083,6 +55865,108 @@ Transform:
   m_Father: {fileID: 1167639296}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1542335122
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 675155893}
+    m_Modifications:
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.22837901
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055657078759172, guid: e54e554e45de801418a21d361b42de47, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394764478241346, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394764478241346, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33812827650678750, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114101667452286472, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114101667452286472, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33330589512801340, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144563222330750, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144563222330750, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33157850605626860, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33512754407352072, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114616710513768664, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114616710513768664, guid: e54e554e45de801418a21d361b42de47,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e54e554e45de801418a21d361b42de47, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1549344283
 GameObject:
   m_ObjectHideFlags: 0
@@ -56331,10 +56215,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -56362,7 +56246,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1550739789
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013883101452, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -56423,7 +56307,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1550739792
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012079980624, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -56563,10 +56447,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -56594,7 +56478,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1553344051
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013692345266, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -56655,7 +56539,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1553344054
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011914315182, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -58506,10 +58390,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -58916,10 +58800,10 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -59195,7 +59079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45973175ec2bc0459a44da9d1211e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cursor: {fileID: 0}
+  Cursor: {fileID: 1282605854}
   DirectionIndicator: {fileID: 1691577217364792, guid: b6819663ff2db4d4baea49886ca3ee2c,
     type: 2}
 --- !u!1 &1673134402
@@ -61065,10 +60949,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -61096,7 +60980,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1727052367
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011624882064, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -61157,7 +61041,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1727052370
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014150509022, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62148,10 +62032,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -62179,7 +62063,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1759181981
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011467189700, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62240,7 +62124,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1759181984
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010144292082, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62380,10 +62264,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -62411,7 +62295,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1763815387
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011662683042, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62472,7 +62356,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1763815390
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012874799424, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62612,10 +62496,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -62643,7 +62527,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1766087816
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010304627898, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -62704,7 +62588,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1766087819
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011977542820, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -63092,6 +62976,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1784714205}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1786766383 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114756211292353730, guid: e54e554e45de801418a21d361b42de47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1542335122}
+  m_Script: {fileID: 11500000, guid: ff5cb732c3f2ecb4eacbe6b25cf600e8, type: 3}
 --- !u!21 &1795327927
 Material:
   serializedVersion: 6
@@ -63681,10 +63571,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -63712,7 +63602,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1833797868
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011936559754, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -63773,7 +63663,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1833797871
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012345248356, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64145,10 +64035,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -64176,7 +64066,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1847329863
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010179976530, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64237,7 +64127,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1847329866
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013500255566, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64377,10 +64267,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -64408,7 +64298,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1850632595
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013118908520, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64469,7 +64359,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1850632598
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010060592234, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64729,10 +64619,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -64760,7 +64650,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1859486649
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011721698952, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -64821,7 +64711,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1859486652
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013301260226, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -65299,10 +65189,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -65330,7 +65220,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1877159377
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010445935962, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -65391,7 +65281,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1877159380
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010357416616, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -65531,10 +65421,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -65562,7 +65452,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1882470768
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013990378194, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -65623,7 +65513,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1882470771
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011985102806, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -66729,10 +66619,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -67294,10 +67184,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -67325,7 +67215,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1951438240
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012867549374, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -67386,7 +67276,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1951438243
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012718479618, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -67645,10 +67535,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -67676,14 +67566,14 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1971391830
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011346227444, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1971391827}
 --- !u!33 &1971391831
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013976185164, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -67906,10 +67796,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -67937,7 +67827,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1979105124
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000011704800012, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -67998,7 +67888,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1979105127
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000014266078570, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -68219,10 +68109,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -68727,10 +68617,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -68758,7 +68648,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1990624889
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013745167252, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -68819,7 +68709,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1990624892
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011668635912, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -68990,10 +68880,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -69021,7 +68911,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1995325207
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013580686006, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69082,7 +68972,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1995325210
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013621106336, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69345,10 +69235,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -69376,7 +69266,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1998170594
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012888858728, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69437,7 +69327,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1998170597
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012562230974, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69644,10 +69534,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -69675,7 +69565,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &1999292833
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013679617620, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69736,7 +69626,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1999292836
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013587508804, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -69901,10 +69791,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -71844,10 +71734,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -71875,7 +71765,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2051710818
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013806996528, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -71936,7 +71826,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2051710821
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012371552920, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -72104,10 +71994,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -72135,7 +72025,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2052365369
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010256437094, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -72196,7 +72086,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2052365372
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010499189716, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -72580,10 +72470,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -72611,7 +72501,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2065495398
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000013959155046, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -72672,7 +72562,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2065495401
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000012290463578, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -73000,10 +72890,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -73031,7 +72921,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2077367864
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012495495362, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -73092,58 +72982,12 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2077367867
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010762349590, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2077367861}
   m_Mesh: {fileID: 0}
---- !u!1 &2078431042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1797837505543102, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2078431043}
-  - component: {fileID: 2078431044}
-  m_Layer: 0
-  m_Name: UIContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2078431043
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4412557316306906, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078431042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1259788241}
-  - {fileID: 332894879}
-  m_Father: {fileID: 215449157}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2078431044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114482343887243706, guid: e54e554e45de801418a21d361b42de47,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078431042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 461269a5888414a40b8c175b2d61806d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationValue: 6
 --- !u!1 &2088919602
 GameObject:
   m_ObjectHideFlags: 0
@@ -73384,10 +73228,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -73415,7 +73259,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2095944097
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000014177630298, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -73476,7 +73320,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2095944100
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000013199691238, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -74097,10 +73941,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -74128,7 +73972,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2110852995
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010015998524, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -74189,7 +74033,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2110852998
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010941269664, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -74696,10 +74540,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -74727,7 +74571,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2115158642
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010569321104, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -74788,7 +74632,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2115158645
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011833084238, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -74957,10 +74801,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -74988,7 +74832,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2126984118
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012123424072, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -75049,7 +74893,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2126984121
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010770884794, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -75309,10 +75153,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -75340,7 +75184,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2127757680
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000012890674738, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -75401,7 +75245,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2127757683
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000011673039966, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -75784,10 +75628,10 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -75815,7 +75659,7 @@ MonoBehaviour:
   m_anchor: 10
 --- !u!222 &2146733242
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 222000010620041758, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -75876,7 +75720,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &2146733245
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 33000010616482038, guid: 5e9cc1095d8feea46922d5cc552a1219,
     type: 2}
   m_PrefabInternal: {fileID: 0}

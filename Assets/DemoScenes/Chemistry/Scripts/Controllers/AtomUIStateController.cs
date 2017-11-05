@@ -76,11 +76,6 @@ public class AtomUIStateController : MonoBehaviour
         _projector = GetComponentInParent<ProjectorController>();
     }
 
-    void Update()
-    {
-       transform.LookAt(Camera.main.transform.position);
-    }
-
     public void ChangeLocalViewTo3D(bool to3D)
     {
         if (to3D)

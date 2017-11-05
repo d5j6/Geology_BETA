@@ -127,7 +127,7 @@ public class StartScenario : Singleton<StartScenario>
 
 
         projector.gameObject.SetActive(true);
-        Vector3 projectorSpawnPos = new Vector3(-1.5f, 0.25f, -0.2f);
+        Vector3 projectorSpawnPos = new Vector3(-1.4f, 0.25f, -0.3f);
         projector.transform.position = periodicTable.transform.TransformPoint(-projectorSpawnPos);
         projector.transform.parent = null;
 

@@ -48,6 +48,11 @@ public class ProjectorController : Singleton<ProjectorController>, IInteractive
         this.gameObject.SetActive(true);
     }
 
+    void Update()
+    {
+        transform.LookAt(Camera.main.transform.position);
+    }
+
     public List<ActionType> GetAllowedActions()
     {
         return allowedActions;
