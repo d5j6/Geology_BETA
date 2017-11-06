@@ -4,6 +4,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using HoloToolkit.Unity;
+using HoloToolkit.Unity.SpatialMapping;
 
 /// <summary>
 /// Attach this component to a GameObject that contains some meshes (i.e.: the FakeSpatialMappingMesh.fbx).

@@ -12,6 +12,8 @@ public class StartScenario : Singleton<StartScenario>
     //public GameObject projectorTemplatePrefab;
     //private GameObject projectorTemplate;
 
+    private TemplateDrag templateTableScript;
+
     public GameObject projector;
 
     public GameObject chaptersMenu;
@@ -40,7 +42,7 @@ public class StartScenario : Singleton<StartScenario>
 
         // NEW
         PeriodicTabletemplate = Instantiate(periodicTableTemplatePrefab, this.gameObject.transform.parent);
-        TemplateDrag templateTableScript = PeriodicTabletemplate.GetComponentInChildren<TemplateDrag>();
+        templateTableScript = PeriodicTabletemplate.GetComponentInChildren<TemplateDrag>();
 
         // templateTableScript.Initialize();
 
@@ -60,6 +62,12 @@ public class StartScenario : Singleton<StartScenario>
 
     private void PeriodicTableDropHandler(IInteractive interactive)
     {
+        if (!PlaceableTemplate.Instance.isPlaced)
+        {
+            PlayerManager.Instance.TryToDragInteractive(templateTableScript);
+            return;
+        }
+
         OwnGestureManager.Instance.OnTapEvent -= PeriodicTableDropHandler;
 
         periodicTable.gameObject.SetActive(true);
@@ -92,7 +100,7 @@ public class StartScenario : Singleton<StartScenario>
         OwnGestureManager.Instance.OnTapEvent += SpawnerTemplateDropHandler;
         */
 
-        Vector3 chaptersSpawnPos = new Vector3(1.0f, 0.0f, -0.1f);
+        Vector3 chaptersSpawnPos = new Vector3(1.0f, -0.05f, -0.1f);
         chaptersSpawnPos = periodicTable.transform.TransformPoint(-chaptersSpawnPos);
 
         // NEW
@@ -127,7 +135,7 @@ public class StartScenario : Singleton<StartScenario>
 
 
         projector.gameObject.SetActive(true);
-        Vector3 projectorSpawnPos = new Vector3(-1.4f, 0.25f, -0.3f);
+        Vector3 projectorSpawnPos = new Vector3(-1.2f, 0.25f, -0.5f);
         projector.transform.position = periodicTable.transform.TransformPoint(-projectorSpawnPos);
         projector.transform.parent = null;
 

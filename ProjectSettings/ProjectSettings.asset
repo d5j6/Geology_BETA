@@ -628,14 +628,14 @@ PlayerSettings:
     WindowsStoreApps:
       AllJoyn: False
       BlockedChatMessages: False
-      Bluetooth: False
+      Bluetooth: True
       Chat: False
       CodeGeneration: False
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
       InputInjectionBrokered: False
-      InternetClient: False
-      InternetClientServer: False
+      InternetClient: True
+      InternetClientServer: True
       Location: False
       Microphone: True
       MusicLibrary: False
@@ -650,7 +650,7 @@ PlayerSettings:
       UserAccountInformation: False
       VideosLibrary: False
       VoipCall: False
-      WebCam: False
+      WebCam: True
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

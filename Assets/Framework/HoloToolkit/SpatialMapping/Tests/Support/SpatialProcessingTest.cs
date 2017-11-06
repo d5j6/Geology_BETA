@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity;
+using HoloToolkit.Unity.SpatialMapping;
 
 /// <summary>
 /// The SpatialProcessingTest class allows applications to scan the environment for a specified amount of time 

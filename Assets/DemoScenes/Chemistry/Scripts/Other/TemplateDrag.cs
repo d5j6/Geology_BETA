@@ -36,6 +36,7 @@ public class TemplateDrag : MonoBehaviour, IInteractive
 
     public void OnGestureTap() { }
 
+
     public void StopDrag()
     {
         StopCoroutine(_dragCoroutine);
@@ -69,7 +70,8 @@ public class TemplateDrag : MonoBehaviour, IInteractive
     {
         while(true)
         {
-             _rootObject.transform.position = Vector3.Lerp(_rootObject.transform.position, OwnCursorManager.Instance.cursor.position, Time.deltaTime * 8f);
+             _rootObject.transform.position =
+                Vector3.Lerp(_rootObject.transform.position, OwnCursorManager.Instance.cursor.position, Time.deltaTime * 8f);
             _rootObject.transform.rotation = OwnCursorManager.Instance.cursor.rotation;
 
             yield return null;

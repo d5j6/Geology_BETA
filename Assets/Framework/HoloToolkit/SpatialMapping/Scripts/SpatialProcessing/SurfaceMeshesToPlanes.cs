@@ -1,19 +1,18 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See LICENSE in the project root for license information.
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-#if !UNITY_EDITOR
+#if !UNITY_EDITOR && UNITY_METRO
 using System.Threading;
 using System.Threading.Tasks;
-#else
+#endif
+
+#if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-namespace HoloToolkit.Unity
+namespace HoloToolkit.Unity.SpatialMapping
 {
     /// <summary>
     /// SurfaceMeshesToPlanes will find and create planes based on the meshes returned by the SpatialMappingManager's Observer.
@@ -82,7 +81,7 @@ namespace HoloToolkit.Unity
         /// </summary>
         private bool makingPlanes = false;
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE
         /// <summary>
         /// How much time (in sec), while running in the Unity Editor, to allow RemoveSurfaceVertices to consume before returning control to the main program.
         /// </summary>
@@ -95,13 +94,15 @@ namespace HoloToolkit.Unity
 #endif
 
         // GameObject initialization.
-        private void Start()
+        void Start()
         {
             makingPlanes = false;
             ActivePlanes = new List<GameObject>();
+            /*
             planesParent = new GameObject("SurfacePlanes");
             planesParent.transform.position = Vector3.zero;
             planesParent.transform.rotation = Quaternion.identity;
+            */
         }
 
         /// <summary>
@@ -149,11 +150,10 @@ namespace HoloToolkit.Unity
         /// <returns>Yield result.</returns>
         private IEnumerator MakePlanesRoutine()
         {
-            // Remove any previously existing planes, as they may no longer be valid.
-            for (int index = 0; index < ActivePlanes.Count; index++)
-            {
-                Destroy(ActivePlanes[index]);
-            }
+            // TODO HUX CHANGE
+            List<GameObject> planesToDestroy = new List<GameObject>(ActivePlanes);
+            ActivePlanes.Clear();
+            // TODO HUX CHANGE
 
             // Pause our work, and continue on the next frame.
             yield return null;
@@ -186,7 +186,7 @@ namespace HoloToolkit.Unity
             // Pause our work, and continue on the next frame.
             yield return null;
 
-#if !UNITY_EDITOR
+#if !UNITY_EDITOR && UNITY_METRO
             // When not in the unity editor we can use a cool background task to help manage FindPlanes().
             Task<BoundedPlane[]> planeTask = Task.Run(() => PlaneFinding.FindPlanes(meshData, snapToGravityThreshold, MinArea));
         
@@ -243,6 +243,14 @@ namespace HoloToolkit.Unity
             // Create SurfacePlane objects to represent each plane found in the Spatial Mapping mesh.
             for (int index = 0; index < planes.Length; index++)
             {
+                if (index == 0)
+                {
+                    planesParent = new GameObject("SurfacePlanes");
+                    planesParent.transform.position = Vector3.zero;
+                    planesParent.transform.rotation = Quaternion.identity;
+                    planesParent.AddComponent<SimpleUndestroyableOnLoad>();
+                }
+
                 GameObject destPlane;
                 BoundedPlane boundedPlane = planes[index];
 
@@ -285,6 +293,14 @@ namespace HoloToolkit.Unity
                     start = Time.realtimeSinceStartup;
                 }
             }
+
+            // TODO HUX CHANGE
+            // Remove any previously existing planes, as they may no longer be valid.
+            for (int index = 0; index < planesToDestroy.Count; index++) {
+                Destroy(planesToDestroy[index]);
+            }
+            planesToDestroy.Clear();
+            // TODO HUX CHANGE
 
             Debug.Log("Finished making planes.");
 

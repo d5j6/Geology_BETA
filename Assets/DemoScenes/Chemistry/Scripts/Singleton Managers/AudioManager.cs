@@ -12,7 +12,7 @@ public class AudioManager : Singleton<AudioManager>
         audioSource.dopplerLevel = 0.0f;
         audioSource.spatialBlend = 1.0f;
         audioSource.spatialize = true;
-        audioSource.volume = 0.9f;
+        audioSource.volume = 1.0f;
         AudioClip audioClip = null;
         audioClip = Resources.Load<AudioClip>("Button_Press");
         audioSource.clip = audioClip;
