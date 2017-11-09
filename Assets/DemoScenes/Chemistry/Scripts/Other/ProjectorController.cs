@@ -3,6 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using HoloToolkit.Unity;
 
 // AbstractFactory used for atom creation
 public class ProjectorController : Singleton<ProjectorController>, IInteractive
@@ -75,6 +76,8 @@ public class ProjectorController : Singleton<ProjectorController>, IInteractive
 
     public void StopDrag()
     {
+        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+
         StopCoroutine(_dragCoroutine);
 
         this.gameObject.transform.position = OwnGazeManager.Instance.HitPoint;
@@ -85,6 +88,8 @@ public class ProjectorController : Singleton<ProjectorController>, IInteractive
 
     public bool TryToDrag()
     {
+        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+
         _oldLayer = gameObject.layer;
 
         ChangeLayerRecursively(gameObject, LayerMask.NameToLayer("Ignore Raycast"));

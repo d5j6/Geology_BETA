@@ -85,7 +85,7 @@ public class PlaceableTemplate : Singleton<PlaceableTemplate> {
             return false;
         }
 
-        if (hitInfo.collider.gameObject.transform.localScale.x >= 2.4f && hitInfo.collider.gameObject.transform.localScale.y >= 0.8f)
+        if (hitInfo.collider.gameObject.transform.localScale.x >= 0.8f && hitInfo.collider.gameObject.transform.localScale.y >= 2.4f)
         {
             return true;
         }

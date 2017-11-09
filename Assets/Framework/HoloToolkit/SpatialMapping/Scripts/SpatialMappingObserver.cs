@@ -36,7 +36,7 @@ namespace HoloToolkit.Unity
         public Vector3 Extents = Vector3.one * 10.0f;
 
         [Tooltip("How long to wait (in sec) between Spatial Mapping updates.")]
-        public float TimeBetweenUpdates = 3.5f;
+        public static float TimeBetweenUpdates = 3.5f;
 
         /// <summary>
         /// Event for hooking when surfaces are changed.

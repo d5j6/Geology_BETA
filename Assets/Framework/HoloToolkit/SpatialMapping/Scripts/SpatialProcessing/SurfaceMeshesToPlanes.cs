@@ -69,7 +69,8 @@ namespace HoloToolkit.Unity.SpatialMapping
         /// <summary>
         /// Empty game object used to contain all planes created by the SurfaceToPlanes class.
         /// </summary>
-        private GameObject planesParent;
+        [HideInInspector]
+        public GameObject planesParent;
 
         /// <summary>
         /// Used to align planes with gravity so that they appear more level.

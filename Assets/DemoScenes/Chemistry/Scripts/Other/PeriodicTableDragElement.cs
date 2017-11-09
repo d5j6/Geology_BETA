@@ -3,9 +3,12 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using HoloToolkit.Unity;
 
 public class PeriodicTableDragElement : MonoBehaviour, IInteractive
 {
+    private bool isClicked = false;
+
     [SerializeField]
     private GameObject _periodicTable;
 
@@ -63,9 +66,10 @@ public class PeriodicTableDragElement : MonoBehaviour, IInteractive
 
     public bool TryToDrag()
     {
-        _professor.transform.parent = _periodicTable.transform;
+        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
 
-        Debug.Log("sd");
+        _professor.transform.parent = _periodicTable.transform;
+        
         _oldLayer = _periodicTable.layer;
 
         ChangeLayerRecursively(_periodicTable, LayerMask.NameToLayer("Ignore Raycast"));
@@ -102,6 +106,8 @@ public class PeriodicTableDragElement : MonoBehaviour, IInteractive
 
     public void StopDrag()
     {
+        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+
         StopCoroutine(_dragCoroutine);
 
         _periodicTable.transform.position = OwnGazeManager.Instance.HitPoint;

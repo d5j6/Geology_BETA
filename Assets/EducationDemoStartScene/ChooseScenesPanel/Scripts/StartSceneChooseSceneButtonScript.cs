@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using HoloToolkit.Unity;
 
 public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D {
 
@@ -109,7 +110,7 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
 
         if (isNeed)
         {
-         //  
+          //  
         }
 
         // Andrew Milko
@@ -141,9 +142,18 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
             {
                 Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
 
+                SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+
                 if (SceneToLoad == "ChemistryScene")
                 {
                     Loader.Instance.TurnOffManagers();
+
+                    SpatialMappingManager.Instance.StopObserver();
+                    PlaySpaceManager.Instance.CreatePlanes();
+
+                    Debug.Log("Starting naking planes...");
+
+                    SpatialMappingManager.Instance.StartObserver();
                 }
             }
         }

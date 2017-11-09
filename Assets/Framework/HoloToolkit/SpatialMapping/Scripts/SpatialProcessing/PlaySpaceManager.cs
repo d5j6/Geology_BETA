@@ -43,15 +43,9 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
     /// </summary>
     private void Update()
     {
-        // Check to see if the spatial mapping data has been processed
-        // and if we are limiting how much time the user can spend scanning.
+        /*
         if (!meshesProcessed && limitScanningByTime)
         {
-            // If we have not processed the spatial mapping data
-            // and scanning time is limited...
-
-            // Check to see if enough scanning time has passed
-            // since starting the observer.
             if (limitScanningByTime && ((Time.time - SpatialMappingManager.Instance.StartTime) < scanTime))
             {
                 // If we have a limited scanning time, then we should wait until
@@ -59,31 +53,17 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
             }
             else
             {
-                // The user should be done scanning their environment,
-                // so start processing the spatial mapping data...
-
-                /* TODO: 3.a DEVELOPER CODING EXERCISE 3.a */
-
-                /// We are checking if our Observer is running and if it still running after 10 seconds
-                /// then we went ahead and stopped the observer.
-                /// And after that we will create planes (we are calling our "SurfaceMeshesToPlanes" class in it)
-
-                // 3.a: Check if IsObserverRunning() is true on the
-                // SpatialMappingManager.Instance.
                 if (SpatialMappingManager.Instance.IsObserverRunning())
                 {
-                    // 3.a: If running, Stop the observer by calling
-                    // StopObserver() on the SpatialMappingManager.Instance.
                     SpatialMappingManager.Instance.StopObserver();
                 }
 
-                // 3.a: Call CreatePlanes() to generate planes.
                 CreatePlanes();
 
-                // 3.a: Set meshesProcessed to true.
                 meshesProcessed = true;
             }
         }
+        */
     }
 
     // After we've complted to create planes, we will get an event where will calssify those planes:
@@ -136,22 +116,14 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
         }
         else
         {
-            // We do not have enough floors/walls to place our holograms on...
-
-            // 3.a: Re-enter scanning mode so the user can find more surfaces by 
-            // calling StartObserver() on the SpatialMappingManager.Instance.
-            SpatialMappingManager.Instance.StartObserver();
-
-            // 3.a: Re-process spatial data after scanning completes by
-            // re-setting meshesProcessed to false.
-            meshesProcessed = false;
+            Debug.Log("Not enough f=ound surfaces. Re-enter to the Chemistry Lessons");
         }
     }
 
     /// <summary>
     /// Creates planes from the spatial mapping surfaces.
     /// </summary>
-    private void CreatePlanes()
+    public void CreatePlanes()
     {
         // Generate planes based on the spatial map.
         SurfaceMeshesToPlanes surfaceToPlanes = SurfaceMeshesToPlanes.Instance;

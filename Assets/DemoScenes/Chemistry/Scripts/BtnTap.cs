@@ -5,6 +5,8 @@ using DG.Tweening;
 using UnityEngine.UI;
 using Andy.IdGenerator;
 using UnityEngine.SceneManagement;
+using HoloToolkit.Unity.SpatialMapping;
+using HoloToolkit.Unity;
 
 public class BtnTap : MonoBehaviour, IInteractive
 {
@@ -76,11 +78,14 @@ public class BtnTap : MonoBehaviour, IInteractive
                 CutsceneManager.Instance.StopCutscene();
 
                 // AndrewMilko
+                Debug.Log("Deleting old planes and gathering data for new...");
+
+                Destroy(SurfaceMeshesToPlanes.Instance.planesParent);
+
                 Loader.Instance.TurnOnManagers();
                 Loader.Instance.GoToPreviousScene();
-                
 
-
+                SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
                 break;
             default:
                 PrefabManager.Instance.professorPrefab.SetActive(true);

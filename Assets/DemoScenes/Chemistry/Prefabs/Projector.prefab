@@ -288,14 +288,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1089138979905550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.25, z: 0.22837901}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.06500004, y: 0.065, z: 0.058500014}
   m_Children:
   - {fileID: 4412557316306906}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4175669853552032
 Transform:
   m_ObjectHideFlags: 1
@@ -316,7 +316,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1488357452813636}
   m_LocalRotation: {x: -0, y: -0.70710653, z: -0.70710707, w: 0}
-  m_LocalPosition: {x: -0.048, y: 1, z: 0}
+  m_LocalPosition: {x: -0.05, y: 0.94, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4496437757990920}
@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HelperColliderPrefab: {fileID: 1867487144328080}
-  allowedActions: 01000000
+  allowedActions: 0100000000000000
   _duration: 1
   _spawnPlace: {fileID: 4208294919143132}
   _atomUIState: {fileID: 114021187103936820}

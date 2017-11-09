@@ -3,6 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using HoloToolkit.Unity;
 
 public class MenuDragScript : MonoBehaviour, IInteractive
 {
@@ -65,7 +66,8 @@ public class MenuDragScript : MonoBehaviour, IInteractive
 
     public bool TryToDrag()
     {
-        Debug.Log("sd");
+        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+
         _oldLayer = _chaptersMenu.layer;
 
         ChangeLayerRecursively(_chaptersMenu, LayerMask.NameToLayer("Ignore Raycast"));
@@ -106,6 +108,8 @@ public class MenuDragScript : MonoBehaviour, IInteractive
 
     public void StopDrag()
     {
+        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+
         StopCoroutine(_dragCoroutine);
 
         _chaptersMenu.transform.position = OwnGazeManager.Instance.HitPoint + new Vector3(0f,0f,-0.05f);
