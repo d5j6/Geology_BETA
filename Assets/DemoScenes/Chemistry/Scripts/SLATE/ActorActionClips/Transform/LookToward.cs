@@ -8,6 +8,7 @@ public class LookToward : ActorActionClip
 {
     public Transform target;
     public bool inverse;
+    public bool isTextContainer = false;
 
     public override bool isValid
     {
@@ -19,7 +20,16 @@ public class LookToward : ActorActionClip
 
     protected override void OnEnter()
     {
-        Quaternion lookRotation = Quaternion.LookRotation(target.forward);
+        Quaternion lookRotation;
+
+        if (isTextContainer)
+        {
+            lookRotation = Quaternion.LookRotation(-target.forward);
+        }
+        else
+        {
+            lookRotation = Quaternion.LookRotation(target.forward);
+        }
 
         if(inverse)
         {
