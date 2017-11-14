@@ -70,6 +70,7 @@ public class BtnTap : MonoBehaviour, IInteractive
                 CutsceneManager.Instance.PlaySectionNow(playDemo: true);
                 break;
             case "Stop":
+
                 CutsceneManager.Instance.SkipCutscene();
                 CutsceneManager.Instance.StopCutscene();
                 break;
@@ -87,7 +88,7 @@ public class BtnTap : MonoBehaviour, IInteractive
 
                 SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
                 break;
-            default:
+            default: 
                 PrefabManager.Instance.professorPrefab.SetActive(true);
                 CutsceneManager.Instance.PlaySectionNow(sectionName: chapterName);
                 break;
