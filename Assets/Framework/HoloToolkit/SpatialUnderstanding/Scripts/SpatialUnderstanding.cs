@@ -85,8 +85,8 @@ namespace HoloToolkit.Unity
                 // Update scan period, based on state
 
                 // AndrewMilko
-                SpatialMappingObserver.TimeBetweenUpdates = (scanState == ScanStates.Done) ? UpdatePeriod_AfterScanning : UpdatePeriod_DuringScanning;
-                // SpatialMappingManager.Instance.GetComponent<SpatialMappingObserver>().TimeBetweenUpdates = (scanState == ScanStates.Done) ? UpdatePeriod_AfterScanning : UpdatePeriod_DuringScanning;
+                // SpatialMappingObserver.TimeBetweenUpdates = (scanState == ScanStates.Done) ? UpdatePeriod_AfterScanning : UpdatePeriod_DuringScanning;
+                SpatialMappingManager.Instance.GetComponent<SpatialMappingObserver>().TimeBetweenUpdates = (scanState == ScanStates.Done) ? UpdatePeriod_AfterScanning : UpdatePeriod_DuringScanning;
             }
         }
         /// <summary>

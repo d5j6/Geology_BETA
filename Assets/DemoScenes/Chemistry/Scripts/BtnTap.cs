@@ -70,7 +70,6 @@ public class BtnTap : MonoBehaviour, IInteractive
                 CutsceneManager.Instance.PlaySectionNow(playDemo: true);
                 break;
             case "Stop":
-
                 CutsceneManager.Instance.SkipCutscene();
                 CutsceneManager.Instance.StopCutscene();
                 break;
@@ -81,12 +80,11 @@ public class BtnTap : MonoBehaviour, IInteractive
                 // AndrewMilko
                 Debug.Log("Deleting old planes and gathering data for new...");
 
-                Destroy(SurfaceMeshesToPlanes.Instance.planesParent);
+                // Destroy(SurfaceMeshesToPlanes.Instance.planesParent);
 
                 Loader.Instance.TurnOnManagers();
                 Loader.Instance.GoToPreviousScene();
-
-                SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+                
                 break;
             default: 
                 PrefabManager.Instance.professorPrefab.SetActive(true);

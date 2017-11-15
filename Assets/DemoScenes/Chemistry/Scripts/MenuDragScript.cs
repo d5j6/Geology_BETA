@@ -66,7 +66,7 @@ public class MenuDragScript : MonoBehaviour, IInteractive
 
     public bool TryToDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
 
         _oldLayer = _chaptersMenu.layer;
 
@@ -108,7 +108,7 @@ public class MenuDragScript : MonoBehaviour, IInteractive
 
     public void StopDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
 
         StopCoroutine(_dragCoroutine);
 

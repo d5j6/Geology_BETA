@@ -134,26 +134,27 @@ public class StartSceneChooseSceneButtonScript : StandardSimpleButton, IButton3D
         });
     }
 
+    
+
     private void LoadSceneByTap()
     {
         if (animationMayChange)
         {
             if (SceneToLoad != "")
             {
-                Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);
-
-                SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+                Loader.Instance.LoadScene(SceneToLoad, SceneLoadingMode.Single);  
 
                 if (SceneToLoad == "ChemistryScene")
                 {
                     Loader.Instance.TurnOffManagers();
 
-                    SpatialMappingManager.Instance.StopObserver();
-                    PlaySpaceManager.Instance.CreatePlanes();
+                    if (PlaySpaceManager.Instance.numberOfTimes == 1)
+                    {
+                        PlaySpaceManager.Instance.CreatePlanes();
+                        PlaySpaceManager.Instance.numberOfTimes = 0;
+                    }
 
                     Debug.Log("Starting naking planes...");
-
-                    SpatialMappingManager.Instance.StartObserver();
                 }
             }
         }

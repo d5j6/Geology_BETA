@@ -10,7 +10,7 @@ public class CubeButton : StandardSimpleButton {
 
         isNeed = true;
 
-        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
 
         SceneStateMachine.Instance.GoBackToMainMenu();
     }

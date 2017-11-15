@@ -590,7 +590,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: Holo Group
   metroCertificateIssuer: Holo Group
-  metroCertificateNotAfter: 00f6dc53f972d401
+  metroCertificateNotAfter: 0044431fd47cd401
   metroApplicationDescription: HoloStudy is a series of geology, physics, chemistry
     and biology lessons. The lessons are designed specifically to give you all the
     possibilities of HoloLens during educational process. Set off on an incredible

@@ -66,7 +66,7 @@ public class PeriodicTableDragElement : MonoBehaviour, IInteractive
 
     public bool TryToDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
 
         _professor.transform.parent = _periodicTable.transform;
         
@@ -106,7 +106,7 @@ public class PeriodicTableDragElement : MonoBehaviour, IInteractive
 
     public void StopDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
 
         StopCoroutine(_dragCoroutine);
 

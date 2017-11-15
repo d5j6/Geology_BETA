@@ -29,6 +29,8 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
     /// </summary>
     private bool meshesProcessed = false;
 
+    public int numberOfTimes;
+
     /// <summary>
     /// GameObject initialization.
     /// </summary>
@@ -36,6 +38,8 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
     {
         // Register for the MakePlanesComplete event.
         SurfaceMeshesToPlanes.Instance.MakePlanesComplete += SurfaceMeshesToPlanes_MakePlanesComplete;
+
+        numberOfTimes = 0;
     }
 
     /// <summary>
@@ -43,7 +47,6 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
     /// </summary>
     private void Update()
     {
-        /*
         if (!meshesProcessed && limitScanningByTime)
         {
             if (limitScanningByTime && ((Time.time - SpatialMappingManager.Instance.StartTime) < scanTime))
@@ -58,12 +61,12 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
                     SpatialMappingManager.Instance.StopObserver();
                 }
 
-                CreatePlanes();
+                // CreatePlanes();
+                numberOfTimes++;
 
                 meshesProcessed = true;
             }
         }
-        */
     }
 
     // After we've complted to create planes, we will get an event where will calssify those planes:

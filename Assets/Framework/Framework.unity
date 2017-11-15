@@ -874,7 +874,7 @@ Prefab:
     - target: {fileID: 114804436515998876, guid: f6b39c8b1dbb5bf43bc4c88004343a0b,
         type: 2}
       propertyPath: scanTime
-      value: 20
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114866653799979194, guid: f6b39c8b1dbb5bf43bc4c88004343a0b,
         type: 2}
@@ -884,12 +884,12 @@ Prefab:
     - target: {fileID: 114892245407896888, guid: f6b39c8b1dbb5bf43bc4c88004343a0b,
         type: 2}
       propertyPath: drawPlanesMask
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114804436515998876, guid: f6b39c8b1dbb5bf43bc4c88004343a0b,
         type: 2}
       propertyPath: limitScanningByTime
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6b39c8b1dbb5bf43bc4c88004343a0b, type: 2}

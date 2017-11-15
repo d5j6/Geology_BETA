@@ -76,7 +76,7 @@ public class ProjectorController : Singleton<ProjectorController>, IInteractive
 
     public void StopDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 14.0f;
 
         StopCoroutine(_dragCoroutine);
 
@@ -88,7 +88,7 @@ public class ProjectorController : Singleton<ProjectorController>, IInteractive
 
     public bool TryToDrag()
     {
-        SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
+        // SpatialMappingObserver.TimeBetweenUpdates = 3.5f;
 
         _oldLayer = gameObject.layer;
 
