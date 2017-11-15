@@ -71594,8 +71594,8 @@ MonoBehaviour:
   - {fileID: 1595662549}
   - {fileID: 1723721713}
   _length: 1
-  _viewTimeMin: -0.34330255
-  _viewTimeMax: 2.2749598
+  _viewTimeMin: -0.29461354
+  _viewTimeMax: 2.0218575
 --- !u!1 &2042974699
 GameObject:
   m_ObjectHideFlags: 0
